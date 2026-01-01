@@ -22,3 +22,19 @@ Reads messages from a messaging app, performs sentiment analysis (positive/negat
 - Matplotlib/Streamlit (visualization)
 
 ## Setup
+
+### Run the chat UI server (dev)
+1. Create & activate a virtual environment (optional):
+   - python -m venv .venv
+   - .\.venv\Scripts\Activate.ps1
+2. Install dependencies:
+   - pip install flask
+3. Start the static UI server (serves `index.html` and assets):
+   - python UI.py
+4. Open in browser: http://127.0.0.1:5000/
+
+CSV persistence
+- The project includes `storage.py` which provides a simple CSV-backed API (`append_message`, `append_messages`, `get_history`, `get_csv_path`) that other Python modules can import to persist chat data to `chat_history_global.csv`.
+
+(If you previously used `socketio_client.py` or `test_client.py` those demo clients have been removed; import `storage.py` directly for integrations.)
+

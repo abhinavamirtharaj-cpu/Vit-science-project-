@@ -1,0 +1,15 @@
+contact_id,contact_name,dir,iso_time,date,time,text,saved_at
+support,Support,received,,1/1/2026,01:28 pm,Welcome to support conversation!,2026-01-01T07:58:41.593749
+support,Support,sent,2026-01-01T07:58:18.369Z,1/1/2026,01:28 pm,HI,2026-01-01T07:58:41.593749
+support,Support,received,2026-01-01T07:58:19.178Z,1/1/2026,01:28 pm,Thanks! This is an automated reply.,2026-01-01T07:58:41.593749
+support,Support,sent,2026-01-01T07:58:25.851Z,1/1/2026,01:28 pm,How Are you!,2026-01-01T07:58:41.593749
+support,Support,received,2026-01-01T07:58:26.663Z,1/1/2026,01:28 pm,Thanks! This is an automated reply.,2026-01-01T07:58:41.593749
+alice,Alice,received,,1/1/2026,01:28 pm,Welcome to alice conversation!,2026-01-01T08:01:48.565982
+alice,Alice,sent,2026-01-01T08:01:40.385Z,1/1/2026,01:31 pm,Hello,2026-01-01T08:01:48.565982
+alice,Alice,received,2026-01-01T08:01:41.197Z,1/1/2026,01:31 pm,Thanks! This is an automated reply.,2026-01-01T08:01:48.565982
+demo_device,Demo Device,sent,2026-01-01T08:25:48.478404,2026-01-01,08:25,Hello from demo_integration - single append,2026-01-01T08:25:48.480140
+demo_device,Demo Device,sent,2026-01-01T08:25:48.478404,2026-01-01,08:25,Second message via append_messages,2026-01-01T08:25:48.481430
+demo_device,Demo Device,sent,2026-01-01T08:57:29.519697,2026-01-01,08:57,Demo test message from run,2026-01-01T08:57:29.529732
+demo_device,Demo Device,sent,2026-01-01T09:28:32.886359,2026-01-01,09:28,Second run demo message,2026-01-01T09:28:32.888368
+demo_device,Demo Device,sent,2026-01-01T09:39:11.756747,2026-01-01,09:39,Automated run test,2026-01-01T09:39:11.756747
+demo_device,Demo Device,sent,2026-01-01T10:11:53.385273,2026-01-01,10:11,Execute all 3 test,2026-01-01T10:11:53.385273

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chat-like UI Template</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="logo" href="file:///C:/Users/Kavin_Vaibhav/OneDrive/Pictures/Documents/Kavin%20School/Class%20XI/Projects/VIT/" target="_blank" rel="noopener noreferrer">
+        <!-- Project logo (local file) -->
+        <img class="logo-img" src="assets/LOGO.png" alt="SEAN Logo" />
+        <span class="brand">SEAN</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#about">More about us</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+        <button class="primary chat-cta small" id="get-started-sm">Chat Here.</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / banner with background image enabled in CSS -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="wave-text">A Smarter Future in Chat!</h1>
+        <p>Start Your Chat, That signifies Emotions..</p>
+        <div class="hero-actions">
+          <button class="primary chat-cta" id="get-started">Chat Here.</button>
+          <a href="#about" class="ghost chat-cta">More about us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Two horizontal blocks (different widths) -->
+    <section class="blocks">
+      <div class="block block-left">
+        <h2>Top block (larger)</h2>
+        <p>This block can hold the chat area, conversation preview, or a showcase graphic. It is wider to emphasize the main content.</p>
+      </div>
+
+      <aside class="block block-right">
+        <h3>Side block (narrow)</h3>
+        <p>Use this for contacts, quick actions, or short information panels.</p>
+        <button class="ghost">Open Contacts</button>
+      </aside>
+    </section>
+
+    <!-- Lower half - details about the application -->
+    <section id="about" class="details">
+      <h2>About the application</h2>
+      <p>This template demonstrates a clean layout for a chat-style user interface. The top navigation contains your logo and quick links, the hero area features an eye-catching backdrop image, and the two horizontal blocks let you place the main content and supplementary panels side-by-side.</p>
+
+      <p>Customize the background image via <code>styles.css</code> and replace the inline SVG logo with your own image. The "Get Started" button scrolls down to these details; you can wire it up to open modals or navigate to signup forms.</p>
+
+      <h3>Features you can add next</h3>
+      <ul>
+        <li>Contact list & chat conversations</li>
+        <li>Message input box with keyboard shortcuts</li>
+        <li>Saving conversation history to localStorage or backend</li>
+      </ul>
+    </section>
+
+    <footer id="contact" class="footer">
+      <p>© <strong>MyChatApp</strong> — Built with ❤️</p>
+    </footer>
+  </main>
+
+  <!-- Chat panel (hidden by default) -->
+  <div id="chat-panel" class="chat-panel hidden" aria-hidden="true">
+    <div class="chat-container">
+      <aside class="contacts" id="contacts">
+        <div class="contacts-header">Contacts</div>
+        <ul class="contacts-list" id="contacts-list">
+          <!-- contacts populated here -->
+        </ul>
+        <div class="contacts-footer">
+          <button id="add-contact" class="ghost">+ Add</button>
+        </div>
+      </aside>
+
+      <main class="chat-main">
+        <header class="chat-header">
+          <button id="close-chat" class="icon" aria-label="Close chat">←</button>
+
+          <div class="chat-title" id="chat-title">
+            <img src="" alt="" class="avatar" aria-hidden="true" />
+            <div>
+              <strong id="chat-with">Support</strong>
+              <div class="status" id="chat-status">Online</div>
+            </div>
+          </div>
+
+          <div class="chat-actions">
+            <!-- Export buttons removed. Use localStorage for demo persistence or import `storage.py` for CSV persistence. -->
+          </div>
+        </header>
+
+        <div class="chat-messages" id="messages" role="log" aria-live="polite">
+          <div class="messages-inner" id="messages-inner"><!-- messages inserted here --></div>
+        </div>
+
+        <form class="chat-input" id="chat-form">
+          <textarea id="message-input" placeholder="Type a message..." rows="1"></textarea>
+          <button type="submit" class="primary">Send</button>
+        </form>
+      </main>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
