@@ -19,3 +19,9 @@ support,Support,sent,2026-01-01T14:21:31.670344,2026-01-01,14:21,I said lol,0.8,
 support,Support,sent,2026-01-01T14:24:17.982950,2026-01-01,14:24,U think u're too smart!?,0.268,Positive,🙂,#4CAF50,2026-01-01T14:24:17.983069
 support,Support,sent,2026-01-01T14:24:34.880762,2026-01-01,14:24,You think that you are too smart.huh,,Neutral,😐,#FFC107,2026-01-01T14:24:34.880882
 support,Support,sent,2026-01-01T14:24:42.491706,2026-01-01,14:24,I won't forgive u,,Neutral,😐,#FFC107,2026-01-01T14:24:42.491785
+support,Support,sent,2026-01-01T16:21:02.919365,2026-01-01,16:21,I will never hate you,0.4,Very Positive,😄,#4CAF50,2026-01-01T16:21:02.919443
+support,Support,sent,2026-01-01T16:21:07.875816,2026-01-01,16:21,I hate you,-0.8,Very Negative,😠,#F44336,2026-01-01T16:21:07.875918
+alice,Alice,sent,2026-01-01T16:22:24.366785,2026-01-01,16:22,Hey Alice!,,Neutral,😐,#FFC107,2026-01-01T16:22:24.366861
+alice,Alice,sent,2026-01-01T16:22:31.230196,2026-01-01,16:22,I am afraid I hate you!,-0.8,Very Negative,😠,#F44336,2026-01-01T16:22:31.230301
+alice,Alice,sent,2026-01-01T16:22:43.079221,2026-01-01,16:22,I like you very much man!,0.325,Very Positive,😄,#4CAF50,2026-01-01T16:22:43.079298
+alice,Alice,sent,2026-01-01T16:22:49.038047,2026-01-01,16:22,You are my friend,,Neutral,😐,#FFC107,2026-01-01T16:22:49.038124

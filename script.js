@@ -308,6 +308,23 @@ document.addEventListener('DOMContentLoaded', () => {
   // Enter to send
   input && input.addEventListener('keydown', (e)=>{ if(e.key === 'Enter' && !e.shiftKey){ e.preventDefault(); chatForm.dispatchEvent(new Event('submit', {cancelable:true})); } });
 
+  // Typing animation for chat bar
+  const typingTextEl = document.getElementById('text');
+  if(typingTextEl){
+    const message = "We Welcome You";
+    const speed = 120;
+    let index = 0;
+
+    function typeText() {
+      if (index < message.length) {
+        typingTextEl.textContent += message.charAt(index);
+        index++;
+        setTimeout(typeText, speed);
+      }
+    }
+    typeText();
+  }
+
   // initial render
   renderContacts();
 });
