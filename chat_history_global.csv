@@ -13,3 +13,9 @@ demo_device,Demo Device,sent,2026-01-01T08:57:29.519697,2026-01-01,08:57,Demo te
 demo_device,Demo Device,sent,2026-01-01T09:28:32.886359,2026-01-01,09:28,Second run demo message,2026-01-01T09:28:32.888368
 demo_device,Demo Device,sent,2026-01-01T09:39:11.756747,2026-01-01,09:39,Automated run test,2026-01-01T09:39:11.756747
 demo_device,Demo Device,sent,2026-01-01T10:11:53.385273,2026-01-01,10:11,Execute all 3 test,2026-01-01T10:11:53.385273
+support,Support,sent,2026-01-01T14:19:46.022637,2026-01-01,14:19,HI,,Neutral,😐,#FFC107,2026-01-01T14:19:46.022869
+support,Support,sent,2026-01-01T14:21:18.793967,2026-01-01,14:21,I'm completely angry!!,-0.781,Very Negative,😠,#F44336,2026-01-01T14:21:18.794045
+support,Support,sent,2026-01-01T14:21:31.670344,2026-01-01,14:21,I said lol,0.8,Very Positive,😄,#4CAF50,2026-01-01T14:21:31.670475
+support,Support,sent,2026-01-01T14:24:17.982950,2026-01-01,14:24,U think u're too smart!?,0.268,Positive,🙂,#4CAF50,2026-01-01T14:24:17.983069
+support,Support,sent,2026-01-01T14:24:34.880762,2026-01-01,14:24,You think that you are too smart.huh,,Neutral,😐,#FFC107,2026-01-01T14:24:34.880882
+support,Support,sent,2026-01-01T14:24:42.491706,2026-01-01,14:24,I won't forgive u,,Neutral,😐,#FFC107,2026-01-01T14:24:42.491785

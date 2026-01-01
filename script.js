@@ -1,4 +1,4 @@
-// Chat panel with contacts, exports, and server save
+// Chat panel with contacts, sentiment analysis, and server save
 document.addEventListener('DOMContentLoaded', () => {
   const btn = document.getElementById('get-started');
   const btnSm = document.getElementById('get-started-sm');
@@ -9,6 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const input = document.getElementById('message-input');
   const contactsListEl = document.getElementById('contacts-list');
   const chatWithEl = document.getElementById('chat-with');
+  
+  // Sentiment analysis state
+  let isAnalyzing = false;
 
   // Sample contacts (now include avatar images)
   const contacts = [
@@ -67,10 +70,24 @@ document.addEventListener('DOMContentLoaded', () => {
     avatarImg.alt = '';
 
     const bubble = document.createElement('div');
+    // Add sentiment-based styling if available
     bubble.className = 'msg ' + (msg.dir === 'sent' ? 'sent' : 'received');
+    if(msg.sentiment && msg.sentiment.color) {
+      bubble.setAttribute('data-sentiment-color', msg.sentiment.color);
+      bubble.setAttribute('data-sentiment-category', msg.sentiment.category);
+      bubble.setAttribute('data-sentiment-description', msg.sentiment.description);
+      bubble.setAttribute('data-sentiment-emoji', msg.sentiment.emoji);
+    }
+    
     const timeHtml = `<span class="time">${escapeHtml(msg.time)}</span>`;
     const meta = msg.date ? `<span class="meta">${escapeHtml(msg.date)}</span>` : '';
-    bubble.innerHTML = `<div class="text">${escapeHtml(msg.text)}</div>${timeHtml}${meta}`;
+    
+    let sentimentBadge = '';
+    if(msg.sentiment) {
+      sentimentBadge = `<span class="sentiment-badge" title="${escapeHtml(msg.sentiment.description)}">${msg.sentiment.emoji} ${escapeHtml(msg.sentiment.category)}</span>`;
+    }
+    
+    bubble.innerHTML = `<div class="text">${escapeHtml(msg.text)}</div>${sentimentBadge}${timeHtml}${meta}`;
 
     // assemble row: avatar + bubble
     if(msg.dir === 'sent'){
@@ -110,6 +127,86 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     return msg;
+  }
+
+  // Sentiment Analysis Integration
+  async function analyzeSentimentAndSend(text) {
+    if(!text.trim() || isAnalyzing) return false;
+    
+    isAnalyzing = true;
+    const submitBtn = chatForm.querySelector('button[type="submit"]');
+    if(submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Analyzing...';
+    }
+    
+    try {
+      const response = await fetch('/api/analyze', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+          text: text,
+          contact_id: currentContact.id,
+          contact_name: currentContact.name
+        })
+      });
+      
+      if(!response.ok) {
+        console.error('Sentiment analysis failed:', response.status);
+        // Fallback: add without sentiment if API fails
+        addToHistory(text, 'sent', currentContact.id);
+        return true;
+      }
+      
+      const result = await response.json();
+      
+      if(result.success) {
+        // Add message with sentiment data
+        let history = [];
+        try{ const raw = localStorage.getItem(storageKeyFor(currentContact.id)); history = raw ? JSON.parse(raw) : [] }catch(e){ history = [] }
+        
+        const ts = nowTime();
+        const msg = {
+          text: text,
+          time: ts.time,
+          date: ts.date,
+          iso: ts.iso,
+          dir: 'sent',
+          sentiment: {
+            emoji: result.sentiment.emoji,
+            category: result.sentiment.category,
+            description: result.sentiment.description,
+            color: result.sentiment.color,
+            polarity: result.sentiment.polarity
+          }
+        };
+        
+        history.push(msg);
+        saveHistory(history, currentContact.id);
+        renderMessage(msg);
+        scrollBottom();
+        
+        // Schedule auto reply
+        scheduleAutoReply(currentContact.id, text);
+        
+        return true;
+      } else {
+        console.error('API error:', result.error);
+        addToHistory(text, 'sent', currentContact.id);
+        return true;
+      }
+    } catch(err) {
+      console.error('Fetch error:', err);
+      // Fallback: add without sentiment
+      addToHistory(text, 'sent', currentContact.id);
+      return true;
+    } finally {
+      isAnalyzing = false;
+      if(submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send';
+      }
+    }
   }
 
   // Contacts rendering and selection
@@ -199,13 +296,13 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') closeChat(); });
   chatPanel && chatPanel.addEventListener('click', (e)=>{ if(e.target === chatPanel) closeChat(); });
 
-  // Handle send: store locally
+  // Handle send: analyze sentiment and store
   chatForm && chatForm.addEventListener('submit', (e)=>{
     e.preventDefault();
     const txt = input.value.trim();
     if(!txt) return;
-    addToHistory(txt, 'sent', currentContact.id);
     input.value = '';
+    analyzeSentimentAndSend(txt);
   });
 
   // Enter to send
