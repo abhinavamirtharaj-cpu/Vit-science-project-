@@ -1,14 +1,23 @@
 contact_id,contact_name,dir,iso_time,date,time,text,sentiment_polarity,sentiment_category,sentiment_emoji,color_hex,saved_at
-support,Support,sent,2026-01-05T22:14:11.235423,2026-01-05,22:14,Get lost!,,Neutral,😐,#FFC107,2026-01-05T16:44:11.244375
-support,Support,sent,2026-01-05T22:14:34.018647,2026-01-05,22:14,Get lost,,Neutral,😐,#FFC107,2026-01-05T16:44:34.019702
-support,Support,sent,2026-01-05T22:14:57.131177,2026-01-05,22:14,I am mad at you!,-0.781,Very Negative,😠,#F44336,2026-01-05T16:44:57.132204
-support,Support,sent,2026-01-05T22:37:01.192565,2026-01-05,22:37,Hello,,Neutral,😐,#FFC107,2026-01-05T17:07:01.193489
-support,Support,sent,2026-01-05T22:37:08.086598,2026-01-05,22:37,HEll!!,,Neutral,😐,#FFC107,2026-01-05T17:07:08.090818
-support,Support,sent,2026-01-05T22:37:12.622998,2026-01-05,22:37,Hell,,Neutral,😐,#FFC107,2026-01-05T17:07:12.623740
-support,Support,sent,2026-01-05T22:37:21.582859,2026-01-05,22:37,Get away!!,,Neutral,😐,#FFC107,2026-01-05T17:07:21.583587
-support,Support,sent,2026-01-05T22:37:32.402989,2026-01-05,22:37,I hate you!,-0.3,Negative,🙁,#F44336,2026-01-05T17:07:32.403510
-support,Support,sent,2026-01-05T22:40:59.477035,2026-01-05,22:40,The program luks good but ain't work,0.3,Positive,🙂,#00BCD4,2026-01-05T17:10:59.477544
-support,Support,sent,2026-01-05T22:41:12.130829,2026-01-05,22:41,Where's the colour code?,,Neutral,😐,#FFC107,2026-01-05T17:11:12.130829
-support,Support,sent,2026-01-05T22:41:25.180055,2026-01-05,22:41,The program luks gud but it ain;t work,,Neutral,😐,#FFC107,2026-01-05T17:11:25.180786
-support,Support,sent,2026-01-05T22:57:44.746266,2026-01-05,22:57,U hell,,Neutral,😐,#FFC107,2026-01-05T17:27:44.750877
-support,Support,sent,2026-01-05T22:57:57.501423,2026-01-05,22:57,This model sucks,,Neutral,😐,#FFC107,2026-01-05T17:27:57.501423
+support,Support,sent,2026-01-06T22:28:44.230482,2026-01-06,22:28,This model sucks a lot!!,,Neutral,😐,#FFC107,2026-01-06T16:58:44.232765
+support,Support,sent,2026-01-06T22:28:54.918937,2026-01-06,22:28,What the fish!!,,Neutral,😐,#FFC107,2026-01-06T16:58:54.921968
+test_user,Test,sent,2026-01-06T22:40:43.124565,2026-01-06,22:40,I hate this so much,-0.26102941176470584,Negative,🙁,#F44336,2026-01-06T17:10:43.124565
+support,Support,sent,2026-01-06T22:44:03.799150,2026-01-06,22:44,What the fish!!,0.03897058823529412,Factual,📘,#9E9E9E,2026-01-06T17:14:03.800686
+support,Support,sent,2026-01-06T22:44:12.417699,2026-01-06,22:44,It sucks!!,,Factual,📘,#9E9E9E,2026-01-06T17:14:12.418211
+support,Support,sent,2026-01-06T22:44:25.108347,2026-01-06,22:44,I hate you!,-0.3,Negative,🙁,#F44336,2026-01-06T17:14:25.109238
+test_user,Test,sent,2026-01-06T22:49:25.035007,2026-01-06,22:49,What the fish!?,-0.9460905349794237,Very Negative,😠,#9C27B0,2026-01-06T17:19:25.044896
+test_user,Test,sent,2026-01-06T22:57:40.023798,2026-01-06,22:57,What the fish!?,-0.9433333333333332,Very Negative,😠,#9C27B0,2026-01-06T17:27:40.024807
+test_user,Test,sent,2026-01-06T22:57:40.102123,2026-01-06,22:57,Order number is 12345,-0.043333333333333335,Neutral,😐,#FFC107,2026-01-06T17:27:40.110919
+test_user,Test,sent,2026-01-06T22:57:40.250812,2026-01-06,22:57,Absolutely fantastic service!,0.5,Positive,🙂,#00BCD4,2026-01-06T17:27:40.250812
+test_user,Test,sent,2026-01-06T22:57:40.368939,2026-01-06,22:57,"Worst update ever, totally broken",-0.5379679144385027,Negative,🙁,#F44336,2026-01-06T17:27:40.376342
+support,Support,sent,2026-01-06T23:01:54.649046,2026-01-06,23:01,What the hell!!,-1.0460905349794238,Very Negative,😠,#9C27B0,2026-01-06T17:31:54.650053
+support,Support,sent,2026-01-06T23:02:00.786075,2026-01-06,23:02,What the fish!,-0.9433333333333332,Very Negative,😠,#9C27B0,2026-01-06T17:32:00.790279
+support,Support,sent,2026-01-06T23:02:14.881292,2026-01-06,23:02,I love this but this sucks!,-0.3433333333333334,Negative,🙁,#F44336,2026-01-06T17:32:14.882301
+support,Support,sent,2026-01-06T23:02:20.167306,2026-01-06,23:02,Sucking idea,-0.04609053497942387,Neutral,😐,#FFC107,2026-01-06T17:32:20.167814
+support,Support,sent,2026-01-06T23:02:25.361386,2026-01-06,23:02,Its bad!,-0.5,Negative,🙁,#F44336,2026-01-06T17:32:25.362391
+support,Support,sent,2026-01-06T23:02:28.915490,2026-01-06,23:02,Its gud,-0.04609053497942387,Neutral,😐,#FFC107,2026-01-06T17:32:28.917119
+support,Support,sent,2026-01-06T23:02:33.916672,2026-01-06,23:02,It's good!,0.5,Positive,🙂,#00BCD4,2026-01-06T17:32:33.916672
+support,Support,sent,2026-01-06T23:02:53.066733,2026-01-06,23:02,Idiot!.,0.062032085561497335,Neutral,😐,#FFC107,2026-01-06T17:32:53.066733
+support,Support,sent,2026-01-06T23:02:56.851180,2026-01-06,23:02,Rascal!,,Neutral,😐,#FFC107,2026-01-06T17:32:56.851512
+support,Support,sent,2026-01-06T23:02:59.825519,2026-01-06,23:02,Stupid,,Neutral,😐,#FFC107,2026-01-06T17:32:59.827799
+support,Support,sent,2026-01-06T23:04:04.883481,2026-01-06,23:04,U moron!,,Neutral,😐,#FFC107,2026-01-06T17:34:04.883481

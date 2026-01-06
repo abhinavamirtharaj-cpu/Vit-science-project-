@@ -13,18 +13,24 @@ from collections import defaultdict
 class SentimentPredictorNode:
     def __init__(self, csv_path):
         self.csv_path = csv_path
+        # Use data/data_trained.csv for training if available, otherwise fallback to provided path
+        self.training_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'data_trained.csv')
+        if not os.path.exists(self.training_path):
+            self.training_path = csv_path
+            
         self.transitions = defaultdict(lambda: defaultdict(int))
         self.totals = defaultdict(int)
         self.trained = False
 
     def load_and_train(self):
-        """Reads sentiment scores from the specified CSV file and builds the model."""
-        if not os.path.exists(self.csv_path):
-            print(f"Warning: CSV file not found at {self.csv_path}")
+        """Reads sentiment scores from the training CSV file and builds the model."""
+        target_path = self.training_path
+        if not os.path.exists(target_path):
+            print(f"Warning: Training file not found at {target_path}")
             return
 
         try:
-            with open(self.csv_path, 'r', newline='', encoding='utf-8') as f:
+            with open(target_path, 'r', newline='', encoding='utf-8') as f:
                 reader = csv.DictReader(f)
                 
                 # Group messages by contact to analyze individual flows
@@ -46,6 +52,7 @@ class SentimentPredictorNode:
                         self.totals[current_s] += 1
             
             self.trained = True
+            # print(f"DEBUG: Node 2 trained on {target_path}")
             
         except Exception as e:
             print(f"Error reading CSV file: {e}")
