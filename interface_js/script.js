@@ -267,6 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function renderContacts(){
+    if(!contactsListEl) return;
     contactsListEl.innerHTML = '';
     contacts.forEach(c=>{
       const li = document.createElement('li');
@@ -307,6 +308,8 @@ document.addEventListener('DOMContentLoaded', () => {
   if(btn) btn.addEventListener('click', (e)=>{e.preventDefault(); openChat();});
   if(btnSm) btnSm.addEventListener('click', (e)=>{e.preventDefault(); openChat();});
   if(closeBtn) closeBtn.addEventListener('click', closeChat);
+  const openContactsBtn = document.getElementById('open-contacts-btn');
+  if(openContactsBtn) openContactsBtn.addEventListener('click', ()=>{ window.location.href = 'learn_more.html#contact'; });
 
   document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') closeChat(); });
   chatPanel && chatPanel.addEventListener('click', (e)=>{ if(e.target === chatPanel) closeChat(); });
@@ -341,5 +344,5 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // initial render
-  renderContacts();
+  if(contactsListEl) renderContacts();
 });

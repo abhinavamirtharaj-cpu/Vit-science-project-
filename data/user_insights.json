@@ -127,14 +127,46 @@
             "score": 0.0,
             "node_1_input": 0.0,
             "node_2_prediction": "Sarcastic"
+        },
+        {
+            "timestamp": "2026-01-07T20:50:56.529679",
+            "text": "What the fish!",
+            "sentiment": "Very Negative",
+            "score": -0.8999999999999999,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Sarcastic"
+        },
+        {
+            "timestamp": "2026-01-07T20:51:12.358080",
+            "text": "IDiot!",
+            "sentiment": "Negative",
+            "score": -0.5433333333333333,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Negative"
+        },
+        {
+            "timestamp": "2026-01-07T20:51:18.952804",
+            "text": "Rascal!",
+            "sentiment": "Neutral",
+            "score": -0.04609053497942387,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Very Negative"
+        },
+        {
+            "timestamp": "2026-01-07T20:51:31.008074",
+            "text": "Fool!",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Sarcastic"
         }
     ],
     "patterns": {
         "sentiment_counts": {
-            "Neutral": 8,
+            "Neutral": 10,
             "Factual": 2,
-            "Negative": 3,
-            "Very Negative": 2,
+            "Negative": 4,
+            "Very Negative": 3,
             "Positive": 1
         }
     }
