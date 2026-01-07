@@ -59,3 +59,20 @@ support,Support,sent,2026-01-02T14:02:57.301094,2026-01-02,14:02,Hello how are y
 support,Support,sent,2026-01-02T14:03:17.522092,2026-01-02,14:03,Hi I'm fine,0.417,Very Positive,😄,#4CAF50,2026-01-02T14:03:17.522165
 support,Support,sent,2026-01-02T14:03:35.562806,2026-01-02,14:03,I'm not happy with the  performance,-0.4,Very Negative,😠,#F44336,2026-01-02T14:03:35.562898
 support,Support,sent,2026-01-02T14:06:59.101963,2026-01-02,14:06,You really behave so??,0.2,Positive,🙂,#4CAF50,2026-01-02T14:06:59.102036
+demo_device,Demo Device,sent,2026-01-02T14:55:52.970524,2026-01-02,14:55,Hello from demo_integration - single append,,,,,2026-01-02T14:55:52.970720
+demo_device,Demo Device,sent,2026-01-02T14:55:52.970524,2026-01-02,14:55,Second message via append_messages,,,,,2026-01-02T14:55:52.970975
+demo_device,Demo Device,sent,2026-01-02T15:00:42.404014,2026-01-02,15:00,Hello from demo_integration - single append,,,,,2026-01-02T15:00:42.404157
+demo_device,Demo Device,sent,2026-01-02T15:00:42.404014,2026-01-02,15:00,Second message via append_messages,,,,,2026-01-02T15:00:42.404442
+user_happy,Happy User,sent,2026-01-02T15:01:03.104363,2026-01-02,15:01,This is a wonderful experience! I'm so thrilled!,0.875,Very Positive,😄,#4CAF50,2026-01-02T15:01:03.104443
+user_angry,Frustrated User,sent,2026-01-02T15:01:03.105968,2026-01-02,15:01,This is absolutely infuriating! I hate this!,-0.875,Very Negative,😠,#F44336,2026-01-02T15:01:03.106031
+user_sad,Sad User,sent,2026-01-02T15:01:03.107614,2026-01-02,15:01,I feel so heartbroken and depressed...,,Neutral,😐,#FFC107,2026-01-02T15:01:03.107670
+demo_device,Demo Device,sent,2026-01-02T15:07:48.975383,2026-01-02,15:07,Hello from demo_integration - single append,,,,,2026-01-02T15:07:48.975578
+demo_device,Demo Device,sent,2026-01-02T15:07:48.975383,2026-01-02,15:07,Second message via append_messages,,,,,2026-01-02T15:07:48.975930
+user_happy,Happy User,sent,2026-01-02T15:09:49.739581,2026-01-02,15:09,This is a wonderful experience! I'm so thrilled!,0.875,Very Positive,😄,#4CAF50,2026-01-02T15:09:49.739663
+user_angry,Frustrated User,sent,2026-01-02T15:09:49.741260,2026-01-02,15:09,This is absolutely infuriating! I hate this!,-0.875,Very Negative,😠,#F44336,2026-01-02T15:09:49.741324
+user_sad,Sad User,sent,2026-01-02T15:09:49.743006,2026-01-02,15:09,I feel so heartbroken and depressed...,,Neutral,😐,#FFC107,2026-01-02T15:09:49.743065
+demo_device,Demo Device,sent,2026-01-02T15:15:55.774129,2026-01-02,15:15,Hello from demo_integration - single append,,,,,2026-01-02T15:15:55.774278
+demo_device,Demo Device,sent,2026-01-02T15:15:55.774129,2026-01-02,15:15,Second message via append_messages,,,,,2026-01-02T15:15:55.774659
+user_happy,Happy User,sent,2026-01-02T15:18:05.549715,2026-01-02,15:18,This is a wonderful experience! I'm so thrilled!,0.875,Very Positive,😄,#4CAF50,2026-01-02T15:18:05.549788
+user_angry,Frustrated User,sent,2026-01-02T15:18:05.551340,2026-01-02,15:18,This is absolutely infuriating! I hate this!,-0.875,Very Negative,😠,#F44336,2026-01-02T15:18:05.551396
+user_sad,Sad User,sent,2026-01-02T15:18:05.553036,2026-01-02,15:18,I feel so heartbroken and depressed...,,Neutral,😐,#FFC107,2026-01-02T15:18:05.553090

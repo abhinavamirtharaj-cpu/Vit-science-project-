@@ -1,0 +1,7 @@
+# VIT Science Project: Sentiment Analysis Messaging Tool
+Analyzes chat sentiment, color-codes, encrypts & sends to devs. Class 11 Python project.
+
+## Modules
+- Module 1: Sentiment analysis with TextBlob ( polarity → 🟢/🔴/🟡 )
+
+Demo: See module1_sentiment.ipynb
