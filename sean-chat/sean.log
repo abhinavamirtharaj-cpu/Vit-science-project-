@@ -1,0 +1,144 @@
+2026-01-07 17:25:19,834 INFO Generated local identity `me`
+2026-01-07 17:25:19,879 INFO Added contact Friend
+2026-01-07 17:26:13,426 INFO Added contact Friend
+2026-01-07 17:31:46,891 INFO Generated local identity `alice`
+2026-01-07 17:31:46,909 ERROR WebSocket connection failed
+Traceback (most recent call last):
+  File "/workspaces/Vit-science-project-/sean-chat/main.py", line 78, in _connect
+    async with websockets.connect(self.uri) as ws:
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/websockets/asyncio/client.py", line 587, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/websockets/asyncio/client.py", line 541, in __await_impl__
+    self.connection = await self.create_connection()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/websockets/asyncio/client.py", line 467, in create_connection
+    _, connection = await loop.create_connection(factory, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/asyncio/base_events.py", line 1127, in create_connection
+    raise OSError('Multiple exceptions: {}'.format(
+OSError: Multiple exceptions: [Errno 111] Connect call failed ('::1', 8765, 0, 0), [Errno 111] Connect call failed ('127.0.0.1', 8765)
+2026-01-07 17:31:47,524 INFO Added contact bob
+2026-01-07 17:33:14,867 ERROR WebSocket connection failed
+Traceback (most recent call last):
+  File "/workspaces/Vit-science-project-/sean-chat/main.py", line 78, in _connect
+    async with websockets.connect(self.uri) as ws:
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/websockets/asyncio/client.py", line 587, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/websockets/asyncio/client.py", line 541, in __await_impl__
+    self.connection = await self.create_connection()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/websockets/asyncio/client.py", line 467, in create_connection
+    _, connection = await loop.create_connection(factory, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/asyncio/base_events.py", line 1127, in create_connection
+    raise OSError('Multiple exceptions: {}'.format(
+OSError: Multiple exceptions: [Errno 111] Connect call failed ('::1', 8765, 0, 0), [Errno 111] Connect call failed ('127.0.0.1', 8765)
+2026-01-07 17:33:15,505 INFO Added contact alice
+2026-01-07 17:53:09,952 ERROR WebSocket connection failed
+Traceback (most recent call last):
+  File "/workspaces/Vit-science-project-/sean-chat/main.py", line 104, in _connect
+    async with websockets.connect(self.uri, ssl=ssl_ctx) as ws:
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/websockets/asyncio/client.py", line 587, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/websockets/asyncio/client.py", line 541, in __await_impl__
+    self.connection = await self.create_connection()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/websockets/asyncio/client.py", line 467, in create_connection
+    _, connection = await loop.create_connection(factory, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/asyncio/base_events.py", line 1119, in create_connection
+    raise exceptions[0]
+  File "/usr/local/python/3.12.1/lib/python3.12/asyncio/base_events.py", line 1101, in create_connection
+    sock = await self._connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/asyncio/base_events.py", line 1004, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/local/python/3.12.1/lib/python3.12/asyncio/selector_events.py", line 647, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/asyncio/selector_events.py", line 687, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('127.0.0.1', 8765)
+2026-01-07 17:53:10,459 ERROR WebSocket connection failed
+Traceback (most recent call last):
+  File "/workspaces/Vit-science-project-/sean-chat/main.py", line 104, in _connect
+    async with websockets.connect(self.uri, ssl=ssl_ctx) as ws:
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/websockets/asyncio/client.py", line 587, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/websockets/asyncio/client.py", line 541, in __await_impl__
+    self.connection = await self.create_connection()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/websockets/asyncio/client.py", line 467, in create_connection
+    _, connection = await loop.create_connection(factory, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/asyncio/base_events.py", line 1119, in create_connection
+    raise exceptions[0]
+  File "/usr/local/python/3.12.1/lib/python3.12/asyncio/base_events.py", line 1101, in create_connection
+    sock = await self._connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/asyncio/base_events.py", line 1004, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/local/python/3.12.1/lib/python3.12/asyncio/selector_events.py", line 647, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/asyncio/selector_events.py", line 687, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('127.0.0.1', 8765)
+2026-01-07 17:53:10,576 INFO Added contact bob
+2026-01-07 17:53:37,016 ERROR WebSocket connection failed
+Traceback (most recent call last):
+  File "/workspaces/Vit-science-project-/sean-chat/main.py", line 104, in _connect
+    async with websockets.connect(self.uri, ssl=ssl_ctx) as ws:
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/websockets/asyncio/client.py", line 587, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/websockets/asyncio/client.py", line 541, in __await_impl__
+    self.connection = await self.create_connection()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/websockets/asyncio/client.py", line 467, in create_connection
+    _, connection = await loop.create_connection(factory, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/asyncio/base_events.py", line 1119, in create_connection
+    raise exceptions[0]
+  File "/usr/local/python/3.12.1/lib/python3.12/asyncio/base_events.py", line 1101, in create_connection
+    sock = await self._connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/asyncio/base_events.py", line 1004, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/local/python/3.12.1/lib/python3.12/asyncio/selector_events.py", line 647, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/asyncio/selector_events.py", line 687, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('127.0.0.1', 8765)
+2026-01-07 17:53:37,519 ERROR WebSocket connection failed
+Traceback (most recent call last):
+  File "/workspaces/Vit-science-project-/sean-chat/main.py", line 104, in _connect
+    async with websockets.connect(self.uri, ssl=ssl_ctx) as ws:
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/websockets/asyncio/client.py", line 587, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/websockets/asyncio/client.py", line 541, in __await_impl__
+    self.connection = await self.create_connection()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/site-packages/websockets/asyncio/client.py", line 467, in create_connection
+    _, connection = await loop.create_connection(factory, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/asyncio/base_events.py", line 1119, in create_connection
+    raise exceptions[0]
+  File "/usr/local/python/3.12.1/lib/python3.12/asyncio/base_events.py", line 1101, in create_connection
+    sock = await self._connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/asyncio/base_events.py", line 1004, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/local/python/3.12.1/lib/python3.12/asyncio/selector_events.py", line 647, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/usr/local/python/3.12.1/lib/python3.12/asyncio/selector_events.py", line 687, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('127.0.0.1', 8765)
+2026-01-07 17:53:37,661 INFO Added contact bob
