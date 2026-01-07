@@ -1,0 +1,26 @@
+[
+  {
+    "name": "me",
+    "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAofPrJn8ZvXfyBr0TX+I9\nlZI8x8Hqj2HLXYO+QlSywC2lq3uSeQxOf1rd9TW7d4a5V1172/6ryE/PqytOIoHN\nvjI1sJypj2BJKRQMdOOebNgRiQVBGicNGEoudF5MX8jKWdHwxZRidb2ZT6sHU8n9\nLuLTQ3aMRaPEK7/dwv+IWntJVoojof9LcaqPZrTr2l1vBc/BOiBoPpP6gl98cKmj\nqKroyU2V0kF1hRkojvvg71QEzvOMhsygCUtiahYlk8ycwScB5F9Aawqx9M0EQhju\n0BYmZMG/0s9Xs0zXs8OPV8vxNbjOFh5OP0XP3rPjnHjNRrIju7nL+Twldj1XL/sO\ngwIDAQAB\n-----END PUBLIC KEY-----\n",
+    "created_date": "2026-01-07T17:25:19.831599",
+    "last_seen": "2026-01-07T17:25:19.831599"
+  },
+  {
+    "name": "Friend",
+    "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkj8FpqhBfZPP6JxReTkp\nb4+tpTCw6KjgNFQK6Pse+gQUpdVk52XQZ9ceOSUeHUjKwi2g0+oYFe+ojnvsCC4u\n/Ur8AtM+ovu7DMhzhNwEJNnzqJaWOANNWCTWWxAEERZYatQj59tNnMe5WaGM0Qmf\nFIg7AlXxGeeAYZKibru2zvSyMRQ4EqQJ9t2Z+55DFx+sb7QyPR+jUbqfOltKJM4A\nTwY9zrCDL4dLY9T04s1Wl7HEwSfU0NIAGxrNmhh51sm4+WHTPooPKpKoCTgwG4np\ny1h4noBbndOWXThKaIwLz2txrOQaOzEL7VF9OF2UuZIjdweUKMF3o5FTX2Xzasbt\nmwIDAQAB\n-----END PUBLIC KEY-----\n",
+    "created_date": "2026-01-07T17:26:13.422816",
+    "last_seen": "2026-01-07T17:26:13.422816"
+  },
+  {
+    "name": "alice",
+    "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwrr0GlYXXK2i/zDjYx0W\nCS+fMfOG3jEX0mQlajzAJY7ZkMV/WCsNCA7c1GMLcZKPH6CytzDfsR0xYn8fkaKV\n8L2EBISXrV5/+LiSKyHz9AbLcu1lMklGZzsDDrJ8eWPYDWSdlNYtfW78UAU8o64S\nNNky6/u8LzKgjQxQ2HoUNK/OWB3FGVDo80T2XmUwEpyl2ZXcDMDZ7YbzBIRfDKQi\n5MOAVrsy3KjzkSJE8ugsAF7STIPZEnMQ8FpuPF+rKym3uMH+GT/OEiQTmDL7xPgo\naVtU4aS0tPaQZljViLsAWzEmrL33S6/ZYZ5Kuj9boLZF8uG9nrTB/49FfHbsCAk2\ncQIDAQAB\n-----END PUBLIC KEY-----\n",
+    "created_date": "2026-01-07T17:33:15.496214",
+    "last_seen": "2026-01-07T17:33:15.496214"
+  },
+  {
+    "name": "bob",
+    "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmTrfOMjMg8btGjZ3D6WP\nReeksVjDqUT+kqWG+eI3gGBF4Ogjt3In1eVTVE3Fyyp2LRYTFi+kiMshFI7FGgFc\n+KfcsVw4xDiyH6yQtJieiQYvMGF4dAS/LT9qN3rvaq5onanYWDVf1i28nqdnugBp\nVlttJdbdiQHNcY5n/GK2/lyAx5kHyaaJhWX0D4t/HPrR4512VJMDMhoNIQVOPk2F\nofm2O1AxV74/kKiuAoKZ5S1fnmQqvIKZRI/BUp3TT7PiigyGRhljz8LqMSwHtY8S\ngBgvMDGT3yO0dcq376NAh/9LOZqKTcBpc1fq6mX91RAUz5nfkQjsehVxiSuXdgIO\n2QIDAQAB\n-----END PUBLIC KEY-----\n",
+    "created_date": "2026-01-07T17:53:37.655607",
+    "last_seen": "2026-01-07T17:53:37.655607"
+  }
+]

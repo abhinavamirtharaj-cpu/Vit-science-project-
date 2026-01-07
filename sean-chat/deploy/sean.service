@@ -1,0 +1,14 @@
+[Unit]
+Description=SEAN WebSocket Relay Server
+After=network.target
+
+[Service]
+Type=simple
+User=sean
+WorkingDirectory=/opt/sean
+ExecStart=/usr/bin/env python3 /opt/sean/server.py --host 0.0.0.0 --port 8765 --certfile /etc/ssl/sean_cert.pem --keyfile /etc/ssl/sean_key.pem
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target
