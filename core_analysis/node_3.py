@@ -124,9 +124,9 @@ def analyze_context(text, history_messages):
     is_sarcastic = any(phrase in text_lower for phrase in sarcasm_indicators) and ("!" in text or "..." in text)
     
     base_score = 0.0
-    positive_words = ["good", "great", "happy", "love", "excellent", "thanks", "amazing", "best", "fantastic"]
-    negative_words = ["bad", "hate", "terrible", "sad", "angry", "worst", "awful", "broken", "refund", "slow", "hell", "damn", "wtf", "fish"]
-    interjection_negatives = ["what the hell", "what the fish", "wtf", "damn", "screw this", "this sucks"]
+    positive_words = ["good", "great", "happy", "love", "excellent", "thanks", "amazing", "best", "fantastic", "awesome", "cool", "nice"]
+    negative_words = ["bad", "hate", "terrible", "sad", "angry", "worst", "awful", "broken", "refund", "slow", "hell", "damn", "wtf", "fish", "crap", "shit", "sucks", "idiot", "stupid", "useless", "garbage", "trash", "annoying", "disgusting", "kidding"]
+    interjection_negatives = ["what the hell", "what the fish", "wtf", "damn", "screw this", "this sucks", "are you kidding", "oh come on", "you gotta be kidding"]
     
     pos_count = 0
     neg_count = 0
@@ -151,6 +151,11 @@ def analyze_context(text, history_messages):
             base_score -= min(0.2 + 0.1 * (exclamations - 1), 0.5)
         elif pos_count > 0:
             base_score += min(0.2 + 0.1 * (exclamations - 1), 0.5)
+
+    tokens = [t for t in re.findall(r"[A-Za-z']+", text)]
+    caps_tokens = [t for t in tokens if len(t) >= 3 and t.isupper()]
+    if len(caps_tokens) >= 2 and neg_count > 0:
+        base_score -= 0.2
             
     base_score = max(min(base_score, 1.0), -1.0)
     
