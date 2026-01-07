@@ -1,0 +1,141 @@
+{
+    "interactions": [
+        {
+            "timestamp": "2026-01-06T22:28:44.227420",
+            "text": "This model sucks a lot!!",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Sarcastic"
+        },
+        {
+            "timestamp": "2026-01-06T22:28:54.913896",
+            "text": "What the fish!!",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Sarcastic"
+        },
+        {
+            "timestamp": "2026-01-06T22:44:03.794164",
+            "text": "What the fish!!",
+            "sentiment": "Factual",
+            "score": 0.03897058823529412,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Very Positive"
+        },
+        {
+            "timestamp": "2026-01-06T22:44:12.414556",
+            "text": "It sucks!!",
+            "sentiment": "Factual",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Sarcastic"
+        },
+        {
+            "timestamp": "2026-01-06T22:44:25.102302",
+            "text": "I hate you!",
+            "sentiment": "Negative",
+            "score": -0.3,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Sarcastic"
+        },
+        {
+            "timestamp": "2026-01-06T23:01:54.643637",
+            "text": "What the hell!!",
+            "sentiment": "Very Negative",
+            "score": -1.0460905349794238,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Very Negative"
+        },
+        {
+            "timestamp": "2026-01-06T23:02:00.780950",
+            "text": "What the fish!",
+            "sentiment": "Very Negative",
+            "score": -0.9433333333333332,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Negative"
+        },
+        {
+            "timestamp": "2026-01-06T23:02:14.858503",
+            "text": "I love this but this sucks!",
+            "sentiment": "Negative",
+            "score": -0.3433333333333334,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Negative"
+        },
+        {
+            "timestamp": "2026-01-06T23:02:20.160216",
+            "text": "Sucking idea",
+            "sentiment": "Neutral",
+            "score": -0.04609053497942387,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Very Negative"
+        },
+        {
+            "timestamp": "2026-01-06T23:02:25.353630",
+            "text": "Its bad!",
+            "sentiment": "Negative",
+            "score": -0.5,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Sarcastic"
+        },
+        {
+            "timestamp": "2026-01-06T23:02:28.913959",
+            "text": "Its gud",
+            "sentiment": "Neutral",
+            "score": -0.04609053497942387,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Very Negative"
+        },
+        {
+            "timestamp": "2026-01-06T23:02:33.905580",
+            "text": "It's good!",
+            "sentiment": "Positive",
+            "score": 0.5,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Sarcastic"
+        },
+        {
+            "timestamp": "2026-01-06T23:02:53.064162",
+            "text": "Idiot!.",
+            "sentiment": "Neutral",
+            "score": 0.062032085561497335,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Very Positive"
+        },
+        {
+            "timestamp": "2026-01-06T23:02:56.848096",
+            "text": "Rascal!",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Sarcastic"
+        },
+        {
+            "timestamp": "2026-01-06T23:02:59.818186",
+            "text": "Stupid",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Sarcastic"
+        },
+        {
+            "timestamp": "2026-01-06T23:04:04.881939",
+            "text": "U moron!",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Sarcastic"
+        }
+    ],
+    "patterns": {
+        "sentiment_counts": {
+            "Neutral": 8,
+            "Factual": 2,
+            "Negative": 3,
+            "Very Negative": 2,
+            "Positive": 1
+        }
+    }
+}

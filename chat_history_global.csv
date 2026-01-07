@@ -76,3 +76,4 @@ demo_device,Demo Device,sent,2026-01-02T15:15:55.774129,2026-01-02,15:15,Second 
 user_happy,Happy User,sent,2026-01-02T15:18:05.549715,2026-01-02,15:18,This is a wonderful experience! I'm so thrilled!,0.875,Very Positive,😄,#4CAF50,2026-01-02T15:18:05.549788
 user_angry,Frustrated User,sent,2026-01-02T15:18:05.551340,2026-01-02,15:18,This is absolutely infuriating! I hate this!,-0.875,Very Negative,😠,#F44336,2026-01-02T15:18:05.551396
 user_sad,Sad User,sent,2026-01-02T15:18:05.553036,2026-01-02,15:18,I feel so heartbroken and depressed...,,Neutral,😐,#FFC107,2026-01-02T15:18:05.553090
+support,Support,sent,2026-01-05T21:47:56.978482,2026-01-05,21:47,Hello,,Neutral,😐,#FFC107,2026-01-05T16:17:56.980588
