@@ -1,0 +1,14 @@
+contact_id,contact_name,dir,iso_time,date,time,text,sentiment_polarity,sentiment_category,sentiment_emoji,color_hex,saved_at
+support,Support,sent,2026-01-05T22:14:11.235423,2026-01-05,22:14,Get lost!,,Neutral,😐,#FFC107,2026-01-05T16:44:11.244375
+support,Support,sent,2026-01-05T22:14:34.018647,2026-01-05,22:14,Get lost,,Neutral,😐,#FFC107,2026-01-05T16:44:34.019702
+support,Support,sent,2026-01-05T22:14:57.131177,2026-01-05,22:14,I am mad at you!,-0.781,Very Negative,😠,#F44336,2026-01-05T16:44:57.132204
+support,Support,sent,2026-01-05T22:37:01.192565,2026-01-05,22:37,Hello,,Neutral,😐,#FFC107,2026-01-05T17:07:01.193489
+support,Support,sent,2026-01-05T22:37:08.086598,2026-01-05,22:37,HEll!!,,Neutral,😐,#FFC107,2026-01-05T17:07:08.090818
+support,Support,sent,2026-01-05T22:37:12.622998,2026-01-05,22:37,Hell,,Neutral,😐,#FFC107,2026-01-05T17:07:12.623740
+support,Support,sent,2026-01-05T22:37:21.582859,2026-01-05,22:37,Get away!!,,Neutral,😐,#FFC107,2026-01-05T17:07:21.583587
+support,Support,sent,2026-01-05T22:37:32.402989,2026-01-05,22:37,I hate you!,-0.3,Negative,🙁,#F44336,2026-01-05T17:07:32.403510
+support,Support,sent,2026-01-05T22:40:59.477035,2026-01-05,22:40,The program luks good but ain't work,0.3,Positive,🙂,#00BCD4,2026-01-05T17:10:59.477544
+support,Support,sent,2026-01-05T22:41:12.130829,2026-01-05,22:41,Where's the colour code?,,Neutral,😐,#FFC107,2026-01-05T17:11:12.130829
+support,Support,sent,2026-01-05T22:41:25.180055,2026-01-05,22:41,The program luks gud but it ain;t work,,Neutral,😐,#FFC107,2026-01-05T17:11:25.180786
+support,Support,sent,2026-01-05T22:57:44.746266,2026-01-05,22:57,U hell,,Neutral,😐,#FFC107,2026-01-05T17:27:44.750877
+support,Support,sent,2026-01-05T22:57:57.501423,2026-01-05,22:57,This model sucks,,Neutral,😐,#FFC107,2026-01-05T17:27:57.501423

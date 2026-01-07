@@ -14,13 +14,21 @@ Run:
 Access in browser: http://127.0.0.1:5000/
 """
 import os
+import sys
 import json
 from flask import Flask, send_from_directory, abort, request, jsonify
-from chat_service import process_user_message, get_history
+
+# Add parent directory to path to find other modules
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from core_analysis.chat_service import process_user_message, get_history
 
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(APP_ROOT)
+INTERFACE_JS_DIR = os.path.join(PROJECT_ROOT, 'interface_js')
 
-app = Flask(__name__, static_folder=APP_ROOT, static_url_path='')
+# Disable default static file handling to allow custom routing for interface_js
+app = Flask(__name__, static_folder=None)
 
 
 # Static file routes
@@ -31,9 +39,16 @@ def index():
 
 @app.route('/<path:filename>')
 def static_files(filename):
+    # Check ui_io folder
     file_path = os.path.join(APP_ROOT, filename)
     if os.path.exists(file_path):
         return send_from_directory(APP_ROOT, filename)
+    
+    # Check interface_js folder (for script.js)
+    js_path = os.path.join(INTERFACE_JS_DIR, filename)
+    if os.path.exists(js_path):
+        return send_from_directory(INTERFACE_JS_DIR, filename)
+        
     abort(404)
 
 
@@ -99,23 +114,11 @@ def get_chat_history(contact_id):
     }
     """
     try:
-        history = get_history(contact_id)
-        return jsonify({
-            "success": True,
-            "messages": history
-        }), 200
+        messages = get_history(contact_id)
+        return jsonify({"success": True, "messages": messages}), 200
     except Exception as e:
         return jsonify({"success": False, "error": str(e)}), 500
 
 
-@app.route('/api/health', methods=['GET'])
-def health_check():
-    """Health check endpoint."""
-    return jsonify({"status": "ok", "service": "chat-sentiment-analyzer"}), 200
-
-
 if __name__ == '__main__':
-    # Use Flask's built-in server for local development
-    app.run(host='127.0.0.1', port=5000, debug=True)
-
-
+    app.run(debug=True, port=5000)

@@ -1,5 +1,6 @@
 // Chat panel with contacts, sentiment analysis, and server save
 document.addEventListener('DOMContentLoaded', () => {
+  console.log('Script loaded successfully');
   const btn = document.getElementById('get-started');
   const btnSm = document.getElementById('get-started-sm');
   const chatPanel = document.getElementById('chat-panel');
@@ -99,6 +100,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     messagesContainer.appendChild(row);
+  }
+
+  function getLastSentiment(contactId) {
+    try {
+      const raw = localStorage.getItem(storageKeyFor(contactId));
+      const history = raw ? JSON.parse(raw) : [];
+      // Look for the last 'sent' message that has sentiment data
+      for (let i = history.length - 1; i >= 0; i--) {
+        if (history[i].dir === 'sent' && history[i].sentiment) {
+          return history[i].sentiment.category;
+        }
+      }
+    } catch (e) { console.warn('Could not read last sentiment', e); }
+    return null;
   }
 
   function escapeHtml(str){
