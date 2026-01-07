@@ -1,0 +1,41 @@
+contact_id,contact_name,dir,text,sentiment_category
+user_1,Alice,sent,I need help with my account,Neutral
+user_1,Alice,sent,It is still not working,Negative
+user_1,Alice,sent,This is ridiculous,Very Negative
+user_1,Alice,sent,Oh great now it crashed completely,Sarcastic
+user_1,Alice,sent,Fix this now,Very Negative
+user_1,Alice,sent,Okay it started working,Neutral
+user_1,Alice,sent,Thanks for the fix,Positive
+user_2,Bob,sent,Love the new update,Very Positive
+user_2,Bob,sent,It is so fast,Very Positive
+user_2,Bob,sent,Best app ever,Very Positive
+user_2,Bob,sent,Keep it up,Positive
+user_3,Charlie,sent,My order is late,Negative
+user_3,Charlie,sent,Where is it,Negative
+user_3,Charlie,sent,I want a refund,Very Negative
+user_3,Charlie,sent,Fine I will wait,Neutral
+user_3,Charlie,sent,It arrived finally,Positive
+user_4,Dave,sent,Not sure how to use this,Neutral
+user_4,Dave,sent,Can you explain,Neutral
+user_4,Dave,sent,I see thanks,Positive
+user_4,Dave,sent,Wait I am confused again,Negative
+user_4,Dave,sent,Never mind I got it,Neutral
+user_4,Dave,sent,Works great,Positive
+user_5,Eve,sent,Horrible service,Very Negative
+user_5,Eve,sent,Worst experience,Very Negative
+user_5,Eve,sent,I am telling everyone,Very Negative
+user_5,Eve,sent,Just fantastic simply fantastic,Sarcastic
+user_5,Eve,sent,Bye,Neutral
+user_6,Frank,sent,Hello,Neutral
+user_6,Frank,sent,Hi there,Neutral
+user_6,Frank,sent,Good morning,Positive
+user_6,Frank,sent,Have a nice day,Positive
+user_7,Grace,sent,I am so happy,Very Positive
+user_7,Grace,sent,This made my day,Very Positive
+user_7,Grace,sent,Thank you so much,Very Positive
+user_7,Grace,sent,You are the best,Very Positive
+user_8,Hank,sent,This is broken,Negative
+user_8,Hank,sent,Why is it broken,Negative
+user_8,Hank,sent,Still broken,Negative
+user_8,Hank,sent,Wow what a surprise it is broken,Sarcastic
+user_8,Hank,sent,I give up,Very Negative

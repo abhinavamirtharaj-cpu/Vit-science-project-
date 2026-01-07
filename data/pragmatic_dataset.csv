@@ -1,0 +1,15 @@
+contact_id,contact_name,dir,iso_time,date,time,text,sentiment_polarity,sentiment_category,sentiment_emoji,color_hex,saved_at
+user_real_001,Alice,sent,2023-10-27T10:00:00,2023-10-27,10:00:00,Hello there,0.0,Neutral,😐,#9E9E9E,2023-10-27T10:00:00
+user_real_001,Alice,sent,2023-10-27T10:01:00,2023-10-27,10:01:00,I am having a serious issue with my order,-0.5,Negative,😠,#F44336,2023-10-27T10:01:00
+user_real_001,Alice,sent,2023-10-27T10:02:00,2023-10-27,10:02:00,It has been delayed for weeks,-0.3,Negative,😠,#F44336,2023-10-27T10:02:00
+user_real_001,Alice,sent,2023-10-27T10:05:00,2023-10-27,10:05:00,Okay I understand the delay now,0.0,Neutral,😐,#9E9E9E,2023-10-27T10:05:00
+user_real_001,Alice,sent,2023-10-27T10:06:00,2023-10-27,10:06:00,Thanks for explaining it to me,0.3,Positive,🙂,#4CAF50,2023-10-27T10:06:00
+user_real_001,Alice,sent,2023-10-27T10:07:00,2023-10-27,10:07:00,You have been very helpful,0.6,Very Positive,😁,#2E7D32,2023-10-27T10:07:00
+user_real_001,Alice,sent,2023-10-28T09:00:00,2023-10-28,09:00:00,Hi again,0.0,Neutral,😐,#9E9E9E,2023-10-28T09:00:00
+user_real_001,Alice,sent,2023-10-28T09:05:00,2023-10-28,09:05:00,My package arrived damaged,-0.6,Very Negative,😡,#B71C1C,2023-10-28T09:05:00
+user_real_001,Alice,sent,2023-10-28T09:10:00,2023-10-28,09:10:00,This is just great. Just what I needed.,-0.1,Sarcastic,😒,#FF9800,2023-10-28T09:10:00
+user_real_001,Alice,sent,2023-10-28T09:15:00,2023-10-28,09:15:00,Fine I will wait for the replacement,0.1,Neutral,😐,#9E9E9E,2023-10-28T09:15:00
+user_real_001,Alice,sent,2023-10-28T09:20:00,2023-10-28,09:20:00,Thank you for the quick refund,0.5,Positive,🙂,#4CAF50,2023-10-28T09:20:00
+user_real_002,Bob,sent,2023-10-29T11:00:00,2023-10-29,11:00:00,This product is amazing,0.8,Very Positive,😁,#2E7D32,2023-10-29T11:00:00
+user_real_002,Bob,sent,2023-10-29T11:05:00,2023-10-29,11:05:00,I love it,0.7,Very Positive,😁,#2E7D32,2023-10-29T11:05:00
+user_real_002,Bob,sent,2023-10-29T11:10:00,2023-10-29,11:10:00,Best purchase ever,0.9,Very Positive,😁,#2E7D32,2023-10-29T11:10:00
