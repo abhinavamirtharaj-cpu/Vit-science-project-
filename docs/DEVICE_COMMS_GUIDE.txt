@@ -1,0 +1,53 @@
+DEVICE-TO-DEVICE COMMUNICATION GUIDE
+====================================
+
+This guide explains how to set up and run the 2-device communication demo using this project, with each device running on a separate machine or environment.
+
+REQUIREMENTS
+------------
+- Python 3.8+
+- All dependencies installed (see requirements.txt)
+- Network connectivity between both devices (same LAN or accessible IP)
+
+SETUP STEPS
+-----------
+1. Install dependencies on both devices:
+   pip install -r docs/requirements.txt
+   (Or use pip install -r requirements.txt if requirements.txt is in the root.)
+
+2. On Device 1 (Server):
+   a. Start the Flask server:
+      python3 run.py
+   b. By default, the server runs on http://127.0.0.1:5000
+   c. To allow connections from another device, run:
+      python3 run.py --host=0.0.0.0 --port=5000
+   d. Note your device's IP address (e.g., 192.168.1.10)
+
+3. On Device 2 (Client):
+   a. Open or modify the client script or UI to point to Device 1's IP:
+      - If using a browser, go to: http://<Device1-IP>:5000
+      - If using a script, set the API endpoint to http://<Device1-IP>:5000
+   b. Example API call from Device 2:
+      curl -X POST http://<Device1-IP>:5000/api/analyze \
+        -H "Content-Type: application/json" \
+        -d '{"text": "Hello from Device 2!", "contact_id": "dev2", "contact_name": "Device 2"}'
+
+4. Chat/Comms Flow:
+   - Device 2 sends messages to Device 1's server via the API or UI.
+   - Device 1 processes, stores, and analyzes the messages.
+   - Both devices can view chat history and sentiment analysis via the web UI or API.
+
+TROUBLESHOOTING
+---------------
+- Ensure both devices are on the same network or that firewalls allow port 5000.
+- Use the correct IP address for Device 1.
+- If you get connection errors, check that the Flask server is running and accessible from Device 2.
+- For advanced setups (e.g., HTTPS, custom ports), modify run.py and firewall settings accordingly.
+
+EXAMPLE WORKFLOW
+----------------
+1. Device 1: python3 run.py --host=0.0.0.0 --port=5000
+2. Device 2: In browser, visit http://<Device1-IP>:5000 or use curl/postman to send API requests.
+3. Both devices can interact via the chat interface or API endpoints.
+
+For more details, see README.md and QUICK_START.md.

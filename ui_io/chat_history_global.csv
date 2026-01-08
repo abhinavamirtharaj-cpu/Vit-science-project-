@@ -27,3 +27,11 @@ support,Support,sent,2026-01-07T20:50:56.543529,2026-01-07,20:50,What the fish!,
 support,Support,sent,2026-01-07T20:51:12.364203,2026-01-07,20:51,IDiot!,-0.5433333333333333,Negative,🙁,#F44336,2026-01-07T15:21:12.365146
 support,Support,sent,2026-01-07T20:51:18.958803,2026-01-07,20:51,Rascal!,-0.04609053497942387,Neutral,😐,#FFC107,2026-01-07T15:21:18.958803
 support,Support,sent,2026-01-07T20:51:31.015297,2026-01-07,20:51,Fool!,,Neutral,😐,#FFC107,2026-01-07T15:21:31.016303
+demo_device,Demo Device,sent,2026-01-08T15:23:23.363583,2026-01-08,15:23,Hello from demo_integration - single append,,,,,2026-01-08T15:23:23.363744
+demo_device,Demo Device,sent,2026-01-08T15:23:23.363583,2026-01-08,15:23,Second message via append_messages,,,,,2026-01-08T15:23:23.364869
+user_happy,Happy User,sent,2026-01-08T15:25:15.380972,2026-01-08,15:25,This is a wonderful experience! I'm so thrilled!,-0.0392156862745098,Neutral,😐,#FFC107,2026-01-08T15:25:15.381067
+user_angry,Frustrated User,sent,2026-01-08T15:25:15.395757,2026-01-08,15:25,This is absolutely infuriating! I hate this!,-0.6392156862745099,Very Negative,😠,#9C27B0,2026-01-08T15:25:15.395884
+user_sad,Sad User,sent,2026-01-08T15:25:15.412857,2026-01-08,15:25,I feel so heartbroken and depressed...,-0.3392156862745098,Negative,🙁,#F44336,2026-01-08T15:25:15.412959
+user_happy,Happy User,sent,2026-01-08T15:25:27.089085,2026-01-08,15:25,This is a wonderful experience! I'm so thrilled!,-0.0392156862745098,Neutral,😐,#FFC107,2026-01-08T15:25:27.089193
+user_angry,Frustrated User,sent,2026-01-08T15:25:27.098309,2026-01-08,15:25,This is absolutely infuriating! I hate this!,-0.6455645161290323,Very Negative,😠,#9C27B0,2026-01-08T15:25:27.098399
+user_sad,Sad User,sent,2026-01-08T15:25:27.109061,2026-01-08,15:25,I feel so heartbroken and depressed...,-0.344140625,Negative,🙁,#F44336,2026-01-08T15:25:27.109153

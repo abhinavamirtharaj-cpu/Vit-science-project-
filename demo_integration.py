@@ -5,7 +5,7 @@ Usage:
 
 This script appends a couple of test messages for a contact and prints the retrieved history.
 """
-from storage import append_message, append_messages, get_history, get_csv_path
+from ui_io.storage import append_message, append_messages, get_history, get_csv_path
 from datetime import datetime
 
 CONTACT = {'id': 'demo_device', 'name': 'Demo Device'}

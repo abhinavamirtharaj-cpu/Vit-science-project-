@@ -159,15 +159,119 @@
             "score": 0.0,
             "node_1_input": 0.0,
             "node_2_prediction": "Sarcastic"
+        },
+        {
+            "timestamp": "2026-01-08T15:25:15.380138",
+            "text": "This is a wonderful experience! I'm so thrilled!",
+            "sentiment": "Neutral",
+            "score": -0.0392156862745098,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Negative"
+        },
+        {
+            "timestamp": "2026-01-08T15:25:15.394923",
+            "text": "This is absolutely infuriating! I hate this!",
+            "sentiment": "Very Negative",
+            "score": -0.6392156862745099,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Negative"
+        },
+        {
+            "timestamp": "2026-01-08T15:25:15.410520",
+            "text": "I feel so heartbroken and depressed...",
+            "sentiment": "Negative",
+            "score": -0.3392156862745098,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Negative"
+        },
+        {
+            "timestamp": "2026-01-08T15:25:27.088359",
+            "text": "This is a wonderful experience! I'm so thrilled!",
+            "sentiment": "Neutral",
+            "score": -0.0392156862745098,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Negative"
+        },
+        {
+            "timestamp": "2026-01-08T15:25:27.097740",
+            "text": "This is absolutely infuriating! I hate this!",
+            "sentiment": "Very Negative",
+            "score": -0.6455645161290323,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Negative"
+        },
+        {
+            "timestamp": "2026-01-08T15:25:27.108278",
+            "text": "I feel so heartbroken and depressed...",
+            "sentiment": "Negative",
+            "score": -0.344140625,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Negative"
+        },
+        {
+            "timestamp": "2026-01-08T15:29:28.063522",
+            "text": "This is absolutely brilliant, thanks a lot for breaking it.",
+            "sentiment": "Positive",
+            "score": 0.2559118236472946,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Negative"
+        },
+        {
+            "timestamp": "2026-01-08T15:29:28.072666",
+            "text": "I appreciate the help.",
+            "sentiment": "Neutral",
+            "score": -0.04078212290502794,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Very Negative"
+        },
+        {
+            "timestamp": "2026-01-08T15:29:28.086551",
+            "text": "Another great feature!",
+            "sentiment": "Positive",
+            "score": 0.5549295774647888,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Positive"
+        },
+        {
+            "timestamp": "2026-01-08T15:29:43.902133",
+            "text": "Oh fantastic job breaking it further",
+            "sentiment": "Positive",
+            "score": 0.2559118236472946,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Negative"
+        },
+        {
+            "timestamp": "2026-01-08T15:29:43.914541",
+            "text": "I am done with this",
+            "sentiment": "Neutral",
+            "score": -0.04353448275862069,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Very Negative"
+        },
+        {
+            "timestamp": "2026-01-08T15:29:43.925668",
+            "text": "Still loving it",
+            "sentiment": "Neutral",
+            "score": 0.05492957746478874,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Positive"
+        },
+        {
+            "timestamp": "2026-01-08T15:29:43.934505",
+            "text": "It's not working right",
+            "sentiment": "Neutral",
+            "score": -0.04078212290502794,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Very Negative"
         }
     ],
     "patterns": {
         "sentiment_counts": {
-            "Neutral": 10,
+            "Neutral": 16,
             "Factual": 2,
-            "Negative": 4,
-            "Very Negative": 3,
-            "Positive": 1
+            "Negative": 6,
+            "Very Negative": 5,
+            "Positive": 4
         }
     }
 }

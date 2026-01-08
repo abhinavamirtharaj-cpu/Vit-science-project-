@@ -132,7 +132,7 @@ EMOTION_TRAINING_DATA = {
 # EXAMPLE 1: Enhanced Sentiment Analysis with Custom Thresholds
 # ============================================================================
 
-from sentiment_analyzer import (
+from core_analysis.sentiment_analyzer import (
     analyze_emotion,
     analyze_chat_message,
     analyze_historical_context,
@@ -355,7 +355,7 @@ print("\n" + "=" * 70)
 print("EXAMPLE 6: Chat Service Integration with Emotion Analysis")
 print("=" * 70)
 
-from chat_service import process_user_message
+from core_analysis.chat_service import process_user_message
 
 test_contacts = [
     {'id': 'user_happy', 'name': 'Happy User'},
@@ -391,7 +391,7 @@ print("\n" + "=" * 70)
 print("EXAMPLE 7: Storage - Reading Chat History with Emotion Analysis")
 print("=" * 70)
 
-from storage import get_history, get_csv_path
+from ui_io.storage import get_history, get_csv_path
 
 print(f"\nCSV File Path: {get_csv_path()}")
 
