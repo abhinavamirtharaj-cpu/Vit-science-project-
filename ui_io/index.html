@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>LOCAL - Two Person Chat</title>
   <link rel="stylesheet" href="styles.css" />
+  <!-- Socket.IO for real-time communication -->
   <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
 </head>
 <body>
@@ -13,34 +14,35 @@
     <div class="modal-content">
       <h2>Enter Your Name</h2>
       <p class="modal-subtitle">Join the LOCAL chat room</p>
-      <input type="text" id="username-input" placeholder="Your name..." maxlength="30" />
+      <input 
+        type="text" 
+        id="username-input" 
+        placeholder="Your name..." 
+        maxlength="30"
+        autocomplete="off"
+      />
       <button id="join-chat-btn" class="primary">Join Chat</button>
     </div>
   </div>
 
   <!-- Main Chat Interface -->
-  <div id="chat-panel" class="chat-panel hidden">
+  <div id="chat-panel" class="chat-panel">
     <div class="chat-container">
       <main class="chat-main">
         <!-- Chat Header -->
         <header class="chat-header">
           <div class="chat-title">
-            <div class="chat-avatar">LC</div>
-            <div>
+            <div class="chat-room-info">
               <strong id="chat-room-name">LOCAL</strong>
               <div class="status" id="current-user">Loading...</div>
             </div>
           </div>
-          <div class="chat-actions">
-            <button id="info-btn" class="icon-btn" title="Chat Info">ℹ️</button>
-          </div>
         </header>
 
         <!-- Messages Area -->
-        <div class="chat-messages" id="messages">
+        <div class="chat-messages" id="messages" role="log" aria-live="polite">
           <div class="messages-inner" id="messages-inner">
-            <!-- System message on load -->
-            <div class="system-message">Welcome to LOCAL chat 💬</div>
+            <!-- Messages will be inserted here dynamically -->
           </div>
         </div>
 
@@ -51,32 +53,15 @@
             placeholder="Type a message..." 
             rows="1"
             maxlength="1000"
+            autocomplete="off"
           ></textarea>
-          <button type="submit" class="primary send-btn" title="Send message">➤</button>
+          <button type="submit" class="primary send-btn">Send</button>
         </form>
       </main>
     </div>
   </div>
 
-  <!-- Info Modal -->
-  <div id="info-modal" class="modal hidden">
-    <div class="modal-content">
-      <h2>About LOCAL Chat</h2>
-      <div class="info-content">
-        <p><strong>Room:</strong> LOCAL</p>
-        <p><strong>Features:</strong></p>
-        <ul>
-          <li>Real-time messaging between two devices</li>
-          <li>Sentiment analysis on all messages</li>
-          <li>Message history persistence</li>
-          <li>WhatsApp-style interface</li>
-        </ul>
-        <p class="info-note">Messages are analyzed for sentiment and displayed with color indicators.</p>
-      </div>
-      <button id="close-info" class="primary">Close</button>
-    </div>
-  </div>
-
+  <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
