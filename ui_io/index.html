@@ -3,119 +3,77 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Chat-like UI Template</title>
+  <title>LOCAL - Two Person Chat</title>
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
 </head>
 <body>
-  <header class="topbar">
-    <div class="topbar-inner">
-      <a class="logo" href="/" title="Sentiment Analyzer">
-        <img class="logo-img" src="assets/LOGO.png" alt="Sentiment Analyzer" />
-        <span class="brand">SEAN</span>
-      </a>
-
-      <nav class="nav">
-        <a href="learn_more.html" class="ghost">Learn More</a>
-        <a href="learn_more.html#contact" class="ghost">Contact</a>
-        <button class="primary chat-cta small" id="get-started-sm">Chat Here.</button>
-      </nav>
+  <!-- Username Entry Modal -->
+  <div id="username-modal" class="modal">
+    <div class="modal-content">
+      <h2>Enter Your Name</h2>
+      <p class="modal-subtitle">Join the LOCAL chat room</p>
+      <input type="text" id="username-input" placeholder="Your name..." maxlength="30" />
+      <button id="join-chat-btn" class="primary">Join Chat</button>
     </div>
-  </header>
+  </div>
 
-  <main>
-    <!-- Hero / banner with background image enabled in CSS -->
-    <section class="hero">
-      <div class="hero-content">
-        <h1 class="wave-text">A Smarter Future in Chat!</h1>
-        <p>Start Your Chat, That signifies Emotions..</p>
-        <div class="hero-actions">
-          <button class="primary chat-cta" id="get-started">Chat Here.</button>
-          <a href="learn_more.html" class="ghost chat-cta">Learn More</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Two horizontal blocks (different widths) -->
-    <section class="blocks">
-      <div class="block block-left">
-        <div class="chat-bar">
-          <div class="typing-text" id="text"></div>
-          <div class="cursor"></div>
-        </div>
-      </div>
-
-      <aside class="block block-right">
-        <h3>Bridging Gap</h3>
-        <p>Use this for contacts, quick actions, or short information panels.</p>
-        <button class="ghost" id="open-contacts-btn" type="button">Open Contacts</button>
-      </aside>
-    </section>
-
-    <!-- Lower half - details about the application -->
-    <section id="about" class="details">
-      <h2>About the application</h2>
-      <p>CipherCodes
-Engineering Tomorrow's Ease, Today
-
-We are young innovators transforming complex technology into effortless luxury for everyday life. We build intuitive tech that lets users focus on what truly matters while the underlying complexity stays elegantly hidden.
-
-Our work follows a futuristic modular ecosystem with specialized teams operating in parallel. The Core Architecture Team designs secure, encrypted backbones, the Sentiment Intelligence Unit builds on‑device emotion detection, the Interface Alchemists craft clear visual experiences, and the Contextual Memory Squad enables privacy‑preserving historical insight. Each team owns its domain while integrating into one cohesive system.</p>
-
-      <p></p>
-
-      <h3>What we prioritise:</h3>
-      <ul>
-        <li>Deep privacy and security through robust encryption and on‑device intelligence.</li>
-        <li>Emotion‑aware experiences that make conversations clearer and more human</li>
-        <li>Seamless modular upgrades so every component can evolve without breaking the whole</li>
-        <li>Fast, reliable collaboration powered by focused teams and frictionless workflows.</li>
-      </ul>
-    </section>
-
-    <footer id="contact" class="footer">
-      <p>© <strong>SEAN</strong> — Built with ©️</p>
-    </footer>
-  </main>
-
-  <!-- Chat panel (hidden by default) -->
-  <div id="chat-panel" class="chat-panel hidden" aria-hidden="true">
+  <!-- Main Chat Interface -->
+  <div id="chat-panel" class="chat-panel hidden">
     <div class="chat-container">
-      <aside class="contacts" id="contacts">
-        <div class="contacts-header">Contacts</div>
-        <ul class="contacts-list" id="contacts-list">
-          <!-- contacts populated here -->
-        </ul>
-        <div class="contacts-footer">
-          <button id="add-contact" class="ghost">+ Add</button>
-        </div>
-      </aside>
-
       <main class="chat-main">
+        <!-- Chat Header -->
         <header class="chat-header">
-          <button id="close-chat" class="icon" aria-label="Close chat">←</button>
-
-          <div class="chat-title" id="chat-title">
-            <img src="" alt="" class="avatar" aria-hidden="true" />
+          <div class="chat-title">
+            <div class="chat-avatar">LC</div>
             <div>
-              <strong id="chat-with">Support</strong>
-              <div class="status" id="chat-status">Online</div>
+              <strong id="chat-room-name">LOCAL</strong>
+              <div class="status" id="current-user">Loading...</div>
             </div>
           </div>
-
           <div class="chat-actions">
-            <!-- Export buttons removed. Use localStorage for demo persistence or import `storage.py` for CSV persistence. -->
+            <button id="info-btn" class="icon-btn" title="Chat Info">ℹ️</button>
           </div>
         </header>
 
-        <div class="chat-messages" id="messages" role="log" aria-live="polite">
-          <div class="messages-inner" id="messages-inner"><!-- messages inserted here --></div>
+        <!-- Messages Area -->
+        <div class="chat-messages" id="messages">
+          <div class="messages-inner" id="messages-inner">
+            <!-- System message on load -->
+            <div class="system-message">Welcome to LOCAL chat 💬</div>
+          </div>
         </div>
 
+        <!-- Message Input -->
         <form class="chat-input" id="chat-form">
-          <textarea id="message-input" placeholder="Type a message..." rows="1"></textarea>
-          <button type="submit" class="primary">Send</button>
+          <textarea 
+            id="message-input" 
+            placeholder="Type a message..." 
+            rows="1"
+            maxlength="1000"
+          ></textarea>
+          <button type="submit" class="primary send-btn" title="Send message">➤</button>
         </form>
       </main>
+    </div>
+  </div>
+
+  <!-- Info Modal -->
+  <div id="info-modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>About LOCAL Chat</h2>
+      <div class="info-content">
+        <p><strong>Room:</strong> LOCAL</p>
+        <p><strong>Features:</strong></p>
+        <ul>
+          <li>Real-time messaging between two devices</li>
+          <li>Sentiment analysis on all messages</li>
+          <li>Message history persistence</li>
+          <li>WhatsApp-style interface</li>
+        </ul>
+        <p class="info-note">Messages are analyzed for sentiment and displayed with color indicators.</p>
+      </div>
+      <button id="close-info" class="primary">Close</button>
     </div>
   </div>
 
