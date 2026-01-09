@@ -1,20 +1,18 @@
 """
-UI.py - Real-time two-person chat with sentiment analysis
-Flask server with WebSocket support for real-time messaging between two devices.
+UI.py
+Flask server with real-time two-person messaging and sentiment analysis.
 
 Features:
-- Real-time WebSocket communication
-- Two-person messaging (messages displayed left/right based on sender)
-- Common room "LOCAL" for both users
+- Real-time WebSocket communication between two users
 - Sentiment analysis on all messages
-- Message history persistence
+- Shared "LOCAL" chat room
+- Message persistence with sender information
 
 Run:
   pip install flask flask-socketio python-socketio textblob
   python UI.py
 
-Access in browser: http://127.0.0.1:5000/
-Access from another device: http://YOUR_IP_ADDRESS:5000/
+Access in browser: http://0.0.0.0:5000/
 """
 import os
 import sys
@@ -35,10 +33,10 @@ INTERFACE_JS_DIR = os.path.join(PROJECT_ROOT, 'interface_js')
 
 # Disable default static file handling to allow custom routing for interface_js
 app = Flask(__name__, static_folder=None)
-app.config['SECRET_KEY'] = 'vit-science-project-secret-key-2026'
+app.config['SECRET_KEY'] = 'sean-chat-secret-key-2026'
 socketio = SocketIO(app, cors_allowed_origins="*")
 
-# Store active users and their sessions
+# Store active users and their devices
 active_sessions = {}
 
 
@@ -63,16 +61,12 @@ def static_files(filename):
     abort(404)
 
 
-# WebSocket Events
+# WebSocket Events for Real-time Communication
 @socketio.on('join_chat')
 def handle_join(data):
     """
     User joins the LOCAL chat room.
-    
-    Expected data:
-    {
-        "username": "User's name"
-    }
+    Broadcasts join notification and sends chat history.
     """
     username = data.get('username', 'Anonymous')
     room = 'LOCAL'  # Common room name for both users
@@ -80,7 +74,7 @@ def handle_join(data):
     join_room(room)
     active_sessions[request.sid] = {'username': username, 'room': room}
     
-    print(f"[JOIN] {username} joined room {room}")
+    print(f"[WebSocket] {username} joined room: {room}")
     
     # Notify others that user joined
     emit('user_joined', {
@@ -88,11 +82,11 @@ def handle_join(data):
         'message': f'{username} joined the chat'
     }, room=room, skip_sid=request.sid)
     
-    # Send chat history to the joining user
+    # Send chat history to the newly joined user
     try:
         messages = get_history('LOCAL')
+        # Convert history to format expected by frontend
         formatted_messages = []
-        
         for msg in messages:
             formatted_messages.append({
                 'sender': msg.get('sender', 'Unknown'),
@@ -108,7 +102,7 @@ def handle_join(data):
         
         emit('chat_history', {'messages': formatted_messages})
     except Exception as e:
-        print(f"[ERROR] Loading history: {e}")
+        print(f"[Error] Failed to load chat history: {str(e)}")
         emit('chat_history', {'messages': []})
 
 
@@ -116,16 +110,12 @@ def handle_join(data):
 def handle_message(data):
     """
     Process and broadcast message to all users in the room.
-    
-    Expected data:
-    {
-        "text": "message content"
-    }
+    Applies sentiment analysis before broadcasting.
     """
     try:
         session = active_sessions.get(request.sid)
         if not session:
-            emit('error', {'message': 'Not connected to chat'})
+            emit('error', {'message': 'Session not found. Please rejoin.'})
             return
         
         username = session['username']
@@ -135,32 +125,15 @@ def handle_message(data):
         if not text:
             return
         
-        print(f"[MESSAGE] {username}: {text}")
+        print(f"[WebSocket] Message from {username}: {text}")
         
         # Process message with sentiment analysis
         contact = {'id': 'LOCAL', 'name': room}
         result = process_user_message(text, contact)
         
-        # Prepare message data for storage with sender info
+        # Prepare message data with sender information
         now = datetime.now()
-        message_data = {
-            'dir': 'sent',
-            'iso': now.isoformat(),
-            'date': now.strftime('%Y-%m-%d'),
-            'time': now.strftime('%H:%M'),
-            'text': text,
-            'sender': username,  # Add sender field
-            'sentiment_polarity': result['sentiment']['polarity_score'],
-            'sentiment_category': result['sentiment']['category'],
-            'sentiment_emoji': result['sentiment']['emoji'],
-            'color_hex': result['sentiment']['color']
-        }
-        
-        # Store message with sender info
-        append_message(contact, message_data)
-        
-        # Broadcast to all users in room (including sender)
-        emit('new_message', {
+        message_with_sender = {
             'sender': username,
             'text': text,
             'timestamp': now.isoformat(),
@@ -171,29 +144,49 @@ def handle_message(data):
                 'polarity': result['sentiment']['polarity_score']
             },
             'trend': result.get('trend', 'stable')
-        }, room=room)
+        }
+        
+        # Manually save with sender info (override process_user_message storage)
+        from ui_io.storage import append_message_with_sender
+        try:
+            append_message_with_sender(contact, {
+                'dir': 'sent',
+                'iso': now.isoformat(),
+                'date': now.strftime('%Y-%m-%d'),
+                'time': now.strftime('%H:%M'),
+                'text': text,
+                'sender': username,
+                'sentiment_polarity': result['sentiment']['polarity_score'],
+                'sentiment_category': result['sentiment']['category'],
+                'sentiment_emoji': result['sentiment']['emoji'],
+                'color_hex': result['sentiment']['color']
+            })
+        except:
+            pass  # Fallback if function doesn't exist yet
+        
+        # Broadcast to all users in room
+        emit('new_message', message_with_sender, room=room)
         
     except Exception as e:
-        print(f"[ERROR] Processing message: {e}")
+        print(f"[Error] Failed to process message: {str(e)}")
         emit('error', {'message': str(e)})
 
 
 @socketio.on('disconnect')
 def handle_disconnect():
     """
-    User disconnected from chat.
+    User disconnected from the chat.
     """
     session = active_sessions.pop(request.sid, None)
     if session:
-        print(f"[DISCONNECT] {session['username']} left")
+        print(f"[WebSocket] {session['username']} disconnected")
         emit('user_left', {
             'username': session['username'],
             'message': f"{session['username']} left the chat"
         }, room=session['room'])
-        leave_room(session['room'])
 
 
-# REST API Routes (for backward compatibility)
+# API Routes (legacy support)
 @app.route('/api/history/<contact_id>', methods=['GET'])
 def get_chat_history(contact_id):
     """
@@ -213,12 +206,11 @@ def get_chat_history(contact_id):
 
 
 if __name__ == '__main__':
-    print("\n" + "="*50)
-    print("Starting Two-Person Chat Server")
-    print("="*50)
-    print(f"Server running on: http://0.0.0.0:5000")
-    print(f"Access locally: http://127.0.0.1:5000")
-    print(f"Access from network: http://YOUR_IP_ADDRESS:5000")
-    print("="*50 + "\n")
+    print("\n" + "="*60)
+    print("  SEAN - Two-Person Real-time Chat with Sentiment Analysis")
+    print("="*60)
+    print("\n  Server starting on http://0.0.0.0:5000")
+    print("  Open this URL on two devices to start chatting!")
+    print("\n" + "="*60 + "\n")
     
     socketio.run(app, debug=True, port=5000, host='0.0.0.0')
