@@ -1,145 +1,143 @@
 """
-storage.py - Message storage with sender support
-Handles CSV persistence for chat messages with sender information.
+storage.py - Message storage with sender support for two-person chat
+
+Handles CSV persistence for chat messages with sentiment data and sender information.
 """
-import csv
 import os
+import csv
 from datetime import datetime
-from pathlib import Path
 
-# Get storage file path
 STORAGE_FILE = os.path.join(os.path.dirname(__file__), 'chat_history_global.csv')
-
-# CSV Field names
-FIELDNAMES = [
-    'timestamp', 'contact_id', 'sender', 'direction', 'message',
-    'polarity', 'subjectivity', 'category', 'emoji', 'color_hex'
-]
 
 
 def get_csv_path():
-    """
-    Returns the path to the global CSV storage file.
-    """
+    """Returns the path to the global CSV storage file."""
     return STORAGE_FILE
 
 
-def append_message(contact, message_data):
+def append_message(contact: dict, msg: dict):
     """
-    Append a single message to the CSV file with sender information.
+    Append a single message to the CSV file.
     
     Args:
-        contact (dict): Contact info with 'id' and 'name'
-        message_data (dict): Message details including:
-            - text: Message content
-            - sender: Username of sender
-            - iso: Timestamp
-            - sentiment_polarity: Sentiment score
-            - sentiment_category: Sentiment category
-            - sentiment_emoji: Emoji representation
-            - color_hex: Color code for UI
+        contact (dict): Contact information with 'id' and 'name'
+        msg (dict): Message data with sentiment information
     """
     os.makedirs(os.path.dirname(STORAGE_FILE) or '.', exist_ok=True)
     
     file_exists = os.path.isfile(STORAGE_FILE)
     
     with open(STORAGE_FILE, 'a', newline='', encoding='utf-8') as f:
-        writer = csv.DictWriter(f, fieldnames=FIELDNAMES)
+        fieldnames = [
+            'contact_id', 'contact_name', 'dir', 'iso', 'date', 'time', 'text',
+            'sender', 'sentiment_polarity', 'sentiment_category', 'sentiment_emoji', 'color_hex'
+        ]
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
         
         if not file_exists:
             writer.writeheader()
         
-        writer.writerow({
-            'timestamp': message_data.get('iso', datetime.now().isoformat()),
+        row = {
             'contact_id': contact.get('id', 'unknown'),
-            'sender': message_data.get('sender', 'Unknown'),
-            'direction': message_data.get('dir', 'sent'),
-            'message': message_data.get('text', ''),
-            'polarity': message_data.get('sentiment_polarity', 0),
-            'subjectivity': message_data.get('subjectivity', 0),
-            'category': message_data.get('sentiment_category', 'Neutral'),
-            'emoji': message_data.get('sentiment_emoji', '😐'),
-            'color_hex': message_data.get('color_hex', '#9E9E9E')
-        })
+            'contact_name': contact.get('name', 'Unknown'),
+            'dir': msg.get('dir', 'sent'),
+            'iso': msg.get('iso', datetime.now().isoformat()),
+            'date': msg.get('date', datetime.now().strftime('%Y-%m-%d')),
+            'time': msg.get('time', datetime.now().strftime('%H:%M')),
+            'text': msg.get('text', ''),
+            'sender': msg.get('sender', 'Unknown'),
+            'sentiment_polarity': msg.get('sentiment_polarity', 0),
+            'sentiment_category': msg.get('sentiment_category', 'Neutral'),
+            'sentiment_emoji': msg.get('sentiment_emoji', '😐'),
+            'color_hex': msg.get('color_hex', '#9E9E9E')
+        }
+        
+        writer.writerow(row)
 
 
-def append_messages(contact, messages):
+def append_message_with_sender(contact: dict, msg: dict):
+    """
+    Append message with explicit sender information.
+    Wrapper for append_message to ensure sender is included.
+    
+    Args:
+        contact (dict): Contact information
+        msg (dict): Message data including 'sender' field
+    """
+    append_message(contact, msg)
+
+
+def append_messages(contact: dict, msgs: list):
     """
     Append multiple messages to the CSV file.
     
     Args:
-        contact (dict): Contact info
-        messages (list): List of message_data dicts
+        contact (dict): Contact information
+        msgs (list): List of message dictionaries
     """
-    for msg in messages:
+    for msg in msgs:
         append_message(contact, msg)
 
 
-def get_history(contact_id):
+def get_history(contact_id: str) -> list:
     """
-    Retrieve all messages for a specific contact.
+    Retrieve all messages for a specific contact from CSV.
     
     Args:
-        contact_id (str): Contact identifier
+        contact_id (str): The contact/room ID
         
     Returns:
-        list: List of message dicts with all fields
+        list: List of message dictionaries
     """
     if not os.path.isfile(STORAGE_FILE):
         return []
     
     messages = []
-    with open(STORAGE_FILE, 'r', encoding='utf-8') as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            if row.get('contact_id') == contact_id:
-                messages.append({
-                    'iso': row.get('timestamp', ''),
-                    'sender': row.get('sender', 'Unknown'),
-                    'text': row.get('message', ''),
-                    'dir': row.get('direction', 'sent'),
-                    'sentiment_polarity': float(row.get('polarity', 0)),
-                    'sentiment_category': row.get('category', 'Neutral'),
-                    'sentiment_emoji': row.get('emoji', '😐'),
-                    'color_hex': row.get('color_hex', '#9E9E9E'),
-                    'contact_id': row.get('contact_id', '')
-                })
+    
+    try:
+        with open(STORAGE_FILE, 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                if row.get('contact_id') == contact_id:
+                    messages.append(row)
+    except Exception as e:
+        print(f"[Error] Failed to read chat history: {str(e)}")
+        return []
     
     return messages
 
 
-def get_all_messages_for_analysis():
+def get_all_messages_for_analysis() -> list:
     """
-    Retrieve all messages from CSV for sentiment analysis purposes.
+    Retrieve all messages from CSV for sentiment analysis.
     
     Returns:
-        list: List of all message dicts
+        list: List of all messages
     """
     if not os.path.isfile(STORAGE_FILE):
         return []
     
     messages = []
-    with open(STORAGE_FILE, 'r', encoding='utf-8') as f:
-        reader = csv.DictReader(f)
-        for row in reader:
-            messages.append({
-                'text': row.get('message', ''),
-                'sender': row.get('sender', 'Unknown'),
-                'timestamp': row.get('timestamp', ''),
-                'sentiment': row.get('category', 'Neutral'),
-                'polarity': float(row.get('polarity', 0))
-            })
+    
+    try:
+        with open(STORAGE_FILE, 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                messages.append(row)
+    except Exception as e:
+        print(f"[Error] Failed to read messages for analysis: {str(e)}")
+        return []
     
     return messages
 
 
-def clear_history(contact_id=None):
+def clear_history(contact_id: str = None):
     """
-    Clear chat history. If contact_id provided, clear only that contact's messages.
-    Otherwise, clear all messages.
+    Clear chat history. If contact_id is provided, clear only that contact.
+    Otherwise, clear entire history.
     
     Args:
-        contact_id (str, optional): Specific contact to clear
+        contact_id (str, optional): Contact ID to clear, or None for all
     """
     if not os.path.isfile(STORAGE_FILE):
         return
@@ -147,17 +145,25 @@ def clear_history(contact_id=None):
     if contact_id is None:
         # Clear entire file
         os.remove(STORAGE_FILE)
-    else:
-        # Keep messages from other contacts
-        all_messages = []
-        with open(STORAGE_FILE, 'r', encoding='utf-8') as f:
-            reader = csv.DictReader(f)
-            for row in reader:
-                if row.get('contact_id') != contact_id:
-                    all_messages.append(row)
-        
-        # Rewrite file
+        return
+    
+    # Clear specific contact
+    messages = []
+    with open(STORAGE_FILE, 'r', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            if row.get('contact_id') != contact_id:
+                messages.append(row)
+    
+    # Rewrite file without the contact's messages
+    if messages:
         with open(STORAGE_FILE, 'w', newline='', encoding='utf-8') as f:
-            writer = csv.DictWriter(f, fieldnames=FIELDNAMES)
+            fieldnames = [
+                'contact_id', 'contact_name', 'dir', 'iso', 'date', 'time', 'text',
+                'sender', 'sentiment_polarity', 'sentiment_category', 'sentiment_emoji', 'color_hex'
+            ]
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()
-            writer.writerows(all_messages)
+            writer.writerows(messages)
+    else:
+        os.remove(STORAGE_FILE)
