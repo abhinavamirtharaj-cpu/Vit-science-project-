@@ -1,0 +1,202 @@
+{
+    "interactions": [
+        {
+            "timestamp": "2026-01-09T08:14:15.560249",
+            "text": "Oh fantastic job breaking it further",
+            "sentiment": "Positive",
+            "score": 0.3,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-09T08:14:15.560756",
+            "text": "I am done with this",
+            "sentiment": "Neutral",
+            "score": 0.05,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-09T08:14:15.561293",
+            "text": "Still loving it",
+            "sentiment": "Neutral",
+            "score": 0.05,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-09T08:14:15.562066",
+            "text": "It's not working right",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-09T08:16:43.204971",
+            "text": "Oh fantastic job breaking it further",
+            "sentiment": "Positive",
+            "score": 0.3,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-09T08:16:43.205564",
+            "text": "I am done with this",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-09T08:16:43.206391",
+            "text": "Still loving it",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-09T08:16:43.206973",
+            "text": "It's not working right",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-09T08:18:38.508697",
+            "text": "Oh fantastic job breaking it further",
+            "sentiment": "Positive",
+            "score": 0.3,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-09T08:18:38.601259",
+            "text": "I am done with this",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-09T08:18:38.671454",
+            "text": "Still loving it",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-09T08:18:38.748479",
+            "text": "It's not working right",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-09T08:22:24.001830",
+            "text": "Oh fantastic job breaking it further",
+            "sentiment": "Positive",
+            "score": 0.3,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-09T08:22:24.104341",
+            "text": "I am done with this",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-09T08:22:24.189735",
+            "text": "Still loving it",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-09T08:22:24.256471",
+            "text": "It's not working right",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-09T08:22:24.347030",
+            "text": "Oh fantastic job breaking it further",
+            "sentiment": "Positive",
+            "score": 0.3,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-09T08:22:24.488017",
+            "text": "I am done with this",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-09T08:22:24.606178",
+            "text": "Still loving it",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-09T08:22:24.673988",
+            "text": "It's not working right",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-09T08:22:24.747833",
+            "text": "Oh fantastic job breaking it further",
+            "sentiment": "Positive",
+            "score": 0.3,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-09T08:22:24.825775",
+            "text": "I am done with this",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-09T08:22:24.892085",
+            "text": "Still loving it",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-09T08:22:24.967057",
+            "text": "It's not working right",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        }
+    ],
+    "patterns": {
+        "sentiment_counts": {
+            "Positive": 6,
+            "Neutral": 18
+        }
+    }
+}

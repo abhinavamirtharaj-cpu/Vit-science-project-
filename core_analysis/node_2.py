@@ -13,8 +13,10 @@ from collections import defaultdict
 class SentimentPredictorNode:
     def __init__(self, csv_path):
         self.csv_path = csv_path
-        # Use data/data_trained.csv for training if available, otherwise fallback to provided path
-        self.training_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'data_trained.csv')
+        # Use models/train_df.csv for training, models/test_df.csv for testing, models/val_df.csv for validation
+        self.training_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'models', 'train_df.csv')
+        self.test_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'models', 'test_df.csv')
+        self.val_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'models', 'val_df.csv')
         if not os.path.exists(self.training_path):
             self.training_path = csv_path
             

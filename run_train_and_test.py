@@ -15,7 +15,10 @@ from core_analysis.node_2 import run_node_2_analysis
 from core_analysis.node_3 import run_core_analysis, COLORS
 
 # Path to the training dataset
-TRAIN_DATASET_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'ui_io', 'train.csv')
+from get_resource_path import get_resource_path
+TRAIN_DATASET_PATH = get_resource_path('models/train_df.csv')
+TEST_DATASET_PATH = get_resource_path('models/test_df.csv')
+VAL_DATASET_PATH = get_resource_path('models/val_df.csv')
 
 def print_header(text):
     print(f"\n{COLORS['Neutral']}{'='*60}")
@@ -58,54 +61,53 @@ def test_prediction(test_name, last_sentiment, user_input, expected_prediction=N
         print(f"    [!] Sarcasm Detected")
 
 def main():
-    print_header("TRAINING & TESTING SUITE")
-    print(f"Dataset: {TRAIN_DATASET_PATH}")
-    
-    if not os.path.exists(TRAIN_DATASET_PATH):
-        print(f"{COLORS['Negative']}Error: Training dataset not found!{COLORS['RESET']}")
-        return
+    print_header("TRAINING, TESTING & VALIDATION SUITE")
+    print(f"Train Dataset: {TRAIN_DATASET_PATH}")
+    print(f"Test Dataset: {TEST_DATASET_PATH}")
+    print(f"Validation Dataset: {VAL_DATASET_PATH}")
 
-    # --- Test 1: Sarcasm Prediction ---
-    # In our dataset, 'Very Negative' is often followed by 'Sarcastic' (e.g. user_1, user_5, user_8)
-    test_prediction(
-        "Sarcasm Prediction Loop",
-        last_sentiment="Very Negative",
-        user_input="Oh fantastic job breaking it further",
-        expected_prediction="Sarcastic"
-    )
+    for dataset_path, label in [
+        (TRAIN_DATASET_PATH, "TRAINING"),
+        (TEST_DATASET_PATH, "TEST"),
+        (VAL_DATASET_PATH, "VALIDATION")
+    ]:
+        if not os.path.exists(dataset_path):
+            print(f"{COLORS['Negative']}Error: {label} dataset not found!{COLORS['RESET']}")
+        else:
+            print(f"{COLORS['Positive']}{label} dataset found: {dataset_path}{COLORS['RESET']}")
 
-    # --- Test 2: Recovery Pattern ---
-    # 'Sarcastic' is often followed by 'Negative' or 'Very Negative' or 'Neutral' depending on user.
-    # In our data: 
-    # user_1: Sarcastic -> Very Negative
-    # user_5: Sarcastic -> Neutral
-    # user_8: Sarcastic -> Very Negative
-    # So 'Very Negative' is a likely outcome.
-    test_prediction(
-        "Post-Sarcasm Volatility",
-        last_sentiment="Sarcastic",
-        user_input="I am done with this",
-        expected_prediction="Very Negative"
-    )
-
-    # --- Test 3: Positive Flow ---
-    # 'Very Positive' -> 'Very Positive' (user_2, user_7)
-    test_prediction(
-        "Positive Reinforcement",
-        last_sentiment="Very Positive",
-        user_input="Still loving it",
-        expected_prediction="Very Positive"
-    )
-
-    # --- Test 4: Neutral Start ---
-    # 'Neutral' -> 'Negative' (user_1, user_3) or 'Positive' (user_6)
-    # It's split. Let's see what the probability says.
-    test_prediction(
-        "Neutral Uncertainty",
-        last_sentiment="Neutral",
-        user_input="It's not working right",
-        expected_prediction=None 
-    )
+    # Example: Run test_prediction on each dataset (customize as needed)
+    for dataset_path, label in [
+        (TRAIN_DATASET_PATH, "TRAINING"),
+        (TEST_DATASET_PATH, "TEST"),
+        (VAL_DATASET_PATH, "VALIDATION")
+    ]:
+        print_header(f"{label} DATASET TESTS")
+        if os.path.exists(dataset_path):
+            test_prediction(
+                f"{label} - Sarcasm Prediction Loop",
+                last_sentiment="Very Negative",
+                user_input="Oh fantastic job breaking it further",
+                expected_prediction="Sarcastic"
+            )
+            test_prediction(
+                f"{label} - Post-Sarcasm Volatility",
+                last_sentiment="Sarcastic",
+                user_input="I am done with this",
+                expected_prediction="Very Negative"
+            )
+            test_prediction(
+                f"{label} - Positive Reinforcement",
+                last_sentiment="Very Positive",
+                user_input="Still loving it",
+                expected_prediction="Very Positive"
+            )
+            test_prediction(
+                f"{label} - Neutral Uncertainty",
+                last_sentiment="Neutral",
+                user_input="It's not working right",
+                expected_prediction=None
+            )
 
     print_header("TEST COMPLETED")
 
