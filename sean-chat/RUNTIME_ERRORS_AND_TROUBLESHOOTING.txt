@@ -1,0 +1,76 @@
+RUNTIME ERRORS & TROUBLESHOOTING GUIDE
+=====================================
+
+This file explains what runtime errors are, the types you might encounter, and common things that can go wrong when running the files in this project.
+
+-------------------------------------
+WHAT IS A RUNTIME ERROR?
+-------------------------------------
+A runtime error is a problem that happens while your program is running. Unlike syntax errors (which stop your code from starting), runtime errors only show up when you try to use the program.
+
+-------------------------------------
+COMMON TYPES OF RUNTIME ERRORS
+-------------------------------------
+1. **ImportError / ModuleNotFoundError**
+   - Happens when Python can't find a package or module you are trying to use.
+   - Example: `ModuleNotFoundError: No module named 'flask'`
+   - Fix: Install missing package with `pip install flask`.
+
+2. **FileNotFoundError**
+   - Happens when your code tries to open a file that doesn't exist.
+   - Example: `FileNotFoundError: [Errno 2] No such file or directory: 'train.csv'`
+   - Fix: Make sure the file exists in the correct folder.
+
+3. **TypeError**
+   - Happens when you use the wrong type of data (like adding a number to a string).
+   - Example: `TypeError: unsupported operand type(s) for +: 'int' and 'str'`
+   - Fix: Check your code to make sure you are using the right types.
+
+4. **ValueError**
+   - Happens when a function gets a value it can't handle.
+   - Example: `ValueError: could not convert string to float: 'abc'`
+   - Fix: Make sure your data is in the correct format.
+
+5. **ConnectionError / URLError**
+   - Happens when your code tries to connect to a server or network and fails.
+   - Example: `URLError(ConnectionRefusedError(111, 'Connection refused'))`
+   - Fix: Check your network, server address, and firewall settings.
+
+6. **KeyError / IndexError**
+   - Happens when you try to access a dictionary key or list index that doesn't exist.
+   - Example: `KeyError: 'name'` or `IndexError: list index out of range`
+   - Fix: Make sure the key or index exists before using it.
+
+-------------------------------------
+THINGS THAT CAN GO WRONG
+-------------------------------------
+- **Missing dependencies:** Not all required Python packages are installed.
+- **Missing files:** Data files like CSVs are not present or are in the wrong folder.
+- **Wrong Python version:** Some code may require a specific version of Python.
+- **Network issues:** Server/client programs may not connect if on different networks or blocked by firewalls.
+- **Permission errors:** You may not have permission to read/write files.
+- **Incorrect file paths:** Code may look for files in the wrong location.
+- **Syntax errors:** Typos or mistakes in code can prevent it from running.
+- **Logic errors:** The code runs but does not do what you expect (harder to spot).
+
+-------------------------------------
+TROUBLESHOOTING TIPS
+-------------------------------------
+- Read the error message carefully; it often tells you what went wrong.
+- Check that all required files and packages are present.
+- Make sure you are in the correct folder when running commands.
+- If you get a network error, check your connection and server address.
+- Search online for the error message if you don't understand it.
+- Ask for help if you are stuck—everyone runs into errors sometimes!
+
+-------------------------------------
+GLOSSARY
+-------------------------------------
+- **Runtime Error:** Problem that happens while the program is running.
+- **Syntax Error:** Problem that stops the program from starting (usually a typo).
+- **Dependency:** Extra code or package your program needs to work.
+- **Network:** How computers connect and talk to each other.
+- **Server/Client:** Server waits for messages, client sends messages.
+
+-------------------------------------
+If you see an error, don't worry! Errors are a normal part of coding. Use this guide to help fix them.
