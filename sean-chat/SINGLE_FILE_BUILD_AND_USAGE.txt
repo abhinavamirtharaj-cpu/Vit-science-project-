@@ -1,0 +1,63 @@
+SINGLE-FILE EXECUTABLE: BUILD & USAGE GUIDE
+===========================================
+
+This guide explains how to build and run your project as a high-performance, standalone executable (.exe) with no external dependencies, using Nuitka. It also covers the new code changes for resource management and automation.
+
+-------------------------------------------
+1. PROJECT STRUCTURE CHANGES
+-------------------------------------------
+- All model/data/config files must be placed in the models/ directory.
+- A new utility, get_resource_path.py, is used to access files inside the executable.
+- All file access in the code now uses get_resource_path for compatibility with single-file builds.
+- An automation script, build_dist.py, is provided to build the executable.
+
+-------------------------------------------
+2. HOW TO BUILD THE EXECUTABLE
+-------------------------------------------
+1. Open a terminal in your project folder.
+2. Run the build script:
+   python build_dist.py
+   (This will create a virtual environment, install only essential dependencies, and build the .exe using Nuitka.)
+3. The resulting .exe will appear in your project directory.
+
+-------------------------------------------
+3. HOW TO USE get_resource_path
+-------------------------------------------
+- Instead of opening files with a direct path, use:
+    from get_resource_path import get_resource_path
+    path = get_resource_path('models/your_file')
+- This ensures your code works both in development and when bundled as a single file.
+
+-------------------------------------------
+4. WHAT THE BUILD SCRIPT DOES
+-------------------------------------------
+- Sets up a clean virtual environment (build_env)
+- Installs Nuitka and only the required packages (edit as needed)
+- Runs Nuitka with --onefile and --noconsole, bundling the models/ folder
+- Produces a single .exe file with all code and data inside
+
+-------------------------------------------
+5. TROUBLESHOOTING & TIPS
+-------------------------------------------
+- Make sure all required files are in the models/ directory before building.
+- If you add new dependencies, update build_dist.py accordingly.
+- If you see errors about missing files at runtime, check your use of get_resource_path.
+- For best performance, use ONNX Runtime or other optimized libraries for inference.
+- If you want a console window, remove --noconsole from the build command.
+
+-------------------------------------------
+6. DRY RUN (SYNTAX CHECK)
+-------------------------------------------
+To check for syntax errors before building, run:
+    python -m py_compile get_resource_path.py build_dist.py
+    # (Add other .py files as needed)
+
+-------------------------------------------
+7. SUMMARY
+-------------------------------------------
+- All code and data are bundled for offline use.
+- No downloads or external dependencies at runtime.
+- Use get_resource_path for all file access.
+- Use build_dist.py to automate the build process.
+
+You now have a portable, high-performance single-file executable version of your project!

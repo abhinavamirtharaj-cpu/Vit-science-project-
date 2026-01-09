@@ -1,0 +1,71 @@
+SINGLE-FILE EXECUTABLE BUILD STEPS (FOR BEGINNERS)
+==================================================
+
+This guide explains how to use the new code and scripts to create a single-file, standalone executable (.exe) for this project. No coding experience is required!
+
+----------------------------------------
+WHAT YOU NEED:
+----------------------------------------
+- Python 3.8 or higher installed on your computer
+- Internet connection (for building only, not for running the app)
+- This project folder (with all files and the models/ directory)
+
+----------------------------------------
+STEP 1: PREPARE YOUR FILES
+----------------------------------------
+- Make sure all your model files, data files, and any assets are in the models/ folder inside your project.
+- Do NOT delete or move get_resource_path.py or build_dist.py.
+
+----------------------------------------
+STEP 2: OPEN A TERMINAL OR COMMAND PROMPT
+----------------------------------------
+- On Windows: Press Windows+R, type cmd, and press Enter.
+- On Mac: Open Terminal from Applications > Utilities.
+- On Linux: Open Terminal from your applications menu.
+- Use the cd command to go to your project folder. Example:
+  cd path/to/Vit-science-project-
+
+----------------------------------------
+STEP 3: RUN THE BUILD SCRIPT
+----------------------------------------
+- In the terminal, type:
+  python build_dist.py
+- This will:
+  1. Create a clean build environment
+  2. Install only the needed packages
+  3. Use Nuitka to bundle your app and all files into one .exe
+- Wait for the process to finish. It may take a few minutes.
+
+----------------------------------------
+STEP 4: FIND YOUR EXECUTABLE
+----------------------------------------
+- When done, look in your project folder for a file named run.exe (or similar).
+- This is your standalone app! You can copy it to any Windows computer and run it without installing Python or any packages.
+
+----------------------------------------
+TROUBLESHOOTING
+----------------------------------------
+- If you see errors about missing files, make sure all assets are in the models/ folder.
+- If you see errors about missing packages, check requirements in build_dist.py and add them if needed.
+- If you get a permission error, try running the terminal as administrator.
+- If you are on Mac or Linux, you may need to adjust the build_dist.py script for your OS.
+
+----------------------------------------
+HOW THE NEW CODE WORKS
+----------------------------------------
+- All file and model loading now uses get_resource_path.py. This makes sure your app finds its files even after being bundled.
+- The build_dist.py script automates the process so you don't have to run complicated commands.
+- No files are downloaded at runtime. Everything is included in the .exe.
+
+----------------------------------------
+GLOSSARY
+----------------------------------------
+- Executable (.exe): A program you can run by double-clicking.
+- Terminal/Command Prompt: A window where you type commands for your computer.
+- Bundle: To package everything needed into one file.
+- Asset: Any file your program needs (like models, data, or images).
+
+----------------------------------------
+YOU DID IT!
+----------------------------------------
+You now know how to build a single-file app from this project. If you get stuck, read the error messages and check this guide.
