@@ -106,9 +106,11 @@ def load_data_and_train(csv_path):
     """
     Reads the CSV file and trains the Markov Chain model.
     """
+    from get_resource_path import get_resource_path
     history = []
-    if os.path.exists(csv_path):
-        with open(csv_path, 'r', newline='', encoding='utf-8') as f:
+    resource_path = get_resource_path(os.path.join('models', os.path.basename(csv_path)))
+    if os.path.exists(resource_path):
+        with open(resource_path, 'r', newline='', encoding='utf-8') as f:
             reader = csv.DictReader(f)
             for row in reader:
                 history.append(row)

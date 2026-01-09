@@ -58,7 +58,9 @@ SENTENCES = {
 }
 
 def generate_dataset(filename, num_rows=1000):
-    with open(filename, 'w', newline='', encoding='utf-8') as f:
+    from get_resource_path import get_resource_path
+    out_path = get_resource_path(filename)
+    with open(out_path, 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
         # Header matching the project's expectation + extra metadata if needed
         writer.writerow(['contact_id', 'contact_name', 'dir', 'text', 'sentiment_category'])

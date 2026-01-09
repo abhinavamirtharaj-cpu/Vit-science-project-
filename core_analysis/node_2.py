@@ -24,7 +24,8 @@ class SentimentPredictorNode:
 
     def load_and_train(self):
         """Reads sentiment scores from the training CSV file and builds the model."""
-        target_path = self.training_path
+        from get_resource_path import get_resource_path
+        target_path = get_resource_path(os.path.join('models', os.path.basename(self.training_path)))
         if not os.path.exists(target_path):
             print(f"Warning: Training file not found at {target_path}")
             return
@@ -32,7 +33,6 @@ class SentimentPredictorNode:
         try:
             with open(target_path, 'r', newline='', encoding='utf-8') as f:
                 reader = csv.DictReader(f)
-                
                 # Group messages by contact to analyze individual flows
                 user_flows = defaultdict(list)
                 for row in reader:

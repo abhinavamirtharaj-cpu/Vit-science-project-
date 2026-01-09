@@ -9,12 +9,13 @@ Functions:
 - get_all_messages_for_analysis(): get all messages for sentiment context analysis
 This module is importable and can be used by other Python modules/devices.
 """
+
 import csv
 import os
 from datetime import datetime
+from get_resource_path import get_resource_path
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
-CSV_FILE = os.path.join(ROOT, 'chat_history_global.csv')
+CSV_FILE = get_resource_path(os.path.join('models', 'chat_history_global.csv'))
 
 CSV_HEADER = ['contact_id','contact_name','dir','iso_time','date','time','text','sentiment_polarity','sentiment_category','sentiment_emoji','color_hex','saved_at']
 

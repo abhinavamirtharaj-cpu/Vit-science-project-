@@ -40,7 +40,8 @@ COLORS = {
 
 class UserInsightEngine:
     def __init__(self):
-        self.db_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'user_insights.json')
+        from get_resource_path import get_resource_path
+        self.db_path = get_resource_path(os.path.join('models', 'user_insights.json'))
         self.insights = self._load_db()
 
     def _load_db(self):
