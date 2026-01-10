@@ -311,13 +311,12 @@
         <div id="joinScreen" class="join-screen">
             <h1>💬 Real-Time Chat</h1>
             <p style="color: #666; margin-bottom: 30px;">With Sentiment Analysis</p>
-            <form class="join-form" onsubmit="joinRoom(event)">
+            <form class="join-form" onsubmit="joinChat(event)">
                 <input type="text" id="usernameInput" placeholder="Enter your name" required maxlength="20">
-                <input type="text" id="roomInput" placeholder="Enter room code (e.g., room123)" required maxlength="30">
-                <button type="submit" class="join-btn">Join Chat</button>
+                <button type="submit" class="join-btn">Start Chat</button>
             </form>
             <p style="color: #999; margin-top: 20px; font-size: 0.9em;">
-                Share the room code with a friend to chat!
+                Connecting you with the next available person...
             </p>
         </div>
 
@@ -325,13 +324,13 @@
         <div id="chatScreen" class="hidden">
             <div class="chat-header">
                 <div>
-                    <h2>💬 Chat Room</h2>
+                    <h2>💬 Chat</h2>
                     <div class="room-info">
-                        Room: <span id="currentRoom">-</span>
+                        <span id="chatStatus">Waiting for partner...</span>
                     </div>
                 </div>
                 <div class="users-count">
-                    <span id="usersCount">1</span> online
+                    <span id="connectionStatus">●</span> <span id="partnerName">-</span>
                 </div>
             </div>
 
@@ -365,6 +364,7 @@
         let currentRoom = '';
         let currentSid = '';
         let typingTimeout;
+        let partnerConnected = false;
 
         // Initialize socket connection
         function initSocket() {
@@ -378,21 +378,37 @@
                 currentSid = data.sid;
             });
 
-            socket.on('room_joined', (data) => {
-                document.getElementById('currentRoom').textContent = data.room_id;
-                document.getElementById('usersCount').textContent = data.users_count;
+            socket.on('paired', (data) => {
+                currentRoom = data.room_id;
+                partnerConnected = true;
+                document.getElementById('chatStatus').textContent = 'Connected';
+                document.getElementById('partnerName').textContent = data.partner_name || 'Partner';
+                document.getElementById('connectionStatus').style.color = '#4CAF50';
+                addStatusMessage('Connected! You can now start chatting.');
                 showChat();
             });
 
-            socket.on('user_joined', (data) => {
-                addStatusMessage(`${data.username} joined the chat`);
-                document.getElementById('usersCount').textContent = data.users_count;
+            socket.on('waiting', () => {
+                showChat();
+                document.getElementById('chatStatus').textContent = 'Waiting for partner...';
+                document.getElementById('connectionStatus').style.color = '#FFC107';
+                addStatusMessage('Waiting for someone to connect...');
             });
 
-            socket.on('user_left', (data) => {
-                addStatusMessage(`${data.username} left the chat`);
-                const count = parseInt(document.getElementById('usersCount').textContent) - 1;
-                document.getElementById('usersCount').textContent = count;
+            socket.on('partner_joined', (data) => {
+                partnerConnected = true;
+                document.getElementById('chatStatus').textContent = 'Connected';
+                document.getElementById('partnerName').textContent = data.username;
+                document.getElementById('connectionStatus').style.color = '#4CAF50';
+                addStatusMessage(`${data.username} joined the chat`);
+            });
+
+            socket.on('partner_left', (data) => {
+                partnerConnected = false;
+                document.getElementById('chatStatus').textContent = 'Partner disconnected';
+                document.getElementById('partnerName').textContent = '-';
+                document.getElementById('connectionStatus').style.color = '#f44336';
+                addStatusMessage('Your partner left the chat');
             });
 
             socket.on('chat_history', (data) => {
@@ -415,24 +431,20 @@
             });
 
             socket.on('user_typing', (data) => {
-                showTypingIndicator(data.username, data.is_typing);
-            });
-
-            socket.on('room_full', (data) => {
-                alert(data.error);
+                if (partnerConnected) {
+                    showTypingIndicator(data.username, data.is_typing);
+                }
             });
         }
 
-        function joinRoom(event) {
+        function joinChat(event) {
             event.preventDefault();
             currentUsername = document.getElementById('usernameInput').value.trim();
-            currentRoom = document.getElementById('roomInput').value.trim();
 
-            if (!currentUsername || !currentRoom) return;
+            if (!currentUsername) return;
 
-            socket.emit('join_room', {
-                username: currentUsername,
-                room_id: currentRoom
+            socket.emit('find_partner', {
+                username: currentUsername
             });
         }
 
@@ -446,7 +458,12 @@
             const input = document.getElementById('messageInput');
             const text = input.value.trim();
 
-            if (!text) return;
+            if (!text || !partnerConnected) {
+                if (!partnerConnected) {
+                    addStatusMessage('Waiting for partner to connect...');
+                }
+                return;
+            }
 
             socket.emit('send_message', {
                 text: text,
