@@ -1,9 +1,3 @@
-databases:
-  - name: vit-sentiment-db
-    databaseName: sentiment_analysis
-    user: sentiment_user
-    plan: free
-
 services:
   - type: web
     name: vit-sentiment-analyzer
@@ -14,9 +8,5 @@ services:
     envVars:
       - key: PYTHON_VERSION
         value: 3.12.1
-      - key: DATABASE_URL
-        fromDatabase:
-          name: vit-sentiment-db
-          property: connectionString
       - key: FLASK_ENV
         value: production
