@@ -24,7 +24,7 @@ from ui_io.storage import get_history
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', secrets.token_hex(32))
-socketio = SocketIO(app, cors_allowed_origins="*", async_mode='gevent')
+socketio = SocketIO(app, cors_allowed_origins="*", async_mode='eventlet')
 
 # Store active rooms and users
 active_rooms = {}  # {room_id: [user1_sid, user2_sid]}
