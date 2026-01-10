@@ -10,6 +10,7 @@ services:
   - type: web
     name: vit-sentiment-analyzer
     env: python
+    branch: clone
     buildCommand: pip install -r requirements.txt && python -m textblob.download_corpora
     startCommand: gunicorn run:app
     envVars:
