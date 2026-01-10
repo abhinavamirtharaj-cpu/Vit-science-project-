@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Chat with Sentiment Analysis</title>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .chat-container {
+            width: 95%;
+            max-width: 900px;
+            height: 90vh;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* Join Screen */
+        .join-screen {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding: 40px;
+        }
+
+        .join-screen h1 {
+            color: #667eea;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+
+        .join-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .join-form input {
+            padding: 15px 20px;
+            font-size: 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            transition: border-color 0.3s;
+        }
+
+        .join-form input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .join-btn {
+            padding: 15px 30px;
+            font-size: 18px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .join-btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* Chat Header */
+        .chat-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chat-header h2 {
+            font-size: 1.5em;
+        }
+
+        .room-info {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        .users-count {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
+
+        /* Messages Area */
+        .messages-container {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+
+        .message {
+            display: flex;
+            margin-bottom: 15px;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .message.own {
+            justify-content: flex-end;
+        }
+
+        .message.other {
+            justify-content: flex-start;
+        }
+
+        .message-bubble {
+            max-width: 60%;
+            padding: 12px 18px;
+            border-radius: 18px;
+            position: relative;
+            word-wrap: break-word;
+        }
+
+        .message.own .message-bubble {
+            background: #667eea;
+            color: white;
+            border-bottom-right-radius: 4px;
+        }
+
+        .message.other .message-bubble {
+            background: white;
+            color: #333;
+            border-bottom-left-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .message-header {
+            font-size: 0.75em;
+            opacity: 0.8;
+            margin-bottom: 4px;
+            font-weight: 600;
+        }
+
+        .message-text {
+            font-size: 0.95em;
+            line-height: 1.4;
+        }
+
+        .message-footer {
+            font-size: 0.7em;
+            opacity: 0.7;
+            margin-top: 6px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sentiment-indicator {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.85em;
+            margin-left: 5px;
+        }
+
+        .sentiment-positive { background: rgba(76, 175, 80, 0.2); }
+        .sentiment-negative { background: rgba(244, 67, 54, 0.2); }
+        .sentiment-neutral { background: rgba(255, 193, 7, 0.2); }
+
+        /* Typing Indicator */
+        .typing-indicator {
+            padding: 10px 20px;
+            font-size: 0.85em;
+            color: #666;
+            font-style: italic;
+        }
+
+        .typing-dots {
+            display: inline-flex;
+            gap: 4px;
+        }
+
+        .typing-dots span {
+            width: 6px;
+            height: 6px;
+            background: #666;
+            border-radius: 50%;
+            animation: typing 1.4s infinite;
+        }
+
+        .typing-dots span:nth-child(2) { animation-delay: 0.2s; }
+        .typing-dots span:nth-child(3) { animation-delay: 0.4s; }
+
+        @keyframes typing {
+            0%, 60%, 100% { transform: translateY(0); }
+            30% { transform: translateY(-10px); }
+        }
+
+        /* Input Area */
+        .input-container {
+            padding: 20px;
+            background: white;
+            border-top: 1px solid #e0e0e0;
+            display: flex;
+            gap: 10px;
+        }
+
+        .message-input {
+            flex: 1;
+            padding: 12px 20px;
+            font-size: 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 25px;
+            transition: border-color 0.3s;
+        }
+
+        .message-input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .send-btn {
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .send-btn:hover {
+            transform: scale(1.05);
+        }
+
+        .send-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* Status Messages */
+        .status-message {
+            text-align: center;
+            padding: 10px;
+            background: rgba(102, 126, 234, 0.1);
+            border-radius: 10px;
+            margin: 10px 0;
+            font-size: 0.9em;
+            color: #667eea;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        /* Scrollbar */
+        .messages-container::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .messages-container::-webkit-scrollbar-track {
+            background: #f5f5f5;
+        }
+
+        .messages-container::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border-radius: 4px;
+        }
+
+        .messages-container::-webkit-scrollbar-thumb:hover {
+            background: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Join Screen -->
+        <div id="joinScreen" class="join-screen">
+            <h1>💬 Real-Time Chat</h1>
+            <p style="color: #666; margin-bottom: 30px;">With Sentiment Analysis</p>
+            <form class="join-form" onsubmit="joinRoom(event)">
+                <input type="text" id="usernameInput" placeholder="Enter your name" required maxlength="20">
+                <input type="text" id="roomInput" placeholder="Enter room code (e.g., room123)" required maxlength="30">
+                <button type="submit" class="join-btn">Join Chat</button>
+            </form>
+            <p style="color: #999; margin-top: 20px; font-size: 0.9em;">
+                Share the room code with a friend to chat!
+            </p>
+        </div>
+
+        <!-- Chat Screen -->
+        <div id="chatScreen" class="hidden">
+            <div class="chat-header">
+                <div>
+                    <h2>💬 Chat Room</h2>
+                    <div class="room-info">
+                        Room: <span id="currentRoom">-</span>
+                    </div>
+                </div>
+                <div class="users-count">
+                    <span id="usersCount">1</span> online
+                </div>
+            </div>
+
+            <div class="messages-container" id="messagesContainer">
+                <div class="status-message">Welcome! Start chatting...</div>
+            </div>
+
+            <div class="typing-indicator hidden" id="typingIndicator">
+                <span id="typingUsername">Someone</span> is typing
+                <div class="typing-dots">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <input 
+                    type="text" 
+                    id="messageInput" 
+                    class="message-input" 
+                    placeholder="Type your message..." 
+                    maxlength="500"
+                >
+                <button class="send-btn" onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let socket;
+        let currentUsername = '';
+        let currentRoom = '';
+        let currentSid = '';
+        let typingTimeout;
+
+        // Initialize socket connection
+        function initSocket() {
+            socket = io();
+
+            socket.on('connect', () => {
+                console.log('Connected to server');
+            });
+
+            socket.on('connected', (data) => {
+                currentSid = data.sid;
+            });
+
+            socket.on('room_joined', (data) => {
+                document.getElementById('currentRoom').textContent = data.room_id;
+                document.getElementById('usersCount').textContent = data.users_count;
+                showChat();
+            });
+
+            socket.on('user_joined', (data) => {
+                addStatusMessage(`${data.username} joined the chat`);
+                document.getElementById('usersCount').textContent = data.users_count;
+            });
+
+            socket.on('user_left', (data) => {
+                addStatusMessage(`${data.username} left the chat`);
+                const count = parseInt(document.getElementById('usersCount').textContent) - 1;
+                document.getElementById('usersCount').textContent = count;
+            });
+
+            socket.on('chat_history', (data) => {
+                data.messages.forEach(msg => {
+                    if (msg.text) {
+                        addMessage(msg.text, msg.sentiment_category || 'Neutral', false, msg.sentiment_emoji || '😐');
+                    }
+                });
+            });
+
+            socket.on('new_message', (data) => {
+                const isOwn = data.sender_sid === currentSid;
+                addMessage(
+                    data.text, 
+                    data.sentiment.category, 
+                    isOwn, 
+                    data.sentiment.emoji,
+                    data.username
+                );
+            });
+
+            socket.on('user_typing', (data) => {
+                showTypingIndicator(data.username, data.is_typing);
+            });
+
+            socket.on('room_full', (data) => {
+                alert(data.error);
+            });
+        }
+
+        function joinRoom(event) {
+            event.preventDefault();
+            currentUsername = document.getElementById('usernameInput').value.trim();
+            currentRoom = document.getElementById('roomInput').value.trim();
+
+            if (!currentUsername || !currentRoom) return;
+
+            socket.emit('join_room', {
+                username: currentUsername,
+                room_id: currentRoom
+            });
+        }
+
+        function showChat() {
+            document.getElementById('joinScreen').classList.add('hidden');
+            document.getElementById('chatScreen').classList.remove('hidden');
+            document.getElementById('messageInput').focus();
+        }
+
+        function sendMessage() {
+            const input = document.getElementById('messageInput');
+            const text = input.value.trim();
+
+            if (!text) return;
+
+            socket.emit('send_message', {
+                text: text,
+                room_id: currentRoom
+            });
+
+            input.value = '';
+            stopTyping();
+        }
+
+        function addMessage(text, sentiment, isOwn, emoji = '😐', username = '') {
+            const container = document.getElementById('messagesContainer');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${isOwn ? 'own' : 'other'}`;
+
+            const getSentimentClass = (sentiment) => {
+                if (sentiment.includes('Positive')) return 'sentiment-positive';
+                if (sentiment.includes('Negative')) return 'sentiment-negative';
+                return 'sentiment-neutral';
+            };
+
+            messageDiv.innerHTML = `
+                <div class="message-bubble">
+                    ${!isOwn && username ? `<div class="message-header">${username}</div>` : ''}
+                    <div class="message-text">${escapeHtml(text)}</div>
+                    <div class="message-footer">
+                        <span>${new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</span>
+                        <span class="sentiment-indicator ${getSentimentClass(sentiment)}">
+                            ${emoji} ${sentiment}
+                        </span>
+                    </div>
+                </div>
+            `;
+
+            container.appendChild(messageDiv);
+            container.scrollTop = container.scrollHeight;
+        }
+
+        function addStatusMessage(text) {
+            const container = document.getElementById('messagesContainer');
+            const statusDiv = document.createElement('div');
+            statusDiv.className = 'status-message';
+            statusDiv.textContent = text;
+            container.appendChild(statusDiv);
+            container.scrollTop = container.scrollHeight;
+        }
+
+        function showTypingIndicator(username, isTyping) {
+            const indicator = document.getElementById('typingIndicator');
+            const usernameSpan = document.getElementById('typingUsername');
+            
+            if (isTyping) {
+                usernameSpan.textContent = username;
+                indicator.classList.remove('hidden');
+            } else {
+                indicator.classList.add('hidden');
+            }
+        }
+
+        function handleTyping() {
+            socket.emit('typing', {
+                room_id: currentRoom,
+                is_typing: true
+            });
+
+            clearTimeout(typingTimeout);
+            typingTimeout = setTimeout(stopTyping, 1000);
+        }
+
+        function stopTyping() {
+            socket.emit('typing', {
+                room_id: currentRoom,
+                is_typing: false
+            });
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // Event listeners
+        document.getElementById('messageInput').addEventListener('keypress', (e) => {
+            handleTyping();
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+
+        // Initialize on page load
+        initSocket();
+    </script>
+</body>
+</html>
