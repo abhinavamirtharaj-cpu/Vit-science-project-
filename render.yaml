@@ -1,12 +1,10 @@
-services:
-  # PostgreSQL Database (Free Tier)
-  - type: pserv
-    name: vit-sentiment-db
-    plan: free
+databases:
+  - name: vit-sentiment-db
     databaseName: sentiment_analysis
-    databaseUser: sentiment_user
-  
-  # Web Application
+    user: sentiment_user
+    plan: free
+
+services:
   - type: web
     name: vit-sentiment-analyzer
     env: python
