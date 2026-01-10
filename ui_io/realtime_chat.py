@@ -1,18 +1,19 @@
 """
 realtime_chat.py
-Real-time two-person chat with WebSocket support and sentiment analysis.
+WhatsApp-style real-time chat with WebSocket support and sentiment analysis.
 
 Features:
 - Real-time messaging with WebSockets
-- Room-based chat (2 users per room)
+- Contact-based persistent messaging
 - Sentiment analysis on all messages
 - Left/right message alignment (like WhatsApp)
-- Message persistence
+- Offline message support
+- Message persistence with history loading
 """
 import os
 import sys
 from flask import Flask, render_template, request, session
-from flask_socketio import SocketIO, emit, join_room, leave_room
+from flask_socketio import SocketIO, emit
 from datetime import datetime
 import secrets
 
@@ -20,21 +21,26 @@ import secrets
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from core_analysis.chat_service import process_user_message
-from ui_io.storage import get_history
+from ui_io.storage import append_message, get_history
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', secrets.token_hex(32))
 socketio = SocketIO(app, cors_allowed_origins="*", async_mode='threading')
 
-# Store active rooms and users
-waiting_user = None  # Single user waiting to be paired: {'sid': sid, 'username': username}
-active_rooms = {}  # {room_id: {'user1': {'sid': sid, 'username': username}, 'user2': {...}}}
-user_rooms = {}    # {sid: room_id}
+# Store online users
+online_users = {}  # {user_id: sid}
+sid_to_user = {}   # {sid: user_id}
 
 
 @app.route('/')
 def index():
+    return render_template('index.html')
+
+
+@app.route('/chat')
+def chat():
     return render_template('chat.html')
+
 
 
 @socketio.on('connect')
@@ -47,155 +53,139 @@ def handle_connect():
 @socketio.on('disconnect')
 def handle_disconnect():
     """Handle user disconnection"""
-    global waiting_user
     sid = request.sid
     
-    # Check if disconnecting user was waiting
-    if waiting_user and waiting_user['sid'] == sid:
-        waiting_user = None
-        print(f'Waiting user disconnected: {sid}')
+    if sid in sid_to_user:
+        user_id = sid_to_user[sid]
+        
+        # Remove from online users
+        if user_id in online_users:
+            del online_users[user_id]
+        
+        del sid_to_user[sid]
+        
+        # Notify other users that this user went offline
+        emit('user_status', {
+            'user_id': user_id,
+            'online': False
+        }, broadcast=True)
+        
+        print(f'User {user_id} disconnected')
+
+
+@socketio.on('register_user')
+def handle_register_user(data):
+    """Register user when they join"""
+    user_id = data.get('id')
+    username = data.get('name', 'Anonymous')
+    sid = request.sid
+    
+    # Store user mappings
+    online_users[user_id] = sid
+    sid_to_user[sid] = user_id
+    
+    # Notify all users that this user is online
+    emit('user_status', {
+        'user_id': user_id,
+        'online': True
+    }, broadcast=True)
+    
+    print(f'User registered: {username} ({user_id})')
+
+
+@socketio.on('load_messages')
+def handle_load_messages(data):
+    """Load message history for a contact"""
+    contact_id = data.get('contact_id')
+    sid = request.sid
+    
+    if sid not in sid_to_user:
         return
     
-    # Leave room if in one
-    if sid in user_rooms:
-        room_id = user_rooms[sid]
-        leave_room(room_id)
-        
-        # Notify partner
-        if room_id in active_rooms:
-            room_data = active_rooms[room_id]
-            partner_sid = None
-            disconnected_username = ''
-            
-            if room_data['user1']['sid'] == sid:
-                partner_sid = room_data['user2']['sid']
-                disconnected_username = room_data['user1']['username']
-            elif room_data['user2']['sid'] == sid:
-                partner_sid = room_data['user1']['sid']
-                disconnected_username = room_data['user2']['username']
-            
-            if partner_sid:
-                emit('partner_left', {
-                    'username': disconnected_username
-                }, room=partner_sid)
-                
-                # Remove partner from room tracking
-                if partner_sid in user_rooms:
-                    del user_rooms[partner_sid]
-            
-            # Clean up room
-            del active_rooms[room_id]
-        
-        del user_rooms[sid]
+    user_id = sid_to_user[sid]
     
-    print(f'Client disconnected: {sid}')
-
-
-@socketio.on('find_partner')
-def handle_find_partner(data):
-    """Match user with next available partner"""
-    global waiting_user
-    username = data.get('username', 'Anonymous')
-    sid = request.sid
+    # Load messages between these two users
+    conversation_id = get_conversation_id(user_id, contact_id)
+    history = get_history(conversation_id)
     
-    # Check if someone is already waiting
-    if waiting_user and waiting_user['sid'] != sid:
-        # Pair them together
-        room_id = f"room_{waiting_user['sid'][:8]}_{sid[:8]}"
-        
-        # Create room with both users
-        active_rooms[room_id] = {
-            'user1': waiting_user,
-            'user2': {'sid': sid, 'username': username}
-        }
-        
-        # Join both to room
-        user_rooms[waiting_user['sid']] = room_id
-        user_rooms[sid] = room_id
-        
-        join_room(room_id, sid=waiting_user['sid'])
-        join_room(room_id, sid=sid)
-        
-        # Notify both users they're paired
-        emit('paired', {
-            'room_id': room_id,
-            'partner_name': username
-        }, room=waiting_user['sid'])
-        
-        emit('paired', {
-            'room_id': room_id,
-            'partner_name': waiting_user['username']
-        })
-        
-        # Send chat history
-        contact = {'id': room_id, 'name': room_id}
-        history = get_history(room_id)
-        if history:
-            emit('chat_history', {'messages': history[-50:]}, room=room_id)
-        
-        print(f'Paired {waiting_user["username"]} with {username} in room {room_id}')
-        
-        # Clear waiting user
-        waiting_user = None
-    else:
-        # No one waiting, this user becomes the waiting user
-        waiting_user = {'sid': sid, 'username': username}
-        user_rooms[sid] = None  # Not in a room yet
-        emit('waiting')
-        print(f'User {username} ({sid}) is waiting for a partner')
+    messages = []
+    if history:
+        for msg in history[-50:]:  # Last 50 messages
+            messages.append({
+                'text': msg.get('message', ''),
+                'from': msg.get('from', ''),
+                'timestamp': msg.get('timestamp', ''),
+                'sentiment': {
+                    'category': msg.get('sentiment', {}).get('category', 'Neutral'),
+                    'emoji': msg.get('sentiment', {}).get('emoji', '😐'),
+                    'polarity': msg.get('sentiment', {}).get('polarity_score', 0)
+                }
+            })
+    
+    emit('messages_loaded', {'messages': messages})
+    print(f'Loaded {len(messages)} messages for {user_id} with {contact_id}')
 
 
 @socketio.on('send_message')
 def handle_send_message(data):
     """Handle new message from user"""
     text = data.get('text', '').strip()
-    room_id = data.get('room_id', 'default')
-    sid = request.sid
-    username = user_names.get(sid, 'Anonymous')
+    to_user = data.get('to')
+    from_user = data.get('from')
     
-    if not text:
+    if not text or not to_user or not from_user:
         return
     
     # Process message with sentiment analysis
-    contact = {'id': room_id, 'name': room_id}
+    contact = {'id': to_user, 'name': to_user}
     result = process_user_message(text, contact)
     
-    # Prepare message data
+    # Get conversation ID for storage
+    conversation_id = get_conversation_id(from_user, to_user)
+    
+    # Save message
     message_data = {
-        'id': datetime.utcnow().isoformat(),
-        'text': text,
-        'username': username,
-        'sender_sid': sid,
+        'from': from_user,
+        'to': to_user,
+        'message': text,
         'timestamp': datetime.utcnow().isoformat(),
         'sentiment': {
             'category': result['sentiment']['category'],
             'emoji': result['sentiment']['emoji'],
-            'polarity': result['sentiment']['polarity_score'],
-            'color': result['sentiment']['color'],
-            'description': result['sentiment']['description']
+            'polarity': result['sentiment']['polarity_score']
         }
     }
     
-    # Broadcast to room
-    emit('new_message', message_data, room=room_id)
+    append_message(conversation_id, text, result['sentiment'])
     
-    print(f'Message from {username} in {room_id}: {text[:50]}...')
+    # Send confirmation to sender
+    emit('message_sent', {
+        'text': text,
+        'sentiment': message_data['sentiment']
+    })
+    
+    # Send to recipient if online
+    if to_user in online_users:
+        recipient_sid = online_users[to_user]
+        emit('new_message', {
+            'from': from_user,
+            'text': text,
+            'sentiment': message_data['sentiment'],
+            'timestamp': message_data['timestamp']
+        }, room=recipient_sid)
+    
+    print(f'Message from {from_user} to {to_user}: {text[:50]}...')
 
 
-@socketio.on('typing')
-def handle_typing(data):
-    """Handle typing indicator"""
-    room_id = data.get('room_id')
-    username = user_names.get(request.sid, 'Anonymous')
-    
-    emit('user_typing', {
-        'username': username,
-        'is_typing': data.get('is_typing', False)
-    }, room=room_id, include_self=False)
+def get_conversation_id(user1, user2):
+    """Generate consistent conversation ID for two users"""
+    # Sort IDs to ensure same conversation ID regardless of order
+    sorted_ids = sorted([user1, user2])
+    return f"conv_{sorted_ids[0]}_{sorted_ids[1]}"
 
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
-    print(f"Starting Real-time Chat Server on port {port}...")
+    print(f"Starting WhatsApp-style Chat Server on port {port}...")
     print(f"Access at http://0.0.0.0:{port}/")
     socketio.run(app, host="0.0.0.0", port=port, debug=False)

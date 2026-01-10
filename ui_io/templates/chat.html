@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real-Time Chat with Sentiment Analysis</title>
+    <title>SEAN - Chat</title>
     <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
     <style>
         * {
@@ -13,251 +13,268 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(135deg, #0a1929 0%, #1a237e 50%, #4a148c 100%);
             height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .chat-container {
-            width: 95%;
-            max-width: 900px;
-            height: 90vh;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            display: flex;
-            flex-direction: column;
             overflow: hidden;
         }
 
-        /* Join Screen */
-        .join-screen {
+        .chat-container {
+            display: flex;
+            height: 100vh;
+        }
+
+        /* Sidebar - Contacts */
+        .sidebar {
+            width: 320px;
+            background: rgba(10, 25, 41, 0.95);
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            padding: 40px;
         }
 
-        .join-screen h1 {
-            color: #667eea;
-            margin-bottom: 30px;
-            font-size: 2.5em;
+        .sidebar-header {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.3);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        .join-form {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            width: 100%;
-            max-width: 400px;
+        .sidebar-header h2 {
+            color: #00e5ff;
+            font-size: 20px;
+            margin-bottom: 10px;
         }
 
-        .join-form input {
-            padding: 15px 20px;
-            font-size: 16px;
-            border: 2px solid #e0e0e0;
-            border-radius: 10px;
-            transition: border-color 0.3s;
-        }
-
-        .join-form input:focus {
-            outline: none;
-            border-color: #667eea;
-        }
-
-        .join-btn {
-            padding: 15px 30px;
-            font-size: 18px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border: none;
-            border-radius: 10px;
+        .sidebar-header button {
+            background: rgba(0, 229, 255, 0.2);
+            border: 1px solid #00e5ff;
+            color: #00e5ff;
+            padding: 8px 16px;
+            border-radius: 6px;
             cursor: pointer;
-            transition: transform 0.2s;
+            font-size: 14px;
         }
 
-        .join-btn:hover {
-            transform: scale(1.05);
+        .sidebar-header button:hover {
+            background: rgba(0, 229, 255, 0.3);
         }
 
-        /* Chat Header */
-        .chat-header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        .contacts-list {
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .contact-item {
+            padding: 15px 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            cursor: pointer;
+            transition: background 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .contact-item:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .contact-item.active {
+            background: rgba(0, 229, 255, 0.1);
+            border-left: 3px solid #00e5ff;
+        }
+
+        .contact-avatar {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 18px;
             color: white;
+        }
+
+        .contact-info {
+            flex: 1;
+        }
+
+        .contact-name {
+            color: white;
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .contact-status {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 13px;
+            margin-top: 2px;
+        }
+
+        .contact-status.online {
+            color: #00ff88;
+        }
+
+        /* Main Chat Area */
+        .main-chat {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(135deg, #0a1929 0%, #1a237e 50%, #4a148c 100%);
+        }
+
+        .chat-header {
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
             padding: 20px 30px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        .chat-header h2 {
-            font-size: 1.5em;
+        .chat-header-info h2 {
+            color: white;
+            font-size: 20px;
         }
 
-        .room-info {
-            font-size: 0.9em;
-            opacity: 0.9;
+        .chat-header-info .status {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 14px;
+            margin-top: 3px;
         }
 
-        .users-count {
-            background: rgba(255, 255, 255, 0.2);
-            padding: 5px 15px;
-            border-radius: 20px;
+        .chat-header-info .status.online {
+            color: #00ff88;
         }
 
         /* Messages Area */
-        .messages-container {
+        .messages-area {
             flex: 1;
             overflow-y: auto;
-            padding: 20px;
-            background: #f5f5f5;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
         }
 
         .message {
-            display: flex;
-            margin-bottom: 15px;
+            max-width: 60%;
             animation: slideIn 0.3s ease;
         }
 
         @keyframes slideIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
-        .message.own {
-            justify-content: flex-end;
+        .message.sent {
+            align-self: flex-end;
         }
 
-        .message.other {
-            justify-content: flex-start;
+        .message.received {
+            align-self: flex-start;
         }
 
         .message-bubble {
-            max-width: 60%;
             padding: 12px 18px;
             border-radius: 18px;
-            position: relative;
             word-wrap: break-word;
+            position: relative;
         }
 
-        .message.own .message-bubble {
-            background: #667eea;
-            color: white;
+        .message.sent .message-bubble {
+            background: linear-gradient(135deg, #00b8d4, #00e5ff);
+            color: #0a1929;
             border-bottom-right-radius: 4px;
         }
 
-        .message.other .message-bubble {
-            background: white;
-            color: #333;
+        .message.received .message-bubble {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
             border-bottom-left-radius: 4px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        .message-header {
-            font-size: 0.75em;
-            opacity: 0.8;
-            margin-bottom: 4px;
-            font-weight: 600;
+        /* Sentiment-based colors for received messages */
+        .message.received.sentiment-positive .message-bubble {
+            background: rgba(76, 175, 80, 0.3);
+            border: 1px solid rgba(76, 175, 80, 0.5);
+        }
+
+        .message.received.sentiment-negative .message-bubble {
+            background: rgba(244, 67, 54, 0.3);
+            border: 1px solid rgba(244, 67, 54, 0.5);
+        }
+
+        .message.received.sentiment-neutral .message-bubble {
+            background: rgba(255, 193, 7, 0.2);
+            border: 1px solid rgba(255, 193, 7, 0.4);
         }
 
         .message-text {
-            font-size: 0.95em;
+            font-size: 15px;
             line-height: 1.4;
         }
 
         .message-footer {
-            font-size: 0.7em;
-            opacity: 0.7;
-            margin-top: 6px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-top: 6px;
+            font-size: 11px;
+            opacity: 0.7;
         }
 
-        .sentiment-indicator {
+        .sentiment-badge {
             display: inline-flex;
             align-items: center;
-            gap: 5px;
+            gap: 4px;
             padding: 2px 8px;
             border-radius: 10px;
-            font-size: 0.85em;
-            margin-left: 5px;
-        }
-
-        .sentiment-positive { background: rgba(76, 175, 80, 0.2); }
-        .sentiment-negative { background: rgba(244, 67, 54, 0.2); }
-        .sentiment-neutral { background: rgba(255, 193, 7, 0.2); }
-
-        /* Typing Indicator */
-        .typing-indicator {
-            padding: 10px 20px;
-            font-size: 0.85em;
-            color: #666;
-            font-style: italic;
-        }
-
-        .typing-dots {
-            display: inline-flex;
-            gap: 4px;
-        }
-
-        .typing-dots span {
-            width: 6px;
-            height: 6px;
-            background: #666;
-            border-radius: 50%;
-            animation: typing 1.4s infinite;
-        }
-
-        .typing-dots span:nth-child(2) { animation-delay: 0.2s; }
-        .typing-dots span:nth-child(3) { animation-delay: 0.4s; }
-
-        @keyframes typing {
-            0%, 60%, 100% { transform: translateY(0); }
-            30% { transform: translateY(-10px); }
+            font-size: 11px;
+            background: rgba(0, 0, 0, 0.2);
         }
 
         /* Input Area */
-        .input-container {
-            padding: 20px;
-            background: white;
-            border-top: 1px solid #e0e0e0;
+        .input-area {
+            padding: 20px 30px;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
             display: flex;
-            gap: 10px;
+            gap: 15px;
+            align-items: center;
         }
 
         .message-input {
             flex: 1;
-            padding: 12px 20px;
-            font-size: 16px;
-            border: 2px solid #e0e0e0;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+            padding: 14px 20px;
             border-radius: 25px;
-            transition: border-color 0.3s;
+            font-size: 15px;
+            outline: none;
+            transition: all 0.3s;
         }
 
         .message-input:focus {
-            outline: none;
-            border-color: #667eea;
+            background: rgba(255, 255, 255, 0.08);
+            border-color: #00e5ff;
+        }
+
+        .message-input::placeholder {
+            color: rgba(255, 255, 255, 0.4);
         }
 
         .send-btn {
-            padding: 12px 30px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background: linear-gradient(135deg, #00b8d4, #00e5ff);
+            color: #0a1929;
             border: none;
+            padding: 14px 30px;
             border-radius: 25px;
-            font-size: 16px;
+            font-size: 15px;
+            font-weight: 600;
             cursor: pointer;
             transition: transform 0.2s;
         }
@@ -266,91 +283,102 @@
             transform: scale(1.05);
         }
 
-        .send-btn:disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
+        .send-btn:active {
+            transform: scale(0.95);
         }
 
-        /* Status Messages */
-        .status-message {
+        /* Welcome/Empty State */
+        .empty-state {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            color: rgba(255, 255, 255, 0.5);
             text-align: center;
-            padding: 10px;
-            background: rgba(102, 126, 234, 0.1);
-            border-radius: 10px;
-            margin: 10px 0;
-            font-size: 0.9em;
-            color: #667eea;
+            padding: 40px;
+        }
+
+        .empty-state h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Scrollbar */
+        .contacts-list::-webkit-scrollbar,
+        .messages-area::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .contacts-list::-webkit-scrollbar-track,
+        .messages-area::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .contacts-list::-webkit-scrollbar-thumb,
+        .messages-area::-webkit-scrollbar-thumb {
+            background: rgba(0, 229, 255, 0.3);
+            border-radius: 3px;
         }
 
         .hidden {
             display: none !important;
         }
 
-        /* Scrollbar */
-        .messages-container::-webkit-scrollbar {
+        /* Status indicator */
+        .status-dot {
+            display: inline-block;
             width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #888;
+            margin-right: 5px;
         }
 
-        .messages-container::-webkit-scrollbar-track {
-            background: #f5f5f5;
-        }
-
-        .messages-container::-webkit-scrollbar-thumb {
-            background: #ccc;
-            border-radius: 4px;
-        }
-
-        .messages-container::-webkit-scrollbar-thumb:hover {
-            background: #aaa;
+        .status-dot.online {
+            background: #00ff88;
         }
     </style>
 </head>
 <body>
     <div class="chat-container">
-        <!-- Join Screen -->
-        <div id="joinScreen" class="join-screen">
-            <h1>💬 Real-Time Chat</h1>
-            <p style="color: #666; margin-bottom: 30px;">With Sentiment Analysis</p>
-            <form class="join-form" onsubmit="joinChat(event)">
-                <input type="text" id="usernameInput" placeholder="Enter your name" required maxlength="20">
-                <button type="submit" class="join-btn">Start Chat</button>
-            </form>
-            <p style="color: #999; margin-top: 20px; font-size: 0.9em;">
-                Connecting you with the next available person...
-            </p>
+        <!-- Sidebar with Contacts -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>Contacts</h2>
+                <button onclick="showAddContactModal()">+ Add</button>
+            </div>
+            <div class="contacts-list" id="contactsList">
+                <!-- Contacts will be loaded here -->
+            </div>
         </div>
 
-        <!-- Chat Screen -->
-        <div id="chatScreen" class="hidden">
-            <div class="chat-header">
-                <div>
-                    <h2>💬 Chat</h2>
-                    <div class="room-info">
-                        <span id="chatStatus">Waiting for partner...</span>
+        <!-- Main Chat Area -->
+        <div class="main-chat">
+            <div class="chat-header" id="chatHeader">
+                <div class="chat-header-info">
+                    <h2 id="currentContactName">Select a contact</h2>
+                    <div class="status" id="currentContactStatus">
+                        <span class="status-dot" id="statusDot"></span>
+                        <span id="statusText">Offline</span>
                     </div>
                 </div>
-                <div class="users-count">
-                    <span id="connectionStatus">●</span> <span id="partnerName">-</span>
+            </div>
+
+            <div class="messages-area" id="messagesArea">
+                <div class="empty-state">
+                    <h3>Welcome to SEAN</h3>
+                    <p>Select a contact to start chatting</p>
                 </div>
             </div>
 
-            <div class="messages-container" id="messagesContainer">
-                <div class="status-message">Welcome! Start chatting...</div>
-            </div>
-
-            <div class="typing-indicator hidden" id="typingIndicator">
-                <span id="typingUsername">Someone</span> is typing
-                <div class="typing-dots">
-                    <span></span><span></span><span></span>
-                </div>
-            </div>
-
-            <div class="input-container">
+            <div class="input-area">
                 <input 
                     type="text" 
                     id="messageInput" 
                     class="message-input" 
-                    placeholder="Type your message..." 
+                    placeholder="Type a message..."
                     maxlength="500"
                 >
                 <button class="send-btn" onclick="sendMessage()">Send</button>
@@ -360,184 +388,220 @@
 
     <script>
         let socket;
-        let currentUsername = '';
-        let currentRoom = '';
-        let currentSid = '';
-        let typingTimeout;
-        let partnerConnected = false;
+        let currentUser = null;
+        let currentContact = null;
+        let contacts = [];
 
-        // Initialize socket connection
+        // Initialize
+        function init() {
+            // Get username from prompt or use default
+            let username = prompt("Enter your name:", "User_" + Math.floor(Math.random() * 1000));
+            if (!username) username = "Anonymous";
+            
+            currentUser = {
+                id: 'user_' + Date.now(),
+                name: username
+            };
+
+            // Initialize socket
+            initSocket();
+            
+            // Load demo contacts
+            loadDemoContacts();
+            
+            // Event listeners
+            document.getElementById('messageInput').addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    sendMessage();
+                }
+            });
+        }
+
         function initSocket() {
             socket = io();
 
             socket.on('connect', () => {
                 console.log('Connected to server');
-            });
-
-            socket.on('connected', (data) => {
-                currentSid = data.sid;
-            });
-
-            socket.on('paired', (data) => {
-                currentRoom = data.room_id;
-                partnerConnected = true;
-                document.getElementById('chatStatus').textContent = 'Connected';
-                document.getElementById('partnerName').textContent = data.partner_name || 'Partner';
-                document.getElementById('connectionStatus').style.color = '#4CAF50';
-                addStatusMessage('Connected! You can now start chatting.');
-                showChat();
-            });
-
-            socket.on('waiting', () => {
-                showChat();
-                document.getElementById('chatStatus').textContent = 'Waiting for partner...';
-                document.getElementById('connectionStatus').style.color = '#FFC107';
-                addStatusMessage('Waiting for someone to connect...');
-            });
-
-            socket.on('partner_joined', (data) => {
-                partnerConnected = true;
-                document.getElementById('chatStatus').textContent = 'Connected';
-                document.getElementById('partnerName').textContent = data.username;
-                document.getElementById('connectionStatus').style.color = '#4CAF50';
-                addStatusMessage(`${data.username} joined the chat`);
-            });
-
-            socket.on('partner_left', (data) => {
-                partnerConnected = false;
-                document.getElementById('chatStatus').textContent = 'Partner disconnected';
-                document.getElementById('partnerName').textContent = '-';
-                document.getElementById('connectionStatus').style.color = '#f44336';
-                addStatusMessage('Your partner left the chat');
-            });
-
-            socket.on('chat_history', (data) => {
-                data.messages.forEach(msg => {
-                    if (msg.text) {
-                        addMessage(msg.text, msg.sentiment_category || 'Neutral', false, msg.sentiment_emoji || '😐');
-                    }
-                });
+                socket.emit('register_user', currentUser);
             });
 
             socket.on('new_message', (data) => {
-                const isOwn = data.sender_sid === currentSid;
-                addMessage(
-                    data.text, 
-                    data.sentiment.category, 
-                    isOwn, 
-                    data.sentiment.emoji,
-                    data.username
-                );
-            });
-
-            socket.on('user_typing', (data) => {
-                if (partnerConnected) {
-                    showTypingIndicator(data.username, data.is_typing);
+                if (currentContact && data.from === currentContact.id) {
+                    addMessage(data.text, data.sentiment, false);
                 }
+                // Update contact list to show new message indicator
+                updateContactLastMessage(data.from, data.text);
+            });
+
+            socket.on('user_status', (data) => {
+                updateContactStatus(data.user_id, data.online);
+            });
+
+            socket.on('messages_loaded', (data) => {
+                const messagesArea = document.getElementById('messagesArea');
+                messagesArea.innerHTML = '';
+                
+                data.messages.forEach(msg => {
+                    const isSent = msg.from === currentUser.id;
+                    addMessage(msg.text, msg.sentiment, isSent, false);
+                });
+                
+                scrollToBottom();
+            });
+
+            socket.on('message_sent', (data) => {
+                addMessage(data.text, data.sentiment, true);
             });
         }
 
-        function joinChat(event) {
-            event.preventDefault();
-            currentUsername = document.getElementById('usernameInput').value.trim();
+        function loadDemoContacts() {
+            // Demo contacts
+            contacts = [
+                { id: 'support', name: 'Support', avatar: 'S', color: '#00b8d4', online: true },
+                { id: 'alice', name: 'Alice', avatar: 'A', color: '#ff9800', online: true },
+                { id: 'bob', name: 'Bob', avatar: 'B', color: '#9c27b0', online: false }
+            ];
 
-            if (!currentUsername) return;
+            renderContacts();
+        }
 
-            socket.emit('find_partner', {
-                username: currentUsername
+        function renderContacts() {
+            const listEl = document.getElementById('contactsList');
+            listEl.innerHTML = '';
+
+            contacts.forEach(contact => {
+                const div = document.createElement('div');
+                div.className = 'contact-item';
+                if (currentContact && currentContact.id === contact.id) {
+                    div.classList.add('active');
+                }
+                
+                div.innerHTML = `
+                    <div class="contact-avatar" style="background: ${contact.color}">
+                        ${contact.avatar}
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-name">${contact.name}</div>
+                        <div class="contact-status ${contact.online ? 'online' : ''}">
+                            ${contact.online ? 'Online' : 'Offline'}
+                        </div>
+                    </div>
+                `;
+                
+                div.onclick = () => selectContact(contact);
+                listEl.appendChild(div);
             });
         }
 
-        function showChat() {
-            document.getElementById('joinScreen').classList.add('hidden');
-            document.getElementById('chatScreen').classList.remove('hidden');
-            document.getElementById('messageInput').focus();
+        function selectContact(contact) {
+            currentContact = contact;
+            renderContacts();
+            
+            // Update header
+            document.getElementById('currentContactName').textContent = contact.name;
+            document.getElementById('statusText').textContent = contact.online ? 'Online' : 'Offline';
+            document.getElementById('statusDot').className = 'status-dot' + (contact.online ? ' online' : '');
+            document.getElementById('currentContactStatus').className = 'status' + (contact.online ? ' online' : '');
+            
+            // Load messages for this contact
+            loadMessages(contact.id);
+        }
+
+        function loadMessages(contactId) {
+            const messagesArea = document.getElementById('messagesArea');
+            messagesArea.innerHTML = '';
+            
+            // Request message history from server
+            socket.emit('load_messages', { contact_id: contactId });
         }
 
         function sendMessage() {
             const input = document.getElementById('messageInput');
             const text = input.value.trim();
 
-            if (!text || !partnerConnected) {
-                if (!partnerConnected) {
-                    addStatusMessage('Waiting for partner to connect...');
-                }
-                return;
-            }
+            if (!text || !currentContact) return;
 
+            // Send to server
             socket.emit('send_message', {
-                text: text,
-                room_id: currentRoom
+                to: currentContact.id,
+                from: currentUser.id,
+                text: text
             });
 
             input.value = '';
-            stopTyping();
         }
 
-        function addMessage(text, sentiment, isOwn, emoji = '😐', username = '') {
-            const container = document.getElementById('messagesContainer');
+        function addMessage(text, sentiment, isSent, animate = true) {
+            const messagesArea = document.getElementById('messagesArea');
             const messageDiv = document.createElement('div');
-            messageDiv.className = `message ${isOwn ? 'own' : 'other'}`;
-
-            const getSentimentClass = (sentiment) => {
-                if (sentiment.includes('Positive')) return 'sentiment-positive';
-                if (sentiment.includes('Negative')) return 'sentiment-negative';
-                return 'sentiment-neutral';
-            };
-
+            
+            let sentimentClass = '';
+            if (!isSent) {
+                if (sentiment && sentiment.category) {
+                    if (sentiment.category.includes('Positive')) {
+                        sentimentClass = 'sentiment-positive';
+                    } else if (sentiment.category.includes('Negative')) {
+                        sentimentClass = 'sentiment-negative';
+                    } else {
+                        sentimentClass = 'sentiment-neutral';
+                    }
+                }
+            }
+            
+            messageDiv.className = `message ${isSent ? 'sent' : 'received'} ${sentimentClass}`;
+            
+            const emoji = sentiment && sentiment.emoji ? sentiment.emoji : '';
+            const category = sentiment && sentiment.category ? sentiment.category : '';
+            
             messageDiv.innerHTML = `
                 <div class="message-bubble">
-                    ${!isOwn && username ? `<div class="message-header">${username}</div>` : ''}
                     <div class="message-text">${escapeHtml(text)}</div>
                     <div class="message-footer">
                         <span>${new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</span>
-                        <span class="sentiment-indicator ${getSentimentClass(sentiment)}">
-                            ${emoji} ${sentiment}
-                        </span>
+                        ${!isSent && sentiment ? `<span class="sentiment-badge">${emoji} ${category}</span>` : ''}
                     </div>
                 </div>
             `;
-
-            container.appendChild(messageDiv);
-            container.scrollTop = container.scrollHeight;
-        }
-
-        function addStatusMessage(text) {
-            const container = document.getElementById('messagesContainer');
-            const statusDiv = document.createElement('div');
-            statusDiv.className = 'status-message';
-            statusDiv.textContent = text;
-            container.appendChild(statusDiv);
-            container.scrollTop = container.scrollHeight;
-        }
-
-        function showTypingIndicator(username, isTyping) {
-            const indicator = document.getElementById('typingIndicator');
-            const usernameSpan = document.getElementById('typingUsername');
             
-            if (isTyping) {
-                usernameSpan.textContent = username;
-                indicator.classList.remove('hidden');
-            } else {
-                indicator.classList.add('hidden');
+            messagesArea.appendChild(messageDiv);
+            scrollToBottom();
+        }
+
+        function scrollToBottom() {
+            const messagesArea = document.getElementById('messagesArea');
+            messagesArea.scrollTop = messagesArea.scrollHeight;
+        }
+
+        function updateContactStatus(userId, online) {
+            const contact = contacts.find(c => c.id === userId);
+            if (contact) {
+                contact.online = online;
+                renderContacts();
+                
+                if (currentContact && currentContact.id === userId) {
+                    document.getElementById('statusText').textContent = online ? 'Online' : 'Offline';
+                    document.getElementById('statusDot').className = 'status-dot' + (online ? ' online' : '');
+                }
             }
         }
 
-        function handleTyping() {
-            socket.emit('typing', {
-                room_id: currentRoom,
-                is_typing: true
-            });
-
-            clearTimeout(typingTimeout);
-            typingTimeout = setTimeout(stopTyping, 1000);
+        function updateContactLastMessage(userId, text) {
+            // Could add last message preview to contacts list
         }
 
-        function stopTyping() {
-            socket.emit('typing', {
-                room_id: currentRoom,
-                is_typing: false
-            });
+        function showAddContactModal() {
+            const name = prompt("Enter contact name:");
+            if (name) {
+                const newContact = {
+                    id: 'user_' + Date.now(),
+                    name: name,
+                    avatar: name[0].toUpperCase(),
+                    color: '#' + Math.floor(Math.random()*16777215).toString(16),
+                    online: false
+                };
+                contacts.push(newContact);
+                renderContacts();
+            }
         }
 
         function escapeHtml(text) {
@@ -546,16 +610,8 @@
             return div.innerHTML;
         }
 
-        // Event listeners
-        document.getElementById('messageInput').addEventListener('keypress', (e) => {
-            handleTyping();
-            if (e.key === 'Enter') {
-                sendMessage();
-            }
-        });
-
-        // Initialize on page load
-        initSocket();
+        // Initialize on load
+        init();
     </script>
 </body>
 </html>
