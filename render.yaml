@@ -4,7 +4,7 @@ services:
     runtime: python
     branch: clone
     buildCommand: pip install -r requirements.txt && python -m textblob.download_corpora
-    startCommand: gunicorn --worker-class geven-w 1 --bind 0.0.0.0:$PORT run:app
+    startCommand: gunicorn --worker-class gevent -w 1 --bind 0.0.0.0:$PORT run:app
     envVars:
       - key: PYTHON_VERSION
         value: 3.12.7
