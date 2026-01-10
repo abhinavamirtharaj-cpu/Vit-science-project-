@@ -1,0 +1,56 @@
+contact_id,message,dir,emotion
+user_1,I'm so happy today!,sent,joy
+user_2,This makes me really sad,sent,sadness
+user_3,I'm absolutely furious about this,sent,anger
+user_4,I'm terrified of what might happen,sent,fear
+user_5,Wow this is amazing!,sent,excitement
+user_6,I really appreciate your help,sent,gratitude
+user_7,I'm so worried about the results,sent,worry
+user_8,This is so frustrating,sent,frustration
+user_9,I feel so lonely,sent,loneliness
+user_10,You're the best!,sent,love
+user_11,I'm feeling anxious about tomorrow,sent,anxiety
+user_12,This is absolutely disgusting,sent,disgust
+user_13,I'm so embarrassed,sent,embarrassment
+user_14,I feel guilty about what happened,sent,guilt
+user_15,I really admire your work,sent,admiration
+user_16,This is so confusing,sent,confusion
+user_17,Oh I finally understand!,sent,realization
+user_18,I'm stressed out,sent,stress
+user_19,I'm so jealous,sent,jealousy
+user_20,That's hilarious!,sent,amusement
+user_21,I'm so bored,sent,boredom
+user_22,Yeah right like that'll happen,sent,sarcasm
+user_23,What a wonderful surprise!,sent,surprise
+user_24,I feel terrible about this,sent,remorse
+user_25,I'm so relieved,sent,relief
+user_26,I'm proud of what we achieved,sent,pride
+user_27,I really care about you,sent,caring
+user_28,This is disappointing,sent,disappointment
+user_29,That's unacceptable,sent,disapproval
+user_30,I approve of this plan,sent,approval
+user_31,This makes me nervous,sent,nervousness
+user_32,I feel hopeful about the future,sent,optimism
+user_33,This is so much fun!,sent,fun
+user_34,I'm very enthusiastic about this,sent,enthusiasm
+user_35,I feel your pain,sent,empathy
+user_36,This is nothing special,sent,neutral
+user_37,I'm deeply saddened by this loss,sent,grief
+user_38,I'm ashamed of my actions,sent,shame
+user_39,This is really annoying,sent,annoyance
+user_40,Feeling depressed today,sent,depression
+user_41,This brings me so much joy,sent,happiness
+user_42,I hate this so much,sent,hate
+user_43,I'm curious about how it works,sent,curiosity
+user_44,This is absolutely wonderful,sent,joy
+user_45,I'm feeling really down,sent,sadness
+user_46,This makes me so angry!,sent,anger
+user_47,I'm scared of the outcome,sent,fear
+user_48,So excited for tomorrow!,sent,excitement
+user_49,Thank you so much!,sent,gratitude
+user_50,I'm worried sick,sent,worry
+user_51,Hello,sent,neutral
+user_52,Hi there,sent,neutral
+user_53,Good morning,sent,neutral
+user_54,How are you,sent,neutral
+user_55,Thanks,sent,gratitude

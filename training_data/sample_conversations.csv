@@ -1,0 +1,11 @@
+conversation_id,text,emotion_label
+1,"Hello, how can I help?",neutral
+1,My device is not working,neutral
+1,Let me fix that for you,neutral
+2,Thanks for your help!,joy
+2,Happy to assist,joy
+2,Have a great day!,joy
+3,I am so frustrated,anger
+3,"Oh great, another problem",anger
+3,Just perfect,sarcasm
+3,Nothing ever works,sadness

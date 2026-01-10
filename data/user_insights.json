@@ -159,15 +159,280 @@
             "score": 0.0,
             "node_1_input": 0.0,
             "node_2_prediction": "Sarcastic"
+        },
+        {
+            "timestamp": "2026-01-10T12:55:04.784978",
+            "text": "I need some help",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Neutral"
+        },
+        {
+            "timestamp": "2026-01-10T12:55:04.786086",
+            "text": "This is not working",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Neutral"
+        },
+        {
+            "timestamp": "2026-01-10T12:55:04.787165",
+            "text": "Oh great, another issue",
+            "sentiment": "Very Positive",
+            "score": 0.6,
+            "node_1_input": 0.8,
+            "node_2_prediction": "Neutral"
+        },
+        {
+            "timestamp": "2026-01-10T12:55:04.788198",
+            "text": "Thank you for fixing it",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Neutral"
+        },
+        {
+            "timestamp": "2026-01-10T12:58:44.391133",
+            "text": "Hello",
+            "sentiment": "Negative",
+            "score": -0.12,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Neutral"
+        },
+        {
+            "timestamp": "2026-01-10T12:59:49.529178",
+            "text": "I am afraid I hate you!",
+            "sentiment": "Very Negative",
+            "score": -0.6799999999999999,
+            "node_1_input": -0.8,
+            "node_2_prediction": "Neutral"
+        },
+        {
+            "timestamp": "2026-01-10T13:00:01.970217",
+            "text": "THis is gud but I don't like it",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Neutral"
+        },
+        {
+            "timestamp": "2026-01-10T13:00:28.380036",
+            "text": "I love this",
+            "sentiment": "Positive",
+            "score": 0.42,
+            "node_1_input": 0.5,
+            "node_2_prediction": "Neutral"
+        },
+        {
+            "timestamp": "2026-01-10T13:00:33.559634",
+            "text": "This is crap!",
+            "sentiment": "Very Negative",
+            "score": -0.8,
+            "node_1_input": -1.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-10T13:00:43.414632",
+            "text": "This is a very bad idea!",
+            "sentiment": "Very Negative",
+            "score": -0.8,
+            "node_1_input": -1.0,
+            "node_2_prediction": "Neutral"
+        },
+        {
+            "timestamp": "2026-01-10T13:00:59.096846",
+            "text": "Tho it works gud it is a very bad idea!",
+            "sentiment": "Very Negative",
+            "score": -0.8,
+            "node_1_input": -1.0,
+            "node_2_prediction": "Neutral"
+        },
+        {
+            "timestamp": "2026-01-10T13:01:13.276504",
+            "text": "I like this yet it has to be improved",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Neutral"
+        },
+        {
+            "timestamp": "2026-01-10T13:05:14.603955",
+            "text": "Hello",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Neutral"
+        },
+        {
+            "timestamp": "2026-01-10T13:05:24.652806",
+            "text": "U r cool",
+            "sentiment": "Positive",
+            "score": 0.32999999999999996,
+            "node_1_input": 0.35,
+            "node_2_prediction": "Neutral"
+        },
+        {
+            "timestamp": "2026-01-10T13:12:30.510500",
+            "text": "Hello",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-10T13:12:34.769677",
+            "text": "How are you?",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Neutral"
+        },
+        {
+            "timestamp": "2026-01-10T13:12:40.423636",
+            "text": "I love this!",
+            "sentiment": "Positive",
+            "score": 0.575,
+            "node_1_input": 0.625,
+            "node_2_prediction": "Neutral"
+        },
+        {
+            "timestamp": "2026-01-10T13:12:46.207639",
+            "text": "U r tooo gud!",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-10T13:12:58.155400",
+            "text": "U r too good!",
+            "sentiment": "Very Positive",
+            "score": 0.7250000000000001,
+            "node_1_input": 0.875,
+            "node_2_prediction": "Neutral"
+        },
+        {
+            "timestamp": "2026-01-10T13:56:50.598384",
+            "text": "I need some help",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Neutral"
+        },
+        {
+            "timestamp": "2026-01-10T13:56:50.599614",
+            "text": "This is not working",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Neutral"
+        },
+        {
+            "timestamp": "2026-01-10T13:56:50.600643",
+            "text": "Oh great, another issue",
+            "sentiment": "Very Positive",
+            "score": 0.6,
+            "node_1_input": 0.8,
+            "node_2_prediction": "Neutral"
+        },
+        {
+            "timestamp": "2026-01-10T13:56:50.601625",
+            "text": "Thank you for fixing it",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Neutral"
+        },
+        {
+            "timestamp": "2026-01-10T13:56:51.409981",
+            "text": "I need some help",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Neutral"
+        },
+        {
+            "timestamp": "2026-01-10T13:56:51.411159",
+            "text": "This is not working",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Neutral"
+        },
+        {
+            "timestamp": "2026-01-10T13:56:51.412222",
+            "text": "Oh great, another issue",
+            "sentiment": "Very Positive",
+            "score": 0.6,
+            "node_1_input": 0.8,
+            "node_2_prediction": "Neutral"
+        },
+        {
+            "timestamp": "2026-01-10T13:56:51.413451",
+            "text": "Thank you for fixing it",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": "Neutral"
+        },
+        {
+            "timestamp": "2026-01-10T15:04:09.528997",
+            "text": "HI",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-10T15:04:19.183066",
+            "text": "You are great!!",
+            "sentiment": "Very Positive",
+            "score": 0.8400000000000001,
+            "node_1_input": 1.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-10T15:04:37.465752",
+            "text": "U r a fool",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-10T15:04:46.459003",
+            "text": "I don't like you!",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-10T15:05:01.267309",
+            "text": "i hate you!",
+            "sentiment": "Very Negative",
+            "score": -0.8,
+            "node_1_input": -1.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-10T15:05:12.458031",
+            "text": "You are a bastard",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
         }
     ],
     "patterns": {
         "sentiment_counts": {
-            "Neutral": 10,
+            "Neutral": 29,
             "Factual": 2,
-            "Negative": 4,
-            "Very Negative": 3,
-            "Positive": 1
+            "Negative": 5,
+            "Very Negative": 8,
+            "Positive": 4,
+            "Very Positive": 5
         }
     }
 }
