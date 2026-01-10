@@ -191,12 +191,182 @@
             "score": 0.0,
             "node_1_input": 0.0,
             "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-09T12:52:25.180963",
+            "text": "This is a wonderful experience! I'm so thrilled!",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-09T12:52:25.253335",
+            "text": "This is absolutely infuriating! I hate this!",
+            "sentiment": "Very Negative",
+            "score": -0.6000000000000001,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-09T12:52:25.330796",
+            "text": "I feel so heartbroken and depressed...",
+            "sentiment": "Negative",
+            "score": -0.3,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-10T06:33:26.028142",
+            "text": "This is absolutely brilliant, thanks a lot for breaking it.",
+            "sentiment": "Positive",
+            "score": 0.3,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-10T06:33:26.097196",
+            "text": "I appreciate the help.",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-10T06:33:26.165755",
+            "text": "Another great feature!",
+            "sentiment": "Positive",
+            "score": 0.5,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-10T06:34:03.775228",
+            "text": "Oh fantastic job breaking it further",
+            "sentiment": "Positive",
+            "score": 0.3,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-10T06:34:03.852515",
+            "text": "I am done with this",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-10T06:34:03.917123",
+            "text": "Still loving it",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-10T06:34:03.984400",
+            "text": "It's not working right",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-10T06:34:04.050940",
+            "text": "Oh fantastic job breaking it further",
+            "sentiment": "Positive",
+            "score": 0.3,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-10T06:34:04.116664",
+            "text": "I am done with this",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-10T06:34:04.187199",
+            "text": "Still loving it",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-10T06:34:04.255012",
+            "text": "It's not working right",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-10T06:34:04.320793",
+            "text": "Oh fantastic job breaking it further",
+            "sentiment": "Positive",
+            "score": 0.3,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-10T06:34:04.392146",
+            "text": "I am done with this",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-10T06:34:04.456910",
+            "text": "Still loving it",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-10T06:34:04.524100",
+            "text": "It's not working right",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-10T06:34:43.459738",
+            "text": "This is a wonderful experience! I'm so thrilled!",
+            "sentiment": "Neutral",
+            "score": 0.0,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-10T06:34:43.526774",
+            "text": "This is absolutely infuriating! I hate this!",
+            "sentiment": "Very Negative",
+            "score": -0.6000000000000001,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
+        },
+        {
+            "timestamp": "2026-01-10T06:34:43.595598",
+            "text": "I feel so heartbroken and depressed...",
+            "sentiment": "Negative",
+            "score": -0.3,
+            "node_1_input": 0.0,
+            "node_2_prediction": null
         }
     ],
     "patterns": {
         "sentiment_counts": {
-            "Positive": 6,
-            "Neutral": 18
+            "Positive": 11,
+            "Neutral": 30,
+            "Very Negative": 2,
+            "Negative": 2
         }
     }
 }

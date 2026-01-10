@@ -1,0 +1,11 @@
+contact_id,contact_name,dir,iso_time,date,time,text,sentiment_polarity,sentiment_category,sentiment_emoji,color_hex,saved_at
+demo_device,Demo Device,sent,2026-01-09T12:52:03.658865,2026-01-09,12:52,Hello from demo_integration - single append,,,,,2026-01-09T12:52:03.660458
+demo_device,Demo Device,sent,2026-01-09T12:52:03.658865,2026-01-09,12:52,Second message via append_messages,,,,,2026-01-09T12:52:03.662003
+user_happy,Happy User,sent,2026-01-09T12:52:25.181583,2026-01-09,12:52,This is a wonderful experience! I'm so thrilled!,,Neutral,😐,#FFC107,2026-01-09T12:52:25.181673
+user_angry,Frustrated User,sent,2026-01-09T12:52:25.254110,2026-01-09,12:52,This is absolutely infuriating! I hate this!,-0.6000000000000001,Very Negative,😠,#9C27B0,2026-01-09T12:52:25.254208
+user_sad,Sad User,sent,2026-01-09T12:52:25.331475,2026-01-09,12:52,I feel so heartbroken and depressed...,-0.3,Negative,🙁,#F44336,2026-01-09T12:52:25.331556
+demo_device,Demo Device,sent,2026-01-10T06:33:18.237786,2026-01-10,06:33,Hello from demo_integration - single append,,,,,2026-01-10T06:33:18.238030
+demo_device,Demo Device,sent,2026-01-10T06:33:18.237786,2026-01-10,06:33,Second message via append_messages,,,,,2026-01-10T06:33:18.238619
+user_happy,Happy User,sent,2026-01-10T06:34:43.460669,2026-01-10,06:34,This is a wonderful experience! I'm so thrilled!,,Neutral,😐,#FFC107,2026-01-10T06:34:43.460744
+user_angry,Frustrated User,sent,2026-01-10T06:34:43.527694,2026-01-10,06:34,This is absolutely infuriating! I hate this!,-0.6000000000000001,Very Negative,😠,#9C27B0,2026-01-10T06:34:43.527780
+user_sad,Sad User,sent,2026-01-10T06:34:43.596289,2026-01-10,06:34,I feel so heartbroken and depressed...,-0.3,Negative,🙁,#F44336,2026-01-10T06:34:43.596364

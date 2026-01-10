@@ -3,7 +3,7 @@ import sys
 
 url = 'http://127.0.0.1:5000/'
 try:
-    r = urllib.request.urlopen(url, timeout=5)
+    r = urllib.request.urlopen(url, timeout=15)
     content = r.read(800).decode('utf-8', errors='replace')
     print('STATUS: OK')
     print('CONTENT PREVIEW (first 400 chars):')

@@ -8,5 +8,9 @@ from ui_io.UI import app
 
 if __name__ == "__main__":
     print("Starting Sentiment Analysis Chat Application...")
-    print("Access at http://127.0.0.1:5000/")
-    app.run(debug=True, port=5000)
+    # Use PORT environment variable for cloud hosting (Render, Heroku, etc.)
+    port = int(os.environ.get("PORT", 5000))
+    # Disable debug mode in production
+    debug = os.environ.get("FLASK_ENV") != "production"
+    print(f"Access at http://0.0.0.0:{port}/")
+    app.run(host="0.0.0.0", debug=debug, port=port)
