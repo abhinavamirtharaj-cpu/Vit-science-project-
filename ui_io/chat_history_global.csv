@@ -27,3 +27,65 @@ support,Support,sent,2026-01-07T20:50:56.543529,2026-01-07,20:50,What the fish!,
 support,Support,sent,2026-01-07T20:51:12.364203,2026-01-07,20:51,IDiot!,-0.5433333333333333,Negative,🙁,#F44336,2026-01-07T15:21:12.365146
 support,Support,sent,2026-01-07T20:51:18.958803,2026-01-07,20:51,Rascal!,-0.04609053497942387,Neutral,😐,#FFC107,2026-01-07T15:21:18.958803
 support,Support,sent,2026-01-07T20:51:31.015297,2026-01-07,20:51,Fool!,,Neutral,😐,#FFC107,2026-01-07T15:21:31.016303
+support,Support,sent,2026-01-10T12:58:44.392180,2026-01-10,12:58,Hello,-0.12,Negative,🙁,#F44336,2026-01-10T12:58:44.392282
+support,Support,sent,2026-01-10T12:59:49.529810,2026-01-10,12:59,I am afraid I hate you!,-0.6799999999999999,Very Negative,😠,#9C27B0,2026-01-10T12:59:49.529897
+support,Support,sent,2026-01-10T13:00:01.971001,2026-01-10,13:00,THis is gud but I don't like it,,Neutral,😐,#FFC107,2026-01-10T13:00:01.971089
+support,Support,sent,2026-01-10T13:00:28.380821,2026-01-10,13:00,I love this,0.42,Positive,🙂,#00BCD4,2026-01-10T13:00:28.380915
+support,Support,sent,2026-01-10T13:00:33.560257,2026-01-10,13:00,This is crap!,-0.8,Very Negative,😠,#9C27B0,2026-01-10T13:00:33.560345
+support,Support,sent,2026-01-10T13:00:43.415260,2026-01-10,13:00,This is a very bad idea!,-0.8,Very Negative,😠,#9C27B0,2026-01-10T13:00:43.415349
+support,Support,sent,2026-01-10T13:00:59.097749,2026-01-10,13:00,Tho it works gud it is a very bad idea!,-0.8,Very Negative,😠,#9C27B0,2026-01-10T13:00:59.097857
+support,Support,sent,2026-01-10T13:01:13.277214,2026-01-10,13:01,I like this yet it has to be improved,,Neutral,😐,#FFC107,2026-01-10T13:01:13.277316
+support,Support,sent,2026-01-10T13:05:14.604665,2026-01-10,13:05,Hello,,Neutral,😐,#FFC107,2026-01-10T13:05:14.604757
+support,Support,sent,2026-01-10T13:05:24.653473,2026-01-10,13:05,U r cool,0.32999999999999996,Positive,🙂,#00BCD4,2026-01-10T13:05:24.653562
+support,Support,sent,2026-01-10T13:12:30.511225,2026-01-10,13:12,Hello,,Neutral,😐,#FFC107,2026-01-10T13:12:30.511322
+support,Support,sent,2026-01-10T13:12:34.770421,2026-01-10,13:12,How are you?,,Neutral,😐,#FFC107,2026-01-10T13:12:34.770507
+support,Support,sent,2026-01-10T13:12:40.424365,2026-01-10,13:12,I love this!,0.575,Positive,🙂,#2196F3,2026-01-10T13:12:40.424438
+support,Support,sent,2026-01-10T13:12:46.208367,2026-01-10,13:12,U r tooo gud!,,Neutral,😐,#FFC107,2026-01-10T13:12:46.208455
+support,Support,sent,2026-01-10T13:12:58.156178,2026-01-10,13:12,U r too good!,0.7250000000000001,Very Positive,😄,#00E676,2026-01-10T13:12:58.156252
+support,Support,sent,2026-01-10T13:46:23.683269,2026-01-10,13:46,I like this,,neutral,😐,#90A4AE,2026-01-10T13:46:23.683376
+support,Support,sent,2026-01-10T13:46:29.742425,2026-01-10,13:46,I love it,0.5,love,❤️,#FF4081,2026-01-10T13:46:29.742501
+support,Support,sent,2026-01-10T13:46:34.324048,2026-01-10,13:46,U r crazy,-0.6,anger,😠,#F44336,2026-01-10T13:46:34.324123
+support,Support,sent,2026-01-10T13:46:42.303652,2026-01-10,13:46,I hate you,-0.8,hate,😡,#D32F2F,2026-01-10T13:46:42.303727
+support,Support,sent,2026-01-10T13:46:45.158403,2026-01-10,13:46,Hello,,neutral,😐,#90A4AE,2026-01-10T13:46:45.158478
+support,Support,sent,2026-01-10T13:46:55.449344,2026-01-10,13:46,I am afraid this failed!,-0.6125,fear,😨,#7E57C2,2026-01-10T13:46:55.449485
+support,Support,sent,2026-01-10T13:47:08.387568,2026-01-10,13:47,The hell is this?,,neutral,😐,#90A4AE,2026-01-10T13:47:08.387669
+support,Support,sent,2026-01-10T13:47:15.276627,2026-01-10,13:47,What the fish?,,confusion,😕,#B0BEC5,2026-01-10T13:47:15.276702
+support,Support,sent,2026-01-10T13:47:24.914241,2026-01-10,13:47,What the hell!,,confusion,😕,#B0BEC5,2026-01-10T13:47:24.914313
+support,Support,sent,2026-01-10T13:52:37.360356,2026-01-10,13:52,U r bad!,-0.8749999999999998,disapproval,👎,#FF5252,2026-01-10T13:52:37.360436
+support,Support,sent,2026-01-10T13:52:55.546881,2026-01-10,13:52,This is awfully good!,0.875,approval,👍,#69F0AE,2026-01-10T13:52:55.546958
+support,Support,sent,2026-01-10T13:53:03.483547,2026-01-10,13:53,this is awfull,,neutral,😐,#90A4AE,2026-01-10T13:53:03.483642
+support,Support,sent,2026-01-10T13:53:13.009828,2026-01-10,13:53,this is awful,-1.0,anger,😠,#F44336,2026-01-10T13:53:13.009904
+support,Support,sent,2026-01-10T13:55:05.159601,2026-01-10,13:55,Oh my god!,,neutral,😐,#90A4AE,2026-01-10T13:55:05.159677
+support,Support,sent,2026-01-10T13:55:11.554524,2026-01-10,13:55,I hate you!,-1.0,hate,😡,#D32F2F,2026-01-10T13:55:11.554699
+support,Support,sent,2026-01-10T13:55:17.980352,2026-01-10,13:55,Oh my god!!,,neutral,😐,#90A4AE,2026-01-10T13:55:17.980425
+support,Support,sent,2026-01-10T13:55:48.761540,2026-01-10,13:55,my god!,,neutral,😐,#90A4AE,2026-01-10T13:55:48.761635
+support,Support,sent,2026-01-10T14:01:04.169159,2026-01-10,14:01,U r a wicked guy!,,neutral,😐,#90A4AE,2026-01-10T14:01:04.169346
+support,Support,sent,2026-01-10T14:01:13.239528,2026-01-10,14:01,MIND YOUR WORDS,,neutral,😐,#90A4AE,2026-01-10T14:01:13.239634
+support,Support,sent,2026-01-10T14:07:41.182329,2026-01-10,14:07,U r a fool!,,neutral,😐,#90A4AE,2026-01-10T14:07:41.182414
+support,Support,sent,2026-01-10T14:07:48.830904,2026-01-10,14:07,Oh my god!,,surprise,😲,#FFEB3B,2026-01-10T14:07:48.830981
+support,Support,sent,2026-01-10T14:07:56.517660,2026-01-10,14:07,I hate you!,-1.0,hate,😡,#D32F2F,2026-01-10T14:07:56.517761
+support,Support,sent,2026-01-10T14:08:01.894896,2026-01-10,14:08,Oh my god!,,surprise,😲,#FFEB3B,2026-01-10T14:08:01.894971
+support,Support,sent,2026-01-10T14:08:10.293385,2026-01-10,14:08,I love this!,0.625,joy,😄,#00E676,2026-01-10T14:08:10.293460
+support,Support,sent,2026-01-10T14:08:19.223032,2026-01-10,14:08,i am ecstatic,,neutral,😐,#90A4AE,2026-01-10T14:08:19.223106
+alice,Alice,sent,2026-01-10T14:10:33.300680,2026-01-10,14:10,Hello,,neutral,😐,#90A4AE,2026-01-10T14:10:33.300757
+support,Support,sent,2026-01-10T15:09:56.781596,2026-01-10,15:09,I don't like you!,,hate,😡,#D32F2F,2026-01-10T15:09:56.781678
+support,Support,sent,2026-01-10T15:10:04.899312,2026-01-10,15:10,You betrayed me!,,neutral,😐,#90A4AE,2026-01-10T15:10:04.899390
+support,Support,sent,2026-01-10T15:10:13.525164,2026-01-10,15:10,WHat the fish!?,,anger,😠,#F44336,2026-01-10T15:10:13.525237
+support,Support,sent,2026-01-10T15:10:21.051401,2026-01-10,15:10,You moron,-0.8,anger,😠,#F44336,2026-01-10T15:10:21.051486
+support,Support,sent,2026-01-10T15:10:28.523642,2026-01-10,15:10,Oh is it!?,,neutral,😐,#90A4AE,2026-01-10T15:10:28.523721
+support,Support,sent,2026-01-10T15:10:37.292327,2026-01-10,15:10,"I believe you, truly",,neutral,😐,#90A4AE,2026-01-10T15:10:37.292401
+support,Support,sent,2026-01-10T15:59:41.213536,2026-01-10,15:59,I don't think you deserve this!,,neutral,😐,#90A4AE,2026-01-10T15:59:41.213634
+support,Support,sent,2026-01-10T15:59:53.096566,2026-01-10,15:59,This is a bad idea,-0.6999999999999998,disapproval,👎,#FF5252,2026-01-10T15:59:53.096663
+support,Support,sent,2026-01-10T16:13:22.889307,2026-01-10,16:13,Hello,,neutral,😐,#90A4AE,2026-01-10T16:13:22.889386
+support,Support,sent,2026-01-10T16:13:26.318400,2026-01-10,16:13,Shit,-0.2,disappointment,😞,#E64A19,2026-01-10T16:13:26.318475
+support,Support,sent,2026-01-10T16:13:54.677205,2026-01-10,16:13,Crack!,,anger,😠,#F44336,2026-01-10T16:13:54.677281
+support,Support,sent,2026-01-10T16:14:04.526765,2026-01-10,16:14,This is a Banger!,,anger,😠,#F44336,2026-01-10T16:14:04.526841
+support,Support,sent,2026-01-10T16:14:15.674248,2026-01-10,16:14,The movie's awesome,1.0,joy,😄,#00E676,2026-01-10T16:14:15.674324
+support,Support,sent,2026-01-10T16:14:24.152161,2026-01-10,16:14,The plot is terrible,-1.0,anger,😠,#F44336,2026-01-10T16:14:24.152238
+support,Support,sent,2026-01-10T16:18:21.282408,2026-01-10,16:18,"""I'm so glad you're here.""",0.5,joy,😄,#00E676,2026-01-10T16:18:21.282484
+support,Support,sent,2026-01-10T16:18:32.380086,2026-01-10,16:18,That's the last time,,neutral,😐,#90A4AE,2026-01-10T16:18:32.380163
+support,Support,sent,2026-01-10T16:18:41.018918,2026-01-10,16:18,What a great job!,1.0,sarcasm,😏,#9C27B0,2026-01-10T16:18:41.018996
+support,Support,sent,2026-01-10T16:18:51.000757,2026-01-10,16:18,Great job,0.8,joy,😄,#00E676,2026-01-10T16:18:51.000833
+support,Support,sent,2026-01-10T16:19:25.305569,2026-01-10,16:19,You don't deserve this!,,neutral,😐,#90A4AE,2026-01-10T16:19:25.305665
+support,Support,sent,2026-01-10T16:19:45.213145,2026-01-10,16:19,You betrayed me!,,neutral,😐,#90A4AE,2026-01-10T16:19:45.213248
+support,Support,sent,2026-01-10T16:26:41.155971,2026-01-10,16:26,You betrayed me,,anger,😠,#F44336,2026-01-10T16:26:41.156053

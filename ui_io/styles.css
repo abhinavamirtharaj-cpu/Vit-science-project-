@@ -208,46 +208,117 @@ code{background:rgba(0,0,0,0.2);padding:4px 6px;border-radius:4px}
 .message-row{display:flex;align-items:flex-end;gap:8px}
 .message-row.sent{flex-direction:row-reverse}
 .message-row .avatar-img{width:32px;height:32px;border-radius:8px;flex:0 0 32px}
-.message-row .msg{max-width:70%;padding:10px 14px;border-radius:12px;color:white;display:inline-block;transition:all 300ms ease;position:relative}
+.message-row .msg{max-width:70%;padding:10px 14px;border-radius:12px;color:white;display:inline-block;transition:all 300ms ease;position:relative;box-shadow:0 4px 12px rgba(0,0,0,0.3)}
 
-/* Sentiment-based colors with transparency */
-.msg.sent[data-sentiment-color="#4CAF50"]{
-  background:linear-gradient(90deg, rgba(76, 175, 80, 0.7), rgba(56, 142, 60, 0.7));
-  border-left:4px solid #4CAF50;
+/* Very Positive - Bright Green */
+.msg.sent[data-sentiment-color="#00E676"]{
+  background:linear-gradient(135deg, rgba(0, 230, 118, 0.85), rgba(0, 200, 83, 0.85));
+  border-left:4px solid #00E676;
+  box-shadow:0 4px 16px rgba(0, 230, 118, 0.4);
 }
 
-.msg.sent[data-sentiment-color="#F44336"]{
-  background:linear-gradient(90deg, rgba(244, 67, 54, 0.7), rgba(211, 47, 47, 0.7));
-  border-left:4px solid #F44336;
+/* Positive - Bright Blue */
+.msg.sent[data-sentiment-color="#2196F3"]{
+  background:linear-gradient(135deg, rgba(33, 150, 243, 0.85), rgba(25, 118, 210, 0.85));
+  border-left:4px solid #2196F3;
+  box-shadow:0 4px 16px rgba(33, 150, 243, 0.4);
 }
 
+/* Neutral - Amber/Yellow */
 .msg.sent[data-sentiment-color="#FFC107"]{
-  background:linear-gradient(90deg, rgba(255, 193, 7, 0.7), rgba(255, 152, 0, 0.7));
+  background:linear-gradient(135deg, rgba(255, 193, 7, 0.85), rgba(255, 160, 0, 0.85));
   border-left:4px solid #FFC107;
+  box-shadow:0 4px 16px rgba(255, 193, 7, 0.4);
+  color: #1a1a1a;
 }
 
+/* Negative - Deep Orange */
+.msg.sent[data-sentiment-color="#FF5722"]{
+  background:linear-gradient(135deg, rgba(255, 87, 34, 0.85), rgba(244, 67, 54, 0.85));
+  border-left:4px solid #FF5722;
+  box-shadow:0 4px 16px rgba(255, 87, 34, 0.4);
+}
+
+/* Very Negative - Pink/Magenta */
+.msg.sent[data-sentiment-color="#E91E63"]{
+  background:linear-gradient(135deg, rgba(233, 30, 99, 0.85), rgba(194, 24, 91, 0.85));
+  border-left:4px solid #E91E63;
+  box-shadow:0 4px 16px rgba(233, 30, 99, 0.4);
+}
+
+/* Sarcastic - Purple */
+.msg.sent[data-sentiment-color="#9C27B0"]{
+  background:linear-gradient(135deg, rgba(156, 39, 176, 0.85), rgba(123, 31, 162, 0.85));
+  border-left:4px solid #9C27B0;
+  box-shadow:0 4px 16px rgba(156, 39, 176, 0.4);
+}
+
+/* Default sent message (no sentiment) */
 .msg.sent:not([data-sentiment-color]){
-  background:linear-gradient(90deg,var(--accent),#1e66ff);
+  background:linear-gradient(135deg,var(--accent),#1e66ff);
+  box-shadow:0 4px 12px rgba(59, 130, 246, 0.3);
 }
 
 .msg.received{align-self:flex-start;background:rgba(255,255,255,0.06);color:var(--muted)}
 
+/* Message text styling */
+.msg .text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Neutral messages need dark text for better readability */
+.msg.sent[data-sentiment-color="#FFC107"] .text {
+  color: #1a1a1a;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+}
+
+/* All other sentiment messages use white text */
+.msg.sent[data-sentiment-color] .text {
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Time and meta text styling */
+.msg .time, .msg .meta {
+  opacity: 0.85;
+  font-size: 11px;
+}
+
+.msg.sent[data-sentiment-color="#FFC107"] .time,
+.msg.sent[data-sentiment-color="#FFC107"] .meta {
+  color: rgba(0, 0, 0, 0.6);
+}
+
 /* Sentiment badge styling */
 .sentiment-badge {
   display: inline-block;
-  font-size: 12px;
-  font-weight: 600;
-  padding: 4px 8px;
-  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 12px;
   margin-left: 8px;
   margin-top: 6px;
-  background: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   cursor: help;
   transition: all 200ms ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .sentiment-badge:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* Neutral badge text color override */
+.msg.sent[data-sentiment-color="#FFC107"] .sentiment-badge {
+  color: #1a1a1a;
+  background: rgba(0, 0, 0, 0.15);
+  border-color: rgba(0, 0, 0, 0.3);
+}
   background: rgba(255, 255, 255, 0.25);
   border: 1px solid rgba(255, 255, 255, 0.4);
   transform: scale(1.05);
@@ -339,3 +410,321 @@ code{background:rgba(0,0,0,0.2);padding:4px 6px;border-radius:4px}
   0%, 50%, 100% { opacity: 1; }
   25%, 75% { opacity: 0; }
 }
+
+/* ========================================
+   EMOTION-SPECIFIC MESSAGE BUBBLE STYLES
+   Generated dynamically for 40+ emotions
+   ======================================== */
+
+/* Admiration - #7C4DFF */
+.msg.sent[data-sentiment-color="#7C4DFF"]{
+  background:linear-gradient(135deg, rgba(124, 77, 255, 0.85), rgba(94, 47, 225, 0.85));
+  border-left:4px solid #7C4DFF;
+  box-shadow:0 4px 16px rgba(124, 77, 255, 0.4);
+}
+
+/* Amusement - #FFAB40 */
+.msg.sent[data-sentiment-color="#FFAB40"]{
+  background:linear-gradient(135deg, rgba(255, 171, 64, 0.85), rgba(225, 141, 34, 0.85));
+  border-left:4px solid #FFAB40;
+  box-shadow:0 4px 16px rgba(255, 171, 64, 0.4);
+}
+
+/* Anger - #F44336 */
+.msg.sent[data-sentiment-color="#F44336"]{
+  background:linear-gradient(135deg, rgba(244, 67, 54, 0.85), rgba(214, 37, 24, 0.85));
+  border-left:4px solid #F44336;
+  box-shadow:0 4px 16px rgba(244, 67, 54, 0.4);
+}
+
+/* Annoyance - #FF7043 */
+.msg.sent[data-sentiment-color="#FF7043"]{
+  background:linear-gradient(135deg, rgba(255, 112, 67, 0.85), rgba(225, 82, 37, 0.85));
+  border-left:4px solid #FF7043;
+  box-shadow:0 4px 16px rgba(255, 112, 67, 0.4);
+}
+
+/* Anxiety - #5E35B1 */
+.msg.sent[data-sentiment-color="#5E35B1"]{
+  background:linear-gradient(135deg, rgba(94, 53, 177, 0.85), rgba(64, 23, 147, 0.85));
+  border-left:4px solid #5E35B1;
+  box-shadow:0 4px 16px rgba(94, 53, 177, 0.4);
+}
+
+/* Approval - #69F0AE */
+.msg.sent[data-sentiment-color="#69F0AE"]{
+  background:linear-gradient(135deg, rgba(105, 240, 174, 0.85), rgba(75, 210, 144, 0.85));
+  border-left:4px solid #69F0AE;
+  box-shadow:0 4px 16px rgba(105, 240, 174, 0.4);
+}
+
+/* Boredom - #78909C */
+.msg.sent[data-sentiment-color="#78909C"]{
+  background:linear-gradient(135deg, rgba(120, 144, 156, 0.85), rgba(90, 114, 126, 0.85));
+  border-left:4px solid #78909C;
+  box-shadow:0 4px 16px rgba(120, 144, 156, 0.4);
+}
+
+/* Caring - #F06292 */
+.msg.sent[data-sentiment-color="#F06292"]{
+  background:linear-gradient(135deg, rgba(240, 98, 146, 0.85), rgba(210, 68, 116, 0.85));
+  border-left:4px solid #F06292;
+  box-shadow:0 4px 16px rgba(240, 98, 146, 0.4);
+}
+
+/* Confusion - #B0BEC5 */
+.msg.sent[data-sentiment-color="#B0BEC5"]{
+  background:linear-gradient(135deg, rgba(176, 190, 197, 0.85), rgba(146, 160, 167, 0.85));
+  border-left:4px solid #B0BEC5;
+  box-shadow:0 4px 16px rgba(176, 190, 197, 0.4);
+}
+
+/* Curiosity - #4DD0E1 */
+.msg.sent[data-sentiment-color="#4DD0E1"]{
+  background:linear-gradient(135deg, rgba(77, 208, 225, 0.85), rgba(47, 178, 195, 0.85));
+  border-left:4px solid #4DD0E1;
+  box-shadow:0 4px 16px rgba(77, 208, 225, 0.4);
+}
+
+/* Depression - #455A64 */
+.msg.sent[data-sentiment-color="#455A64"]{
+  background:linear-gradient(135deg, rgba(69, 90, 100, 0.85), rgba(39, 60, 70, 0.85));
+  border-left:4px solid #455A64;
+  box-shadow:0 4px 16px rgba(69, 90, 100, 0.4);
+}
+
+/* Disappointment - #E64A19 */
+.msg.sent[data-sentiment-color="#E64A19"]{
+  background:linear-gradient(135deg, rgba(230, 74, 25, 0.85), rgba(200, 44, 0, 0.85));
+  border-left:4px solid #E64A19;
+  box-shadow:0 4px 16px rgba(230, 74, 25, 0.4);
+}
+
+/* Disapproval - #FF5252 */
+.msg.sent[data-sentiment-color="#FF5252"]{
+  background:linear-gradient(135deg, rgba(255, 82, 82, 0.85), rgba(225, 52, 52, 0.85));
+  border-left:4px solid #FF5252;
+  box-shadow:0 4px 16px rgba(255, 82, 82, 0.4);
+}
+
+/* Disgust - #8D6E63 */
+.msg.sent[data-sentiment-color="#8D6E63"]{
+  background:linear-gradient(135deg, rgba(141, 110, 99, 0.85), rgba(111, 80, 69, 0.85));
+  border-left:4px solid #8D6E63;
+  box-shadow:0 4px 16px rgba(141, 110, 99, 0.4);
+}
+
+/* Embarrassment - #EC407A */
+.msg.sent[data-sentiment-color="#EC407A"]{
+  background:linear-gradient(135deg, rgba(236, 64, 122, 0.85), rgba(206, 34, 92, 0.85));
+  border-left:4px solid #EC407A;
+  box-shadow:0 4px 16px rgba(236, 64, 122, 0.4);
+}
+
+/* Empathy - #26A69A */
+.msg.sent[data-sentiment-color="#26A69A"]{
+  background:linear-gradient(135deg, rgba(38, 166, 154, 0.85), rgba(8, 136, 124, 0.85));
+  border-left:4px solid #26A69A;
+  box-shadow:0 4px 16px rgba(38, 166, 154, 0.4);
+}
+
+/* Enthusiasm - #FFC400 */
+.msg.sent[data-sentiment-color="#FFC400"]{
+  background:linear-gradient(135deg, rgba(255, 196, 0, 0.85), rgba(225, 166, 0, 0.85));
+  border-left:4px solid #FFC400;
+  box-shadow:0 4px 16px rgba(255, 196, 0, 0.4);
+}
+
+/* Excitement - #FFD600 */
+.msg.sent[data-sentiment-color="#FFD600"]{
+  background:linear-gradient(135deg, rgba(255, 214, 0, 0.85), rgba(225, 184, 0, 0.85));
+  border-left:4px solid #FFD600;
+  box-shadow:0 4px 16px rgba(255, 214, 0, 0.4);
+  color:#1a1a1a !important;
+}
+
+/* Fear - #7E57C2 */
+.msg.sent[data-sentiment-color="#7E57C2"]{
+  background:linear-gradient(135deg, rgba(126, 87, 194, 0.85), rgba(96, 57, 164, 0.85));
+  border-left:4px solid #7E57C2;
+  box-shadow:0 4px 16px rgba(126, 87, 194, 0.4);
+}
+
+/* Frustration - #EF5350 */
+.msg.sent[data-sentiment-color="#EF5350"]{
+  background:linear-gradient(135deg, rgba(239, 83, 80, 0.85), rgba(209, 53, 50, 0.85));
+  border-left:4px solid #EF5350;
+  box-shadow:0 4px 16px rgba(239, 83, 80, 0.4);
+}
+
+/* Fun - #FF6E40 */
+.msg.sent[data-sentiment-color="#FF6E40"]{
+  background:linear-gradient(135deg, rgba(255, 110, 64, 0.85), rgba(225, 80, 34, 0.85));
+  border-left:4px solid #FF6E40;
+  box-shadow:0 4px 16px rgba(255, 110, 64, 0.4);
+}
+
+/* Gratitude - #4FC3F7 */
+.msg.sent[data-sentiment-color="#4FC3F7"]{
+  background:linear-gradient(135deg, rgba(79, 195, 247, 0.85), rgba(49, 165, 217, 0.85));
+  border-left:4px solid #4FC3F7;
+  box-shadow:0 4px 16px rgba(79, 195, 247, 0.4);
+}
+
+/* Grief - #512DA8 */
+.msg.sent[data-sentiment-color="#512DA8"]{
+  background:linear-gradient(135deg, rgba(81, 45, 168, 0.85), rgba(51, 15, 138, 0.85));
+  border-left:4px solid #512DA8;
+  box-shadow:0 4px 16px rgba(81, 45, 168, 0.4);
+}
+
+/* Guilt - #AD1457 */
+.msg.sent[data-sentiment-color="#AD1457"]{
+  background:linear-gradient(135deg, rgba(173, 20, 87, 0.85), rgba(143, 0, 57, 0.85));
+  border-left:4px solid #AD1457;
+  box-shadow:0 4px 16px rgba(173, 20, 87, 0.4);
+}
+
+/* Happiness - #76FF03 */
+.msg.sent[data-sentiment-color="#76FF03"]{
+  background:linear-gradient(135deg, rgba(118, 255, 3, 0.85), rgba(88, 225, 0, 0.85));
+  border-left:4px solid #76FF03;
+  box-shadow:0 4px 16px rgba(118, 255, 3, 0.4);
+}
+
+/* Hate - #D32F2F */
+.msg.sent[data-sentiment-color="#D32F2F"]{
+  background:linear-gradient(135deg, rgba(211, 47, 47, 0.85), rgba(181, 17, 17, 0.85));
+  border-left:4px solid #D32F2F;
+  box-shadow:0 4px 16px rgba(211, 47, 47, 0.4);
+}
+
+/* Jealousy - #388E3C */
+.msg.sent[data-sentiment-color="#388E3C"]{
+  background:linear-gradient(135deg, rgba(56, 142, 60, 0.85), rgba(26, 112, 30, 0.85));
+  border-left:4px solid #388E3C;
+  box-shadow:0 4px 16px rgba(56, 142, 60, 0.4);
+}
+
+/* Joy - #00E676 */
+.msg.sent[data-sentiment-color="#00E676"]{
+  background:linear-gradient(135deg, rgba(0, 230, 118, 0.85), rgba(0, 200, 88, 0.85));
+  border-left:4px solid #00E676;
+  box-shadow:0 4px 16px rgba(0, 230, 118, 0.4);
+}
+
+/* Loneliness - #546E7A */
+.msg.sent[data-sentiment-color="#546E7A"]{
+  background:linear-gradient(135deg, rgba(84, 110, 122, 0.85), rgba(54, 80, 92, 0.85));
+  border-left:4px solid #546E7A;
+  box-shadow:0 4px 16px rgba(84, 110, 122, 0.4);
+}
+
+/* Love - #FF4081 */
+.msg.sent[data-sentiment-color="#FF4081"]{
+  background:linear-gradient(135deg, rgba(255, 64, 129, 0.85), rgba(225, 34, 99, 0.85));
+  border-left:4px solid #FF4081;
+  box-shadow:0 4px 16px rgba(255, 64, 129, 0.4);
+}
+
+/* Nervousness - #BA68C8 */
+.msg.sent[data-sentiment-color="#BA68C8"]{
+  background:linear-gradient(135deg, rgba(186, 104, 200, 0.85), rgba(156, 74, 170, 0.85));
+  border-left:4px solid #BA68C8;
+  box-shadow:0 4px 16px rgba(186, 104, 200, 0.4);
+}
+
+/* Neutral - #90A4AE */
+.msg.sent[data-sentiment-color="#90A4AE"]{
+  background:linear-gradient(135deg, rgba(144, 164, 174, 0.85), rgba(114, 134, 144, 0.85));
+  border-left:4px solid #90A4AE;
+  box-shadow:0 4px 16px rgba(144, 164, 174, 0.4);
+}
+
+/* Optimism - #FFD54F */
+.msg.sent[data-sentiment-color="#FFD54F"]{
+  background:linear-gradient(135deg, rgba(255, 213, 79, 0.85), rgba(225, 183, 49, 0.85));
+  border-left:4px solid #FFD54F;
+  box-shadow:0 4px 16px rgba(255, 213, 79, 0.4);
+  color:#1a1a1a !important;
+}
+
+/* Pride - #9575CD */
+.msg.sent[data-sentiment-color="#9575CD"]{
+  background:linear-gradient(135deg, rgba(149, 117, 205, 0.85), rgba(119, 87, 175, 0.85));
+  border-left:4px solid #9575CD;
+  box-shadow:0 4px 16px rgba(149, 117, 205, 0.4);
+}
+
+/* Realization - #26C6DA */
+.msg.sent[data-sentiment-color="#26C6DA"]{
+  background:linear-gradient(135deg, rgba(38, 198, 218, 0.85), rgba(8, 168, 188, 0.85));
+  border-left:4px solid #26C6DA;
+  box-shadow:0 4px 16px rgba(38, 198, 218, 0.4);
+}
+
+/* Relief - #81C784 */
+.msg.sent[data-sentiment-color="#81C784"]{
+  background:linear-gradient(135deg, rgba(129, 199, 132, 0.85), rgba(99, 169, 102, 0.85));
+  border-left:4px solid #81C784;
+  box-shadow:0 4px 16px rgba(129, 199, 132, 0.4);
+}
+
+/* Remorse - #6A1B9A */
+.msg.sent[data-sentiment-color="#6A1B9A"]{
+  background:linear-gradient(135deg, rgba(106, 27, 154, 0.85), rgba(76, 0, 124, 0.85));
+  border-left:4px solid #6A1B9A;
+  box-shadow:0 4px 16px rgba(106, 27, 154, 0.4);
+}
+
+/* Sadness - #5C6BC0 */
+.msg.sent[data-sentiment-color="#5C6BC0"]{
+  background:linear-gradient(135deg, rgba(92, 107, 192, 0.85), rgba(62, 77, 162, 0.85));
+  border-left:4px solid #5C6BC0;
+  box-shadow:0 4px 16px rgba(92, 107, 192, 0.4);
+}
+
+/* Sarcasm - #9C27B0 */
+.msg.sent[data-sentiment-color="#9C27B0"]{
+  background:linear-gradient(135deg, rgba(156, 39, 176, 0.85), rgba(126, 9, 146, 0.85));
+  border-left:4px solid #9C27B0;
+  box-shadow:0 4px 16px rgba(156, 39, 176, 0.4);
+}
+
+/* Sarcastic - #9C27B0 */
+.msg.sent[data-sentiment-color="#9C27B0"]{
+  background:linear-gradient(135deg, rgba(156, 39, 176, 0.85), rgba(126, 9, 146, 0.85));
+  border-left:4px solid #9C27B0;
+  box-shadow:0 4px 16px rgba(156, 39, 176, 0.4);
+}
+
+/* Shame - #C62828 */
+.msg.sent[data-sentiment-color="#C62828"]{
+  background:linear-gradient(135deg, rgba(198, 40, 40, 0.85), rgba(168, 10, 10, 0.85));
+  border-left:4px solid #C62828;
+  box-shadow:0 4px 16px rgba(198, 40, 40, 0.4);
+}
+
+/* Stress - #FF6F00 */
+.msg.sent[data-sentiment-color="#FF6F00"]{
+  background:linear-gradient(135deg, rgba(255, 111, 0, 0.85), rgba(225, 81, 0, 0.85));
+  border-left:4px solid #FF6F00;
+  box-shadow:0 4px 16px rgba(255, 111, 0, 0.4);
+}
+
+/* Surprise - #FFEB3B */
+.msg.sent[data-sentiment-color="#FFEB3B"]{
+  background:linear-gradient(135deg, rgba(255, 235, 59, 0.85), rgba(225, 205, 29, 0.85));
+  border-left:4px solid #FFEB3B;
+  box-shadow:0 4px 16px rgba(255, 235, 59, 0.4);
+  color:#1a1a1a !important;
+}
+
+/* Worry - #AB47BC */
+.msg.sent[data-sentiment-color="#AB47BC"]{
+  background:linear-gradient(135deg, rgba(171, 71, 188, 0.85), rgba(141, 41, 158, 0.85));
+  border-left:4px solid #AB47BC;
+  box-shadow:0 4px 16px rgba(171, 71, 188, 0.4);
+}
+
+/* Total emotions supported: 44 */

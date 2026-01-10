@@ -118,7 +118,18 @@ def analyze_context(text, history_messages):
     """
     Analyzes message context within specified sentiment score ranges.
     """
-    text_lower = text.lower()
+    text_lower = text.lower().strip()
+    
+    # Quick check for common neutral greetings
+    neutral_greetings = ["hello", "hi", "hey", "good morning", "good afternoon", "good evening", 
+                         "greetings", "howdy", "sup", "yo", "hola", "bonjour"]
+    if text_lower in neutral_greetings or any(text_lower == greeting for greeting in neutral_greetings):
+        return {
+            'context_score': 0.0,
+            'is_sarcastic': False,
+            'pos_count': 0,
+            'neg_count': 0
+        }
     
     sarcasm_indicators = ["oh great", "thanks a lot", "yeah right", "wow"]
     is_sarcastic = any(phrase in text_lower for phrase in sarcasm_indicators) and ("!" in text or "..." in text)

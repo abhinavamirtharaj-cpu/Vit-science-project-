@@ -3,6 +3,7 @@ chat_service.py - Chat service with sentiment analysis integration
 
 This module integrates storage and sentiment analysis capabilities.
 It provides functions to analyze chat messages and persist them with sentiment data.
+Supports both emotion-based and sentiment category-based analysis.
 """
 import sys
 import os
@@ -14,6 +15,15 @@ from ui_io.storage import append_message, append_messages, get_history, get_csv_
 from core_analysis.node_1 import analyze_sentiment_node_1
 from core_analysis.node_2 import run_node_2_analysis
 from core_analysis.node_3 import run_core_analysis
+
+# Import emotion detection
+try:
+    from emotion_analyzer import analyze_emotion
+    from emotion_colors import EMOTION_COLORS, EMOTION_EMOJIS, get_emotion_category
+    EMOTION_MODE = True
+except ImportError:
+    EMOTION_MODE = False
+    print("Warning: Emotion detection not available, using sentiment categories")
 
 __all__ = [
     "append_message", 
@@ -51,7 +61,7 @@ def predict_next_sentiment(current_sentiment: str):
 
 def process_user_message(text: str, contact: dict) -> dict:
     """
-    Process a user message by analyzing sentiment and formatting for display.
+    Process a user message by analyzing sentiment/emotion and formatting for display.
     Uses the Node 1, 2, 3 Architecture.
     
     Args:
@@ -59,7 +69,7 @@ def process_user_message(text: str, contact: dict) -> dict:
         contact (dict): Contact information with 'id' and 'name'
         
     Returns:
-        dict: Processed message with sentiment analysis and display formatting
+        dict: Processed message with sentiment/emotion analysis and display formatting
     """
     # 1. Get History
     csv_path = get_csv_path()
@@ -76,33 +86,56 @@ def process_user_message(text: str, contact: dict) -> dict:
     # 3. Run Node 1 (Placeholder)
     node_1_result = analyze_sentiment_node_1(text)
     
-    # 4. Run Node 3 (Core Analysis)
-    final_result = run_core_analysis(text, node_1_result, node_2_result, history_messages)
-    
-    # Format for display/storage
-    # Mapping Node 3 result to expected format
-    sentiment_analysis = {
-        'polarity_score': final_result['composite_score'],
-        'category': final_result['category'],
-        'emoji': '🤔' if final_result['category'] == 'Sarcastic' else '', # Basic emoji mapping fallback
-        'color': '#333333', # Fallback hex
-        'description': final_result['description']
-    }
-    
-    # Enhance Emoji/Color mapping from Node 3 categories
-    emoji_map = {
-        'Very Positive': '🤩', 'Positive': '🙂', 'Neutral': '😐', 
-        'Negative': '🙁', 'Very Negative': '😠', 'Sarcastic': '🙃'
-    }
-    # Convert ANSI color to Hex for UI? 
-    # Node 3 returns ANSI codes. We need Hex for Web UI.
-    hex_map = {
-        'Very Positive': '#4CAF50', 'Positive': '#00BCD4', 'Neutral': '#FFC107',
-        'Negative': '#F44336', 'Very Negative': '#9C27B0', 'Sarcastic': '#2196F3'
-    }
-    
-    sentiment_analysis['emoji'] = emoji_map.get(final_result['category'], '😐')
-    sentiment_analysis['color'] = hex_map.get(final_result['category'], '#9E9E9E')
+    # 4. Check if emotion mode is enabled
+    if EMOTION_MODE:
+        # Get contact's chat history for context-aware emotion detection
+        contact_history = get_history(contact.get('id', 'unknown'))
+        
+        # Use emotion detection with chat history for more granular analysis
+        emotion_result = analyze_emotion(text, contact_history)
+        emotion_label = emotion_result['emotion']
+        category = emotion_result['category']
+        polarity = emotion_result['polarity']
+        
+        sentiment_analysis = {
+            'polarity_score': polarity,
+            'category': emotion_label,  # Return specific emotion
+            'emotion': emotion_label,
+            'emoji': EMOTION_EMOJIS.get(emotion_label, '😐'),
+            'color': EMOTION_COLORS.get(emotion_label, '#90A4AE'),
+            'description': f'Detected emotion: {emotion_label} (context-aware)'
+        }
+    else:
+        # 5. Run Node 3 (Core Analysis) - Use traditional sentiment categories
+        final_result = run_core_analysis(text, node_1_result, node_2_result, history_messages)
+        
+        # Format for display/storage
+        sentiment_analysis = {
+            'polarity_score': final_result['composite_score'],
+            'category': final_result['category'],
+            'emotion': None,
+            'emoji': '🤔' if final_result['category'] == 'Sarcastic' else '',
+            'color': '#333333',
+            'description': final_result['description']
+        }
+        
+        # Enhance Emoji/Color mapping from Node 3 categories
+        emoji_map = {
+            'Very Positive': '😄', 'Positive': '🙂', 'Neutral': '😐', 
+            'Negative': '☹️', 'Very Negative': '😠', 'Sarcastic': '😏'
+        }
+        # Vibrant color scheme for each sentiment category
+        hex_map = {
+            'Very Positive': '#00E676',   # Bright green
+            'Positive': '#2196F3',        # Bright blue
+            'Neutral': '#FFC107',         # Amber/yellow
+            'Negative': '#FF5722',        # Deep orange/red
+            'Very Negative': '#E91E63',   # Pink/magenta
+            'Sarcastic': '#9C27B0'        # Purple
+        }
+        
+        sentiment_analysis['emoji'] = emoji_map.get(final_result['category'], '😐')
+        sentiment_analysis['color'] = hex_map.get(final_result['category'], '#9E9E9E')
     
     
     # Prepare message for storage
