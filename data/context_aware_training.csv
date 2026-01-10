@@ -1,0 +1,144 @@
+contact_id,message,dir,emotion
+context_0,You broke my laptop! Oh my god!,sent,anger
+context_1,They canceled the concert! Oh my god!,sent,anger
+context_2,He lied to me again! Oh my god!,sent,anger
+context_3,This is the worst day ever! Oh my god!,sent,anger
+context_4,I can't believe you did that! Oh my god!,sent,anger
+context_5,"Mind your words! Oh my god, the disrespect!",sent,anger
+context_6,What the hell is wrong with you! Oh my god!,sent,anger
+context_7,Are you kidding me right now? Oh my god!,sent,anger
+context_8,This is so frustrating! Oh my god!,sent,anger
+context_9,I'm so done with this! Oh my god!,sent,anger
+context_10,I won the lottery! Oh my god!,sent,surprise
+context_11,You're getting married! Oh my god!,sent,surprise
+context_12,Is that really you? Oh my god!,sent,surprise
+context_13,This is unexpected! Oh my god!,sent,surprise
+context_14,I can't believe this! Oh my god!,sent,surprise
+context_15,Did you see that? Oh my god!,sent,surprise
+context_16,Look at that view! Oh my god!,sent,surprise
+context_17,This is incredible! Oh my god!,sent,surprise
+context_18,You did this for me? Oh my god!,sent,surprise
+context_19,I never expected this! Oh my god!,sent,surprise
+context_20,We're going to Paris! Oh my god!,sent,excitement
+context_21,I got accepted! Oh my god!,sent,excitement
+context_22,This is happening! Oh my god!,sent,excitement
+context_23,I'm so excited! Oh my god!,sent,excitement
+context_24,Best news ever! Oh my god!,sent,excitement
+context_25,Can't wait! Oh my god!,sent,excitement
+context_26,This is amazing! Oh my god!,sent,excitement
+context_27,I'm pumped! Oh my god!,sent,excitement
+context_28,Let's do this! Oh my god!,sent,excitement
+context_29,Dreams coming true! Oh my god!,sent,excitement
+context_30,There's someone in the house! Oh my god!,sent,fear
+context_31,The car is coming straight at us! Oh my god!,sent,fear
+context_32,We're going to crash! Oh my god!,sent,fear
+context_33,That's terrifying! Oh my god!,sent,fear
+context_34,I'm so scared! Oh my god!,sent,fear
+context_35,What was that noise? Oh my god!,sent,fear
+context_36,It's a spider! Oh my god!,sent,fear
+context_37,I think someone is following us! Oh my god!,sent,fear
+context_38,The building is on fire! Oh my god!,sent,fear
+context_39,We're trapped! Oh my god!,sent,fear
+context_40,He passed away... Oh my god...,sent,sadness
+context_41,I failed the exam. Oh my god.,sent,sadness
+context_42,They broke up with me. Oh my god...,sent,sadness
+context_43,I lost everything. Oh my god.,sent,sadness
+context_44,This is heartbreaking. Oh my god...,sent,sadness
+context_45,I can't believe they're gone. Oh my god.,sent,sadness
+context_46,My dog died. Oh my god...,sent,sadness
+context_47,Everything is falling apart. Oh my god.,sent,sadness
+context_48,I'm so devastated. Oh my god...,sent,sadness
+context_49,This hurts so much. Oh my god.,sent,sadness
+context_50,We won the championship! Wow!,sent,excitement
+context_51,This is incredible! Wow!,sent,excitement
+context_52,Best present ever! Wow!,sent,excitement
+context_53,I can't believe this is real! Wow!,sent,excitement
+context_54,This is amazing! Wow!,sent,excitement
+context_55,Wow! This is the best day ever!,sent,excitement
+context_56,Wow! I'm so happy!,sent,excitement
+context_57,Wow! This is fantastic!,sent,excitement
+context_58,Did you see that? Wow!,sent,surprise
+context_59,I wasn't expecting this. Wow.,sent,surprise
+context_60,That's unexpected. Wow.,sent,surprise
+context_61,"Wow, I'm speechless.",sent,surprise
+context_62,"Wow, never saw that coming.",sent,surprise
+context_63,That's a surprise. Wow.,sent,surprise
+context_64,You did what? Wow.,sent,anger
+context_65,"Wow, just wow. I'm furious.",sent,anger
+context_66,"Wow, that's disrespectful.",sent,anger
+context_67,I can't believe you lied. Wow.,sent,anger
+context_68,"Wow, this is unacceptable.",sent,anger
+context_69,You crossed the line. Wow.,sent,anger
+context_70,"Wow, real smart move there.",sent,sarcasm
+context_71,"Wow, brilliant idea. Not.",sent,sarcasm
+context_72,"Oh wow, didn't see that coming. Sarcasm.",sent,sarcasm
+context_73,"Wow, you're a genius. Sure.",sent,sarcasm
+context_74,"Wow, that's just great. Perfect.",sent,sarcasm
+context_75,You forgot my birthday. Wow.,sent,disappointment
+context_76,"Wow, I expected more from you.",sent,disappointment
+context_77,That's all you did? Wow.,sent,disappointment
+context_78,"Wow, I'm let down.",sent,disappointment
+context_79,"Wow, this is disappointing.",sent,disappointment
+context_80,That's great news!,sent,happiness
+context_81,Great job on the project!,sent,happiness
+context_82,Great to hear from you!,sent,happiness
+context_83,Having a great time!,sent,happiness
+context_84,Feeling great today!,sent,happiness
+context_85,"Great, just great. My car broke down.",sent,sarcasm
+context_86,"Oh great, another problem.",sent,sarcasm
+context_87,"Great, now everything is ruined.",sent,sarcasm
+context_88,That's just great. Sarcasm.,sent,sarcasm
+context_89,"Great, perfect timing. Not.",sent,sarcasm
+context_90,"Great, you ruined everything!",sent,anger
+context_91,Great job breaking my trust!,sent,anger
+context_92,Just great! Now I'm furious!,sent,anger
+context_93,"Oh great, you did it again!",sent,anger
+context_94,Perfect day!,sent,happiness
+context_95,This is perfect!,sent,happiness
+context_96,Perfect timing!,sent,happiness
+context_97,Everything is perfect!,sent,happiness
+context_98,"Perfect, just perfect. My day is ruined.",sent,sarcasm
+context_99,"Oh perfect, another mistake.",sent,sarcasm
+context_100,"Perfect, now nothing works.",sent,sarcasm
+context_101,That's perfect. Sarcasm.,sent,sarcasm
+context_102,Perfect! You broke it!,sent,anger
+context_103,"Oh perfect, you lost it!",sent,anger
+context_104,Just perfect! I'm so angry!,sent,anger
+context_105,That's nice of you!,sent,happiness
+context_106,Nice work!,sent,happiness
+context_107,Nice to meet you!,sent,happiness
+context_108,Having a nice day!,sent,happiness
+context_109,"Oh nice, real nice. Sarcasm.",sent,sarcasm
+context_110,"Nice going, you broke it.",sent,sarcasm
+context_111,Nice job ruining everything.,sent,sarcasm
+context_112,Real nice. Not.,sent,sarcasm
+context_113,Seriously? You did this again!,sent,anger
+context_114,Are you seriously doing this?,sent,anger
+context_115,"Seriously, I'm fed up!",sent,anger
+context_116,You can't be serious! I'm furious!,sent,anger
+context_117,Seriously? That's amazing!,sent,surprise
+context_118,Seriously? I can't believe it!,sent,surprise
+context_119,Are you serious? Wow!,sent,surprise
+context_120,Seriously? That's all?,sent,disappointment
+context_121,"Seriously, I expected more.",sent,disappointment
+context_122,Are you seriously giving up?,sent,disappointment
+context_123,Mind your words!,sent,anger
+context_124,Watch your mouth!,sent,anger
+context_125,What the hell are you doing!,sent,anger
+context_126,What the fish is this!,sent,anger
+context_127,Shut up right now!,sent,anger
+context_128,Get lost!,sent,anger
+context_129,Leave me alone!,sent,anger
+context_130,You're crossing the line!,sent,anger
+context_131,Don't test me!,sent,anger
+context_132,I'm warning you!,sent,anger
+context_133,Back off!,sent,anger
+context_134,Cut it out!,sent,anger
+context_135,Stop it!,sent,anger
+context_136,Enough is enough!,sent,anger
+context_137,That's it! I'm done!,sent,anger
+context_138,You're pissing me off!,sent,anger
+context_139,Don't push me!,sent,anger
+context_140,I've had it!,sent,anger
+context_141,You're getting on my nerves!,sent,anger
+context_142,Knock it off!,sent,anger

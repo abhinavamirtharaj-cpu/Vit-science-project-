@@ -1,0 +1,2685 @@
+contact_id,message,dir,emotion
+user_0,I'm so happy today!,sent,joy
+user_1,"I have to tell you, I'm so happy today!!",sent,joy
+user_2,"Hey, I'm so happy today!...",sent,joy
+user_3,"I have to tell you, I'm so happy completely today! for real",sent,joy
+user_4,"I have to tell you, I'm so happy really today!...",sent,joy
+user_5,"You know what, I'm so happy today! honestly",sent,joy
+user_6,"Honestly, I'm so happy today! today",sent,joy
+user_7,"To be honest, I'm so so happy today!",sent,joy
+user_8,"Listen, I'm utterly so happy today!!!",sent,joy
+user_9,"Honestly, I'm so happy today! at the moment",sent,joy
+user_10,"Listen, I'm so happy today!",sent,joy
+user_11,This brings me so much joy!,sent,joy
+user_12,"Just so you know, This brings me so much joy! for real",sent,joy
+user_13,"Hey, This brings me so absolutely much joy!!!",sent,joy
+user_14,"To be honest, This brings me so much joy! at the moment",sent,joy
+user_15,"You know what, This brings me so much joy! today",sent,joy
+user_16,"Listen, This brings me very so much joy! today",sent,joy
+user_17,"I have to tell you, This brings me so much joy! at the moment",sent,joy
+user_18,"You know what, This incredibly brings me so much joy!!!",sent,joy
+user_19,"Listen, This brings very me so much joy! today",sent,joy
+user_20,This brings me so much joy! at the moment,sent,joy
+user_21,"Hey, This brings me so much really joy! right now",sent,joy
+user_22,I feel absolutely wonderful,sent,joy
+user_23,I feel really absolutely wonderful...,sent,joy
+user_24,"You know what, I feel absolutely wonderful",sent,joy
+user_25,"Hey, I feel absolutely truly wonderful",sent,joy
+user_26,"Honestly, I feel absolutely wonderful right now",sent,joy
+user_27,"I just want to say, I feel absolutely wonderful seriously",sent,joy
+user_28,"I just want to say, I feel absolutely wonderful seriously",sent,joy
+user_29,"Honestly, I feel absolutely wonderful!",sent,joy
+user_30,I feel absolutely completely wonderful right now,sent,joy
+user_31,"To be honest, I feel absolutely wonderful!!",sent,joy
+user_32,I feel truly absolutely wonderful!!,sent,joy
+user_33,My heart is filled with happiness,sent,joy
+user_34,"Hey, My heart is filled with happiness today",sent,joy
+user_35,"Hey, My heart is filled with happiness",sent,joy
+user_36,"To be honest, My heart is filled with happiness!!",sent,joy
+user_37,"Hey, My heart is filled with happiness for real",sent,joy
+user_38,"Listen, My heart is filled completely with happiness for real",sent,joy
+user_39,"I just want to say, My heart is filled with happiness seriously",sent,joy
+user_40,"To be honest, My heart is filled with happiness for real",sent,joy
+user_41,"To be honest, My heart is filled with really happiness today",sent,joy
+user_42,"You know what, My heart is filled with happiness right now",sent,joy
+user_43,My heart is filled with happiness honestly,sent,joy
+user_44,This is the best day ever!,sent,joy
+user_45,This is the best day ever!!!,sent,joy
+user_46,"Listen, This is the best day ever!",sent,joy
+user_47,"Hey, This is the best day very ever! for real",sent,joy
+user_48,"I have to tell you, This is the best day ever! right now",sent,joy
+user_49,This is incredibly the best day ever!...,sent,joy
+user_50,"Just so you know, This is the best day ever! right now",sent,joy
+user_51,This is the best day ever! seriously,sent,joy
+user_52,"I have to tell you, This totally is the best day ever!",sent,joy
+user_53,"Hey, This is the best day ever! at the moment",sent,joy
+user_54,"Just so you know, This is the best really day ever! for real",sent,joy
+user_55,I'm overjoyed,sent,joy
+user_56,"To be honest, I'm overjoyed...",sent,joy
+user_57,"You know what, I'm overjoyed seriously",sent,joy
+user_58,"I just want to say, I'm overjoyed!",sent,joy
+user_59,"I have to tell you, I'm overjoyed at the moment",sent,joy
+user_60,"Just so you know, I'm overjoyed!",sent,joy
+user_61,"Just so you know, I'm overjoyed",sent,joy
+user_62,"You know what, I'm overjoyed at the moment",sent,joy
+user_63,"Hey, I'm overjoyed!",sent,joy
+user_64,"I just want to say, I'm overjoyed",sent,joy
+user_65,"I just want to say, I'm overjoyed right now",sent,joy
+user_66,What a delightful surprise,sent,joy
+user_67,"Honestly, What a delightful surprise right now",sent,joy
+user_68,"Just so you know, What a absolutely delightful surprise",sent,joy
+user_69,"Just so you know, What a completely delightful surprise seriously",sent,joy
+user_70,"I just want to say, What a delightful incredibly surprise at the moment",sent,joy
+user_71,"To be honest, What a delightful surprise today",sent,joy
+user_72,"Just so you know, What a delightful surprise today",sent,joy
+user_73,"Honestly, What so a delightful surprise today",sent,joy
+user_74,"Listen, What a delightful surprise right now",sent,joy
+user_75,"You know what, What a delightful surprise seriously",sent,joy
+user_76,"Hey, What a delightful surprise for real",sent,joy
+user_77,I'm beaming with joy,sent,joy
+user_78,"Just so you know, I'm beaming with truly joy for real",sent,joy
+user_79,"I have to tell you, I'm beaming very with joy for real",sent,joy
+user_80,"You know what, I'm beaming with joy",sent,joy
+user_81,"Just so you know, I'm beaming so with joy for real",sent,joy
+user_82,"Hey, I'm beaming totally with joy today",sent,joy
+user_83,"You know what, I'm beaming very with joy...",sent,joy
+user_84,"To be honest, I'm beaming totally with joy!!",sent,joy
+user_85,"To be honest, I'm beaming with joy at the moment",sent,joy
+user_86,I'm beaming with so joy...,sent,joy
+user_87,I'm beaming with joy right now,sent,joy
+user_88,This makes my heart sing,sent,joy
+user_89,"Listen, This makes my heart sing honestly",sent,joy
+user_90,"I have to tell you, This makes my utterly heart sing...",sent,joy
+user_91,"To be honest, This makes my heart sing...",sent,joy
+user_92,"You know what, This makes my heart sing honestly",sent,joy
+user_93,"Just so you know, This makes my heart sing honestly",sent,joy
+user_94,"I just want to say, This makes my heart incredibly sing today",sent,joy
+user_95,"Listen, This makes utterly my heart sing...",sent,joy
+user_96,"Honestly, This makes my heart sing...",sent,joy
+user_97,"Hey, This makes truly my heart sing at the moment",sent,joy
+user_98,"Listen, This makes my heart sing right now",sent,joy
+user_99,I couldn't be happier,sent,joy
+user_100,I couldn't be utterly happier for real,sent,joy
+user_101,"You know what, I couldn't be happier!!",sent,joy
+user_102,"Just so you know, I couldn't be very happier for real",sent,joy
+user_103,"Hey, I couldn't be happier",sent,joy
+user_104,I couldn't be happier seriously,sent,joy
+user_105,"I have to tell you, I couldn't be happier at the moment",sent,joy
+user_106,"To be honest, I totally couldn't be happier for real",sent,joy
+user_107,"Hey, I couldn't be happier",sent,joy
+user_108,"Hey, I couldn't be happier for real",sent,joy
+user_109,"Hey, I couldn't incredibly be happier!!",sent,joy
+user_110,Pure happiness,sent,joy
+user_111,"Hey, Pure happiness at the moment",sent,joy
+user_112,"I just want to say, Pure happiness seriously",sent,joy
+user_113,"Listen, Pure happiness for real",sent,joy
+user_114,"You know what, Pure happiness seriously",sent,joy
+user_115,"I have to tell you, Pure happiness seriously",sent,joy
+user_116,"Hey, Pure happiness!",sent,joy
+user_117,"Just so you know, Pure happiness!!",sent,joy
+user_118,"I have to tell you, Pure happiness for real",sent,joy
+user_119,"Listen, Pure happiness!!",sent,joy
+user_120,"I just want to say, Pure happiness honestly",sent,joy
+user_121,Feeling on top of the world,sent,joy
+user_122,"I just want to say, Feeling on top of the world today",sent,joy
+user_123,"You know what, Feeling on top of the world!",sent,joy
+user_124,"Honestly, Feeling on top of the world right now",sent,joy
+user_125,"Hey, Feeling on top of the world!",sent,joy
+user_126,"You know what, Feeling on top of the world...",sent,joy
+user_127,"Listen, Feeling on top of the truly world...",sent,joy
+user_128,"Hey, Feeling on top of completely the world today",sent,joy
+user_129,Feeling on top of the world,sent,joy
+user_130,"I have to tell you, Feeling on top of the world for real",sent,joy
+user_131,"Just so you know, Feeling on top extremely of the world seriously",sent,joy
+user_132,This is amazing news,sent,joy
+user_133,"You know what, This so is amazing news seriously",sent,joy
+user_134,"You know what, This is amazing news!",sent,joy
+user_135,"To be honest, This is amazing news right now",sent,joy
+user_136,"To be honest, This is amazing news honestly",sent,joy
+user_137,"I just want to say, This so is amazing news today",sent,joy
+user_138,"Listen, This is amazing news!",sent,joy
+user_139,"Hey, This is amazing really news today",sent,joy
+user_140,"I have to tell you, This is amazing news today",sent,joy
+user_141,"Just so you know, This is amazing news",sent,joy
+user_142,"You know what, This is amazing news at the moment",sent,joy
+user_143,I'm thrilled beyond words,sent,joy
+user_144,"I just want to say, I'm thrilled beyond words right now",sent,joy
+user_145,"Honestly, I'm thrilled beyond extremely words right now",sent,joy
+user_146,"Hey, I'm thrilled beyond words seriously",sent,joy
+user_147,"I have to tell you, I'm completely thrilled beyond words seriously",sent,joy
+user_148,I'm thrilled beyond words for real,sent,joy
+user_149,"Hey, I'm thrilled beyond words honestly",sent,joy
+user_150,"To be honest, I'm thrilled truly beyond words for real",sent,joy
+user_151,"You know what, I'm thrilled beyond words",sent,joy
+user_152,I'm thrilled beyond words!,sent,joy
+user_153,"You know what, I'm thrilled beyond words at the moment",sent,joy
+user_154,My cup runneth over,sent,joy
+user_155,"I have to tell you, My cup incredibly runneth over right now",sent,joy
+user_156,"I have to tell you, My cup runneth over at the moment",sent,joy
+user_157,"Honestly, My cup runneth so over...",sent,joy
+user_158,"Hey, My cup runneth over for real",sent,joy
+user_159,"I have to tell you, My cup runneth absolutely over seriously",sent,joy
+user_160,"I have to tell you, My truly cup runneth over today",sent,joy
+user_161,"Just so you know, My cup absolutely runneth over seriously",sent,joy
+user_162,"I just want to say, My cup runneth over today",sent,joy
+user_163,My cup runneth extremely over,sent,joy
+user_164,"Hey, My really cup runneth over!",sent,joy
+user_165,Dancing with joy,sent,joy
+user_166,"Hey, Dancing absolutely with joy today",sent,joy
+user_167,"I just want to say, Dancing with incredibly joy today",sent,joy
+user_168,"Just so you know, Dancing with joy seriously",sent,joy
+user_169,"Listen, Dancing with joy honestly",sent,joy
+user_170,"Honestly, Dancing with extremely joy",sent,joy
+user_171,"You know what, Dancing with joy for real",sent,joy
+user_172,"To be honest, Dancing with incredibly joy",sent,joy
+user_173,"Honestly, Dancing very with joy for real",sent,joy
+user_174,"You know what, Dancing with so joy...",sent,joy
+user_175,"Just so you know, Dancing incredibly with joy honestly",sent,joy
+user_176,Jumping for joy,sent,joy
+user_177,"Honestly, Jumping for joy seriously",sent,joy
+user_178,Jumping for so joy,sent,joy
+user_179,"Just so you know, Jumping for joy!!",sent,joy
+user_180,"Honestly, Jumping for joy today",sent,joy
+user_181,"I just want to say, Jumping for joy!!",sent,joy
+user_182,"You know what, Jumping for joy seriously",sent,joy
+user_183,Jumping for joy today,sent,joy
+user_184,"Hey, Jumping for joy for real",sent,joy
+user_185,"Just so you know, Jumping for completely joy...",sent,joy
+user_186,"I just want to say, Jumping extremely for joy!",sent,joy
+user_187,Bursting with happiness,sent,joy
+user_188,"Hey, Bursting with happiness for real",sent,joy
+user_189,"I just want to say, Bursting completely with happiness for real",sent,joy
+user_190,"I just want to say, Bursting with happiness!",sent,joy
+user_191,"Honestly, Bursting with completely happiness for real",sent,joy
+user_192,Bursting with happiness!,sent,joy
+user_193,"Hey, Bursting with happiness seriously",sent,joy
+user_194,"Just so you know, Bursting with happiness honestly",sent,joy
+user_195,"Honestly, Bursting very with happiness!!",sent,joy
+user_196,"I have to tell you, Bursting with happiness...",sent,joy
+user_197,"Honestly, Bursting with really happiness seriously",sent,joy
+user_198,Cloud nine feeling,sent,joy
+user_199,"Listen, Cloud really nine feeling right now",sent,joy
+user_200,"Just so you know, Cloud absolutely nine feeling seriously",sent,joy
+user_201,Cloud very nine feeling,sent,joy
+user_202,Cloud nine feeling,sent,joy
+user_203,"Just so you know, Cloud nine feeling honestly",sent,joy
+user_204,Cloud totally nine feeling right now,sent,joy
+user_205,"I have to tell you, Cloud nine feeling seriously",sent,joy
+user_206,"To be honest, Cloud totally nine feeling right now",sent,joy
+user_207,"Just so you know, Cloud completely nine feeling!",sent,joy
+user_208,"Honestly, Cloud nine so feeling",sent,joy
+user_209,Everything is perfect,sent,joy
+user_210,"To be honest, Everything is perfect",sent,joy
+user_211,"To be honest, Everything is utterly perfect seriously",sent,joy
+user_212,"Just so you know, Everything is perfect honestly",sent,joy
+user_213,"I just want to say, Everything absolutely is perfect today",sent,joy
+user_214,"You know what, Everything incredibly is perfect right now",sent,joy
+user_215,"To be honest, Everything is totally perfect!",sent,joy
+user_216,"You know what, Everything is perfect today",sent,joy
+user_217,"Honestly, Everything very is perfect honestly",sent,joy
+user_218,"I have to tell you, Everything is perfect right now",sent,joy
+user_219,"To be honest, Everything is perfect...",sent,joy
+user_220,Life is beautiful,sent,joy
+user_221,"I just want to say, Life is beautiful honestly",sent,joy
+user_222,"Just so you know, Life completely is beautiful honestly",sent,joy
+user_223,"Listen, Life is incredibly beautiful honestly",sent,joy
+user_224,"You know what, Life totally is beautiful right now",sent,joy
+user_225,"Listen, Life is beautiful at the moment",sent,joy
+user_226,"Listen, Life completely is beautiful...",sent,joy
+user_227,"To be honest, Life absolutely is beautiful for real",sent,joy
+user_228,"To be honest, Life very is beautiful honestly",sent,joy
+user_229,"Hey, Life is beautiful today",sent,joy
+user_230,"Honestly, Life is beautiful for real",sent,joy
+user_231,Smiling from ear to ear,sent,joy
+user_232,"I just want to say, Smiling from completely ear to ear for real",sent,joy
+user_233,"Listen, Smiling from ear to ear today",sent,joy
+user_234,"I just want to say, Smiling from ear to ear for real",sent,joy
+user_235,"I just want to say, Smiling from ear to ear",sent,joy
+user_236,Smiling from absolutely ear to ear!,sent,joy
+user_237,"Listen, Smiling from ear to ear...",sent,joy
+user_238,"Listen, Smiling extremely from ear to ear",sent,joy
+user_239,"Just so you know, Smiling from ear to ear seriously",sent,joy
+user_240,"To be honest, Smiling from ear to ear for real",sent,joy
+user_241,"Honestly, Smiling from extremely ear to ear right now",sent,joy
+user_242,This made my day,sent,joy
+user_243,"Just so you know, This made my day",sent,joy
+user_244,"I just want to say, This made my very day...",sent,joy
+user_245,This made my day seriously,sent,joy
+user_246,"I have to tell you, This made my day!",sent,joy
+user_247,This made my day,sent,joy
+user_248,"You know what, This made my incredibly day honestly",sent,joy
+user_249,"To be honest, This completely made my day",sent,joy
+user_250,"I just want to say, This made my day today",sent,joy
+user_251,"Honestly, This made completely my day!",sent,joy
+user_252,This made incredibly my day!,sent,joy
+user_253,So blessed and happy,sent,joy
+user_254,So blessed and happy right now,sent,joy
+user_255,"You know what, So blessed and happy honestly",sent,joy
+user_256,"I have to tell you, So blessed and happy right now",sent,joy
+user_257,"I just want to say, So blessed and happy right now",sent,joy
+user_258,So completely blessed and happy...,sent,joy
+user_259,"You know what, So blessed and happy!",sent,joy
+user_260,"Listen, So blessed and happy",sent,joy
+user_261,"Honestly, So blessed and happy right now",sent,joy
+user_262,"I just want to say, So blessed and so happy...",sent,joy
+user_263,"You know what, So extremely blessed and happy today",sent,joy
+user_264,Feeling fantastic,sent,joy
+user_265,"I just want to say, Feeling fantastic today",sent,joy
+user_266,Feeling fantastic right now,sent,joy
+user_267,"Honestly, Feeling fantastic right now",sent,joy
+user_268,"Hey, Feeling fantastic!!",sent,joy
+user_269,"Honestly, Feeling fantastic seriously",sent,joy
+user_270,"You know what, Feeling fantastic for real",sent,joy
+user_271,"Just so you know, Feeling fantastic!!",sent,joy
+user_272,"To be honest, Feeling fantastic!",sent,joy
+user_273,"I just want to say, Feeling fantastic seriously",sent,joy
+user_274,"To be honest, Feeling fantastic right now",sent,joy
+user_275,Absolutely ecstatic,sent,joy
+user_276,"Honestly, Absolutely ecstatic for real",sent,joy
+user_277,"To be honest, Absolutely ecstatic!",sent,joy
+user_278,"You know what, Absolutely ecstatic for real",sent,joy
+user_279,"To be honest, Absolutely ecstatic seriously",sent,joy
+user_280,"Listen, Absolutely ecstatic",sent,joy
+user_281,"Honestly, Absolutely ecstatic right now",sent,joy
+user_282,"To be honest, Absolutely ecstatic",sent,joy
+user_283,"Just so you know, Absolutely ecstatic honestly",sent,joy
+user_284,"Listen, Absolutely ecstatic at the moment",sent,joy
+user_285,"To be honest, Absolutely ecstatic!",sent,joy
+user_286,Over the moon with joy,sent,joy
+user_287,"Honestly, Over the moon with joy right now",sent,joy
+user_288,"I just want to say, Over the moon with joy",sent,joy
+user_289,Over the moon with joy for real,sent,joy
+user_290,"I just want to say, Over the moon with joy for real",sent,joy
+user_291,"Honestly, Over the truly moon with joy!",sent,joy
+user_292,"Listen, Over the moon really with joy for real",sent,joy
+user_293,"I just want to say, Over the moon with joy right now",sent,joy
+user_294,"Just so you know, Over the moon with joy right now",sent,joy
+user_295,Over the moon with joy!!,sent,joy
+user_296,"Hey, Over the moon with joy at the moment",sent,joy
+user_297,Radiating happiness,sent,joy
+user_298,"I just want to say, Radiating happiness seriously",sent,joy
+user_299,"You know what, Radiating happiness honestly",sent,joy
+user_300,"To be honest, Radiating happiness",sent,joy
+user_301,Radiating happiness!,sent,joy
+user_302,"To be honest, Radiating happiness!",sent,joy
+user_303,"Honestly, Radiating happiness today",sent,joy
+user_304,"You know what, Radiating happiness seriously",sent,joy
+user_305,"Hey, Radiating happiness...",sent,joy
+user_306,"I just want to say, Radiating happiness for real",sent,joy
+user_307,"You know what, Radiating happiness today",sent,joy
+user_308,Pure bliss,sent,joy
+user_309,"Listen, Pure bliss right now",sent,joy
+user_310,"Hey, Pure bliss at the moment",sent,joy
+user_311,"Honestly, Pure bliss today",sent,joy
+user_312,Pure bliss...,sent,joy
+user_313,"Just so you know, Pure bliss right now",sent,joy
+user_314,Pure bliss at the moment,sent,joy
+user_315,"Hey, Pure bliss seriously",sent,joy
+user_316,"To be honest, Pure bliss",sent,joy
+user_317,"Just so you know, Pure bliss for real",sent,joy
+user_318,"Just so you know, Pure bliss right now",sent,joy
+user_319,Heaven on earth,sent,joy
+user_320,Heaven on totally earth for real,sent,joy
+user_321,"I have to tell you, Heaven incredibly on earth!",sent,joy
+user_322,"You know what, Heaven completely on earth!!",sent,joy
+user_323,"Listen, Heaven on earth for real",sent,joy
+user_324,"Just so you know, Heaven utterly on earth",sent,joy
+user_325,"I have to tell you, Heaven completely on earth right now",sent,joy
+user_326,"Listen, Heaven on earth!!",sent,joy
+user_327,"You know what, Heaven on very earth seriously",sent,joy
+user_328,"Honestly, Heaven completely on earth...",sent,joy
+user_329,"Honestly, Heaven on really earth right now",sent,joy
+user_330,Living my best life,sent,joy
+user_331,"I just want to say, Living my best life!!",sent,joy
+user_332,Living my best life honestly,sent,joy
+user_333,"To be honest, Living completely my best life today",sent,joy
+user_334,"To be honest, Living my best really life...",sent,joy
+user_335,"To be honest, Living truly my best life",sent,joy
+user_336,"You know what, Living very my best life!!",sent,joy
+user_337,"I have to tell you, Living my best very life right now",sent,joy
+user_338,"To be honest, Living my best life seriously",sent,joy
+user_339,"I have to tell you, Living really my best life at the moment",sent,joy
+user_340,"Hey, Living my best really life!",sent,joy
+user_341,Couldn't ask for more,sent,joy
+user_342,"Listen, Couldn't ask for incredibly more!!",sent,joy
+user_343,Couldn't ask for more...,sent,joy
+user_344,"Honestly, Couldn't ask truly for more!!",sent,joy
+user_345,"I have to tell you, Couldn't totally ask for more",sent,joy
+user_346,"Honestly, Couldn't ask for really more right now",sent,joy
+user_347,"Just so you know, Couldn't ask for truly more!",sent,joy
+user_348,"You know what, Couldn't ask for more!!",sent,joy
+user_349,"I have to tell you, Couldn't ask for more!!",sent,joy
+user_350,Couldn't ask for more,sent,joy
+user_351,Couldn't ask utterly for more at the moment,sent,joy
+user_352,Dreams coming true,sent,joy
+user_353,"Just so you know, Dreams coming true",sent,joy
+user_354,"I have to tell you, Dreams coming true right now",sent,joy
+user_355,Dreams really coming true...,sent,joy
+user_356,Dreams coming true,sent,joy
+user_357,"Hey, Dreams coming true!!",sent,joy
+user_358,"I just want to say, Dreams coming true seriously",sent,joy
+user_359,"Hey, Dreams totally coming true",sent,joy
+user_360,"I have to tell you, Dreams coming extremely true",sent,joy
+user_361,"To be honest, Dreams coming true for real",sent,joy
+user_362,"You know what, Dreams coming utterly true...",sent,joy
+user_363,Pinch me I'm dreaming,sent,joy
+user_364,Pinch me I'm extremely dreaming right now,sent,joy
+user_365,"I have to tell you, Pinch totally me I'm dreaming...",sent,joy
+user_366,"I just want to say, Pinch totally me I'm dreaming honestly",sent,joy
+user_367,"I just want to say, Pinch me completely I'm dreaming right now",sent,joy
+user_368,"I have to tell you, Pinch me I'm completely dreaming",sent,joy
+user_369,"I have to tell you, Pinch me I'm dreaming right now",sent,joy
+user_370,"Just so you know, Pinch me I'm dreaming for real",sent,joy
+user_371,"Hey, Pinch me I'm dreaming seriously",sent,joy
+user_372,"Just so you know, Pinch me I'm extremely dreaming!!",sent,joy
+user_373,"I just want to say, Pinch me I'm dreaming",sent,joy
+user_374,This is incredible,sent,joy
+user_375,"I have to tell you, This is really incredible!",sent,joy
+user_376,"To be honest, This really is incredible!",sent,joy
+user_377,"Hey, This is incredible!",sent,joy
+user_378,"To be honest, This is incredible for real",sent,joy
+user_379,"Listen, This is incredibly incredible seriously",sent,joy
+user_380,"I just want to say, This is totally incredible...",sent,joy
+user_381,"Listen, This is incredible today",sent,joy
+user_382,"Just so you know, This is incredible today",sent,joy
+user_383,"Honestly, This incredibly is incredible honestly",sent,joy
+user_384,This is absolutely incredible honestly,sent,joy
+user_385,Feeling blessed,sent,joy
+user_386,"Honestly, Feeling blessed...",sent,joy
+user_387,"Hey, Feeling blessed...",sent,joy
+user_388,"Honestly, Feeling blessed right now",sent,joy
+user_389,"Listen, Feeling blessed at the moment",sent,joy
+user_390,"I just want to say, Feeling blessed right now",sent,joy
+user_391,"Honestly, Feeling blessed...",sent,joy
+user_392,"To be honest, Feeling blessed!!",sent,joy
+user_393,"To be honest, Feeling blessed...",sent,joy
+user_394,"I just want to say, Feeling blessed today",sent,joy
+user_395,Feeling blessed at the moment,sent,joy
+user_396,Grateful and joyful,sent,joy
+user_397,"I have to tell you, Grateful and joyful today",sent,joy
+user_398,"I just want to say, Grateful and joyful right now",sent,joy
+user_399,"Listen, Grateful and joyful at the moment",sent,joy
+user_400,"I have to tell you, Grateful and joyful today",sent,joy
+user_401,"Hey, Grateful extremely and joyful at the moment",sent,joy
+user_402,"You know what, Grateful and joyful honestly",sent,joy
+user_403,"I have to tell you, Grateful and really joyful",sent,joy
+user_404,"To be honest, Grateful utterly and joyful...",sent,joy
+user_405,"To be honest, Grateful very and joyful",sent,joy
+user_406,"Listen, Grateful and incredibly joyful for real",sent,joy
+user_407,Heart full of joy,sent,joy
+user_408,"You know what, Heart extremely full of joy right now",sent,joy
+user_409,"You know what, Heart full of joy today",sent,joy
+user_410,"Just so you know, Heart full of joy today",sent,joy
+user_411,Heart full of absolutely joy honestly,sent,joy
+user_412,Heart full incredibly of joy!!,sent,joy
+user_413,"I have to tell you, Heart absolutely full of joy",sent,joy
+user_414,"Listen, Heart extremely full of joy at the moment",sent,joy
+user_415,"Hey, Heart full of joy...",sent,joy
+user_416,"Listen, Heart full of joy today",sent,joy
+user_417,"Listen, Heart really full of joy at the moment",sent,joy
+user_418,Sunshine in my soul,sent,joy
+user_419,"Honestly, Sunshine in my soul at the moment",sent,joy
+user_420,"You know what, Sunshine in my completely soul!",sent,joy
+user_421,"I have to tell you, Sunshine in absolutely my soul seriously",sent,joy
+user_422,"Honestly, Sunshine in my soul!",sent,joy
+user_423,"I just want to say, Sunshine in really my soul!!",sent,joy
+user_424,"I just want to say, Sunshine in my soul!!",sent,joy
+user_425,"To be honest, Sunshine in my soul!",sent,joy
+user_426,"Just so you know, Sunshine completely in my soul right now",sent,joy
+user_427,"I just want to say, Sunshine utterly in my soul at the moment",sent,joy
+user_428,"You know what, Sunshine in so my soul!",sent,joy
+user_429,Walking on air,sent,joy
+user_430,"You know what, Walking on air...",sent,joy
+user_431,"Just so you know, Walking on air seriously",sent,joy
+user_432,"To be honest, Walking truly on air for real",sent,joy
+user_433,"You know what, Walking very on air for real",sent,joy
+user_434,"I just want to say, Walking truly on air!",sent,joy
+user_435,"Listen, Walking on extremely air!!",sent,joy
+user_436,"Hey, Walking on air today",sent,joy
+user_437,"Honestly, Walking totally on air!!",sent,joy
+user_438,"I just want to say, Walking on air at the moment",sent,joy
+user_439,"Honestly, Walking very on air seriously",sent,joy
+user_440,Grinning like a fool,sent,joy
+user_441,"To be honest, Grinning so like a fool!",sent,joy
+user_442,"Hey, Grinning like a fool...",sent,joy
+user_443,"Hey, Grinning like a fool today",sent,joy
+user_444,Grinning like a fool seriously,sent,joy
+user_445,"Just so you know, Grinning like a fool right now",sent,joy
+user_446,"Hey, Grinning like a fool",sent,joy
+user_447,"I have to tell you, Grinning utterly like a fool today",sent,joy
+user_448,"I have to tell you, Grinning like a fool for real",sent,joy
+user_449,"Honestly, Grinning like a so fool seriously",sent,joy
+user_450,"Honestly, Grinning like a fool",sent,joy
+user_451,Best feeling ever,sent,joy
+user_452,"I just want to say, Best feeling ever honestly",sent,joy
+user_453,"You know what, Best absolutely feeling ever seriously",sent,joy
+user_454,"Honestly, Best feeling ever right now",sent,joy
+user_455,"To be honest, Best very feeling ever today",sent,joy
+user_456,"I have to tell you, Best feeling ever",sent,joy
+user_457,"To be honest, Best feeling totally ever at the moment",sent,joy
+user_458,"To be honest, Best feeling ever seriously",sent,joy
+user_459,"Honestly, Best feeling completely ever today",sent,joy
+user_460,"Hey, Best feeling ever at the moment",sent,joy
+user_461,Best feeling utterly ever seriously,sent,joy
+user_462,Overflowing with joy,sent,joy
+user_463,"Listen, Overflowing with joy today",sent,joy
+user_464,"You know what, Overflowing so with joy for real",sent,joy
+user_465,Overflowing with joy...,sent,joy
+user_466,"Just so you know, Overflowing with joy!",sent,joy
+user_467,"Listen, Overflowing with joy today",sent,joy
+user_468,Overflowing with joy!!,sent,joy
+user_469,"Honestly, Overflowing with joy today",sent,joy
+user_470,"You know what, Overflowing with joy for real",sent,joy
+user_471,"I just want to say, Overflowing with joy at the moment",sent,joy
+user_472,"I just want to say, Overflowing totally with joy right now",sent,joy
+user_473,Happiest moment of my life,sent,joy
+user_474,Happiest moment of my life...,sent,joy
+user_475,"You know what, Happiest extremely moment of my life for real",sent,joy
+user_476,"Just so you know, Happiest moment completely of my life for real",sent,joy
+user_477,"Just so you know, Happiest moment absolutely of my life seriously",sent,joy
+user_478,"Hey, Happiest moment of my life seriously",sent,joy
+user_479,"You know what, Happiest moment of my life!!",sent,joy
+user_480,"I have to tell you, Happiest incredibly moment of my life honestly",sent,joy
+user_481,"I have to tell you, Happiest moment of so my life...",sent,joy
+user_482,"Just so you know, Happiest moment of my life honestly",sent,joy
+user_483,"I just want to say, Happiest moment of my life for real",sent,joy
+user_484,This is magical,sent,joy
+user_485,"I just want to say, This is magical for real",sent,joy
+user_486,"Honestly, This is magical...",sent,joy
+user_487,"Honestly, This is totally magical seriously",sent,joy
+user_488,"I have to tell you, This is extremely magical!",sent,joy
+user_489,"I just want to say, This is magical honestly",sent,joy
+user_490,"Just so you know, This completely is magical!!",sent,joy
+user_491,"You know what, This is magical seriously",sent,joy
+user_492,"Honestly, This is magical honestly",sent,joy
+user_493,"To be honest, This absolutely is magical!",sent,joy
+user_494,"Listen, This utterly is magical!",sent,joy
+user_495,Feeling alive,sent,joy
+user_496,Feeling alive!,sent,joy
+user_497,"Honestly, Feeling alive honestly",sent,joy
+user_498,Feeling alive at the moment,sent,joy
+user_499,"Hey, Feeling alive...",sent,joy
+user_500,"I have to tell you, Feeling alive right now",sent,joy
+user_501,"Honestly, Feeling alive today",sent,joy
+user_502,"I just want to say, Feeling alive seriously",sent,joy
+user_503,"You know what, Feeling alive!",sent,joy
+user_504,"You know what, Feeling alive!!",sent,joy
+user_505,Feeling alive today,sent,joy
+user_506,Pure euphoria,sent,joy
+user_507,"To be honest, Pure euphoria...",sent,joy
+user_508,"I just want to say, Pure euphoria right now",sent,joy
+user_509,"I have to tell you, Pure euphoria!!",sent,joy
+user_510,"You know what, Pure euphoria",sent,joy
+user_511,"To be honest, Pure euphoria!",sent,joy
+user_512,"I just want to say, Pure euphoria!",sent,joy
+user_513,"I just want to say, Pure euphoria seriously",sent,joy
+user_514,"Listen, Pure euphoria!",sent,joy
+user_515,"Listen, Pure euphoria today",sent,joy
+user_516,Pure euphoria today,sent,joy
+user_517,Absolute delight,sent,joy
+user_518,"You know what, Absolute delight!",sent,joy
+user_519,"To be honest, Absolute delight honestly",sent,joy
+user_520,"I just want to say, Absolute delight for real",sent,joy
+user_521,"To be honest, Absolute delight right now",sent,joy
+user_522,"Listen, Absolute delight...",sent,joy
+user_523,Absolute delight right now,sent,joy
+user_524,"I just want to say, Absolute delight seriously",sent,joy
+user_525,"Listen, Absolute delight",sent,joy
+user_526,"Just so you know, Absolute delight seriously",sent,joy
+user_527,"You know what, Absolute delight seriously",sent,joy
+user_528,I love everything about this,sent,joy
+user_529,"I just want to say, I utterly love everything about this honestly",sent,joy
+user_530,"Hey, I love everything about this...",sent,joy
+user_531,"I have to tell you, I love everything about this!",sent,joy
+user_532,"To be honest, I love everything about this!",sent,joy
+user_533,I love everything about this for real,sent,joy
+user_534,"To be honest, I love everything about incredibly this!!",sent,joy
+user_535,"I just want to say, I love extremely everything about this honestly",sent,joy
+user_536,"Hey, I love everything about this",sent,joy
+user_537,"To be honest, I love everything so about this today",sent,joy
+user_538,"Honestly, I love extremely everything about this at the moment",sent,joy
+user_539,Perfect happiness,sent,joy
+user_540,"Just so you know, Perfect happiness!!",sent,joy
+user_541,"You know what, Perfect happiness...",sent,joy
+user_542,"To be honest, Perfect happiness today",sent,joy
+user_543,"Just so you know, Perfect happiness for real",sent,joy
+user_544,"Listen, Perfect happiness honestly",sent,joy
+user_545,"Listen, Perfect happiness right now",sent,joy
+user_546,Perfect happiness!,sent,joy
+user_547,"Hey, Perfect happiness right now",sent,joy
+user_548,"Listen, Perfect happiness",sent,joy
+user_549,"To be honest, Perfect happiness!!",sent,joy
+user_550,Joy unbounded,sent,joy
+user_551,"Listen, Joy unbounded...",sent,joy
+user_552,"You know what, Joy unbounded honestly",sent,joy
+user_553,"I just want to say, Joy unbounded!!",sent,joy
+user_554,"I have to tell you, Joy unbounded for real",sent,joy
+user_555,"Honestly, Joy unbounded!",sent,joy
+user_556,"You know what, Joy unbounded honestly",sent,joy
+user_557,"To be honest, Joy unbounded today",sent,joy
+user_558,"Just so you know, Joy unbounded",sent,joy
+user_559,"I just want to say, Joy unbounded!",sent,joy
+user_560,"You know what, Joy unbounded...",sent,joy
+user_561,I'm so angry right now,sent,anger
+user_562,"Hey, I'm so angry right now...",sent,anger
+user_563,"Hey, I'm so absolutely angry right now seriously",sent,anger
+user_564,I'm so angry right now seriously,sent,anger
+user_565,"To be honest, I'm absolutely so angry right now for real",sent,anger
+user_566,I'm so angry right now honestly,sent,anger
+user_567,"Honestly, I'm so angry right now at the moment",sent,anger
+user_568,"Honestly, I'm so angry right now at the moment",sent,anger
+user_569,"To be honest, I'm so angry right now right now",sent,anger
+user_570,"To be honest, I'm so angry right now today",sent,anger
+user_571,"Honestly, I'm so angry right now...",sent,anger
+user_572,This makes me furious,sent,anger
+user_573,"Just so you know, This makes incredibly me furious!",sent,anger
+user_574,"Listen, This makes really me furious today",sent,anger
+user_575,"You know what, This makes me extremely furious!",sent,anger
+user_576,"Honestly, This makes truly me furious today",sent,anger
+user_577,"I have to tell you, This makes me furious at the moment",sent,anger
+user_578,"Honestly, This makes me furious",sent,anger
+user_579,"I just want to say, This truly makes me furious right now",sent,anger
+user_580,"You know what, This makes me furious right now",sent,anger
+user_581,"Hey, This makes me furious for real",sent,anger
+user_582,"To be honest, This makes me furious seriously",sent,anger
+user_583,I'm absolutely livid,sent,anger
+user_584,I'm absolutely livid seriously,sent,anger
+user_585,"I have to tell you, I'm absolutely livid seriously",sent,anger
+user_586,"Hey, I'm absolutely livid for real",sent,anger
+user_587,"Hey, I'm absolutely livid!!",sent,anger
+user_588,I'm absolutely livid seriously,sent,anger
+user_589,"Listen, I'm absolutely livid seriously",sent,anger
+user_590,I'm absolutely livid honestly,sent,anger
+user_591,"Hey, I'm absolutely totally livid honestly",sent,anger
+user_592,"Honestly, I'm absolutely livid!!",sent,anger
+user_593,"I have to tell you, I'm absolutely livid seriously",sent,anger
+user_594,My blood is boiling,sent,anger
+user_595,"I just want to say, My blood is extremely boiling for real",sent,anger
+user_596,"I just want to say, My so blood is boiling!!",sent,anger
+user_597,"I have to tell you, My blood is boiling at the moment",sent,anger
+user_598,"You know what, My blood totally is boiling!!",sent,anger
+user_599,"I have to tell you, My blood is boiling",sent,anger
+user_600,"Hey, My blood really is boiling...",sent,anger
+user_601,"I just want to say, My blood is boiling!!",sent,anger
+user_602,"Hey, My completely blood is boiling...",sent,anger
+user_603,"Just so you know, My blood is so boiling honestly",sent,anger
+user_604,"I just want to say, My blood is boiling right now",sent,anger
+user_605,I've had enough of this,sent,anger
+user_606,I've had extremely enough of this for real,sent,anger
+user_607,"Honestly, I've extremely had enough of this at the moment",sent,anger
+user_608,"Listen, I've had truly enough of this at the moment",sent,anger
+user_609,"I have to tell you, I've had enough of this at the moment",sent,anger
+user_610,"To be honest, I've had enough of this honestly",sent,anger
+user_611,"Hey, I've had enough of utterly this!!",sent,anger
+user_612,"Listen, I've had enough of this for real",sent,anger
+user_613,"Honestly, I've utterly had enough of this honestly",sent,anger
+user_614,"To be honest, I've had enough of this!",sent,anger
+user_615,I've had enough of really this seriously,sent,anger
+user_616,This is infuriating,sent,anger
+user_617,"I have to tell you, This is infuriating seriously",sent,anger
+user_618,This is very infuriating...,sent,anger
+user_619,"I just want to say, This is infuriating honestly",sent,anger
+user_620,"Honestly, This is infuriating!!",sent,anger
+user_621,"I have to tell you, This is infuriating for real",sent,anger
+user_622,"Just so you know, This is infuriating seriously",sent,anger
+user_623,"Listen, This is infuriating...",sent,anger
+user_624,"Listen, This is extremely infuriating!",sent,anger
+user_625,"I have to tell you, This is infuriating honestly",sent,anger
+user_626,"I have to tell you, This is infuriating!",sent,anger
+user_627,I'm seeing red,sent,anger
+user_628,"I have to tell you, I'm utterly seeing red for real",sent,anger
+user_629,I'm seeing red!,sent,anger
+user_630,"I just want to say, I'm seeing really red seriously",sent,anger
+user_631,"Listen, I'm seeing red right now",sent,anger
+user_632,"Hey, I'm seeing very red!",sent,anger
+user_633,"Honestly, I'm seeing red seriously",sent,anger
+user_634,"Hey, I'm seeing red seriously",sent,anger
+user_635,"Hey, I'm utterly seeing red!",sent,anger
+user_636,"I just want to say, I'm utterly seeing red",sent,anger
+user_637,"I just want to say, I'm incredibly seeing red honestly",sent,anger
+user_638,Rage building up,sent,anger
+user_639,"I just want to say, Rage building up!",sent,anger
+user_640,Rage very building up...,sent,anger
+user_641,Rage building utterly up!,sent,anger
+user_642,"To be honest, Rage building up at the moment",sent,anger
+user_643,"I just want to say, Rage utterly building up!",sent,anger
+user_644,"To be honest, Rage building up honestly",sent,anger
+user_645,"Honestly, Rage building really up...",sent,anger
+user_646,"Just so you know, Rage building really up honestly",sent,anger
+user_647,"Just so you know, Rage building up honestly",sent,anger
+user_648,"To be honest, Rage really building up seriously",sent,anger
+user_649,Sick and tired of this,sent,anger
+user_650,"Just so you know, Sick and very tired of this for real",sent,anger
+user_651,"Honestly, Sick and tired of this!!",sent,anger
+user_652,"I have to tell you, Sick and tired of very this",sent,anger
+user_653,"I have to tell you, Sick and tired of absolutely this!!",sent,anger
+user_654,"I just want to say, Sick and tired of completely this",sent,anger
+user_655,"I just want to say, Sick absolutely and tired of this at the moment",sent,anger
+user_656,"I just want to say, Sick and tired so of this right now",sent,anger
+user_657,Sick and incredibly tired of this,sent,anger
+user_658,"Honestly, Sick and tired of this",sent,anger
+user_659,"Just so you know, Sick and so tired of this for real",sent,anger
+user_660,Fed up with everything,sent,anger
+user_661,"Just so you know, Fed up with everything honestly",sent,anger
+user_662,"Listen, Fed up with everything for real",sent,anger
+user_663,"Just so you know, Fed up with everything!!",sent,anger
+user_664,"I have to tell you, Fed very up with everything!",sent,anger
+user_665,"Listen, Fed completely up with everything at the moment",sent,anger
+user_666,"Hey, Fed up with everything",sent,anger
+user_667,"I have to tell you, Fed up with everything seriously",sent,anger
+user_668,"I have to tell you, Fed up with utterly everything",sent,anger
+user_669,Fed up truly with everything right now,sent,anger
+user_670,"Honestly, Fed up really with everything seriously",sent,anger
+user_671,This is unacceptable,sent,anger
+user_672,"Listen, This totally is unacceptable right now",sent,anger
+user_673,"Just so you know, This is unacceptable!!",sent,anger
+user_674,"You know what, This is unacceptable...",sent,anger
+user_675,"Honestly, This is so unacceptable right now",sent,anger
+user_676,"Hey, This is unacceptable honestly",sent,anger
+user_677,"I have to tell you, This is extremely unacceptable at the moment",sent,anger
+user_678,"You know what, This is unacceptable!",sent,anger
+user_679,"Just so you know, This is so unacceptable...",sent,anger
+user_680,This is unacceptable honestly,sent,anger
+user_681,"Listen, This is so unacceptable...",sent,anger
+user_682,How dare you,sent,anger
+user_683,"Just so you know, How dare you...",sent,anger
+user_684,"Honestly, How dare very you today",sent,anger
+user_685,"You know what, How dare you",sent,anger
+user_686,"Honestly, How absolutely dare you",sent,anger
+user_687,"Honestly, How completely dare you honestly",sent,anger
+user_688,"Honestly, How dare so you...",sent,anger
+user_689,"I just want to say, How dare you for real",sent,anger
+user_690,"Listen, How truly dare you honestly",sent,anger
+user_691,"You know what, How absolutely dare you at the moment",sent,anger
+user_692,"I have to tell you, How dare you today",sent,anger
+user_693,I'm pissed off,sent,anger
+user_694,"I just want to say, I'm pissed off...",sent,anger
+user_695,"I have to tell you, I'm pissed off right now",sent,anger
+user_696,I'm completely pissed off!!,sent,anger
+user_697,"You know what, I'm incredibly pissed off",sent,anger
+user_698,"You know what, I'm pissed truly off at the moment",sent,anger
+user_699,"Honestly, I'm pissed utterly off!",sent,anger
+user_700,I'm pissed really off honestly,sent,anger
+user_701,"I have to tell you, I'm pissed absolutely off today",sent,anger
+user_702,I'm pissed off right now,sent,anger
+user_703,"I have to tell you, I'm incredibly pissed off at the moment",sent,anger
+user_704,This pisses me off,sent,anger
+user_705,"Hey, This pisses me off seriously",sent,anger
+user_706,"Just so you know, This truly pisses me off for real",sent,anger
+user_707,"I just want to say, This pisses me off!",sent,anger
+user_708,"I just want to say, This so pisses me off right now",sent,anger
+user_709,This pisses me extremely off honestly,sent,anger
+user_710,"Listen, This pisses utterly me off...",sent,anger
+user_711,"I just want to say, This pisses me off today",sent,anger
+user_712,"To be honest, This pisses me incredibly off!",sent,anger
+user_713,"Listen, This pisses me off",sent,anger
+user_714,"Listen, This pisses me off right now",sent,anger
+user_715,Absolutely furious,sent,anger
+user_716,"Honestly, Absolutely furious!!",sent,anger
+user_717,"You know what, Absolutely furious right now",sent,anger
+user_718,"You know what, Absolutely furious right now",sent,anger
+user_719,Absolutely furious!,sent,anger
+user_720,Absolutely furious...,sent,anger
+user_721,"Just so you know, Absolutely furious right now",sent,anger
+user_722,"You know what, Absolutely furious!",sent,anger
+user_723,"You know what, Absolutely furious today",sent,anger
+user_724,"Just so you know, Absolutely furious honestly",sent,anger
+user_725,"I just want to say, Absolutely furious today",sent,anger
+user_726,Steaming mad,sent,anger
+user_727,Steaming mad today,sent,anger
+user_728,"I just want to say, Steaming mad today",sent,anger
+user_729,"Honestly, Steaming mad honestly",sent,anger
+user_730,"Honestly, Steaming mad right now",sent,anger
+user_731,"Hey, Steaming mad for real",sent,anger
+user_732,"I just want to say, Steaming mad",sent,anger
+user_733,"Honestly, Steaming mad today",sent,anger
+user_734,"I have to tell you, Steaming mad",sent,anger
+user_735,"I just want to say, Steaming mad today",sent,anger
+user_736,"Honestly, Steaming mad at the moment",sent,anger
+user_737,Fit to be tied,sent,anger
+user_738,"I just want to say, Fit really to be tied!",sent,anger
+user_739,"You know what, Fit to be really tied right now",sent,anger
+user_740,"Hey, Fit so to be tied honestly",sent,anger
+user_741,"To be honest, Fit to very be tied at the moment",sent,anger
+user_742,"I have to tell you, Fit to completely be tied",sent,anger
+user_743,"Just so you know, Fit to be utterly tied!!",sent,anger
+user_744,"I have to tell you, Fit to be tied for real",sent,anger
+user_745,"To be honest, Fit to be tied at the moment",sent,anger
+user_746,"Honestly, Fit to be totally tied...",sent,anger
+user_747,"To be honest, Fit to be so tied",sent,anger
+user_748,Lost my temper,sent,anger
+user_749,Lost my temper,sent,anger
+user_750,"To be honest, Lost incredibly my temper",sent,anger
+user_751,"Hey, Lost my temper today",sent,anger
+user_752,"I just want to say, Lost my utterly temper seriously",sent,anger
+user_753,"Hey, Lost my temper...",sent,anger
+user_754,"I have to tell you, Lost my temper at the moment",sent,anger
+user_755,"Hey, Lost my temper honestly",sent,anger
+user_756,"I just want to say, Lost so my temper seriously",sent,anger
+user_757,"Listen, Lost my temper!!",sent,anger
+user_758,"To be honest, Lost completely my temper today",sent,anger
+user_759,Blowing my top,sent,anger
+user_760,"Hey, Blowing my extremely top honestly",sent,anger
+user_761,"To be honest, Blowing my completely top honestly",sent,anger
+user_762,"To be honest, Blowing my so top",sent,anger
+user_763,Blowing my top!,sent,anger
+user_764,"You know what, Blowing my top...",sent,anger
+user_765,"Honestly, Blowing totally my top...",sent,anger
+user_766,"Honestly, Blowing really my top!",sent,anger
+user_767,"Hey, Blowing really my top",sent,anger
+user_768,"I just want to say, Blowing my top honestly",sent,anger
+user_769,"Just so you know, Blowing my top today",sent,anger
+user_770,Ready to explode,sent,anger
+user_771,"You know what, Ready to utterly explode for real",sent,anger
+user_772,"Listen, Ready to explode today",sent,anger
+user_773,"I have to tell you, Ready to totally explode...",sent,anger
+user_774,"Listen, Ready to truly explode seriously",sent,anger
+user_775,"Listen, Ready so to explode honestly",sent,anger
+user_776,"You know what, Ready to explode today",sent,anger
+user_777,"Hey, Ready truly to explode!",sent,anger
+user_778,Ready to explode!,sent,anger
+user_779,"Listen, Ready to explode right now",sent,anger
+user_780,"Just so you know, Ready to explode at the moment",sent,anger
+user_781,Fuming with anger,sent,anger
+user_782,"To be honest, Fuming really with anger seriously",sent,anger
+user_783,"I have to tell you, Fuming with absolutely anger honestly",sent,anger
+user_784,"Just so you know, Fuming with really anger today",sent,anger
+user_785,"Just so you know, Fuming with really anger seriously",sent,anger
+user_786,Fuming with anger...,sent,anger
+user_787,"To be honest, Fuming with really anger!!",sent,anger
+user_788,"To be honest, Fuming with anger...",sent,anger
+user_789,"To be honest, Fuming with extremely anger honestly",sent,anger
+user_790,"Honestly, Fuming with very anger for real",sent,anger
+user_791,"You know what, Fuming absolutely with anger!",sent,anger
+user_792,Burning with rage,sent,anger
+user_793,"Hey, Burning totally with rage right now",sent,anger
+user_794,"I just want to say, Burning with rage today",sent,anger
+user_795,"I have to tell you, Burning with rage honestly",sent,anger
+user_796,"I just want to say, Burning with absolutely rage today",sent,anger
+user_797,"To be honest, Burning with rage right now",sent,anger
+user_798,"I have to tell you, Burning with utterly rage",sent,anger
+user_799,Burning with incredibly rage,sent,anger
+user_800,"Hey, Burning with rage seriously",sent,anger
+user_801,"I have to tell you, Burning with really rage honestly",sent,anger
+user_802,"Honestly, Burning really with rage today",sent,anger
+user_803,Mind your words,sent,anger
+user_804,"I just want to say, Mind so your words!",sent,anger
+user_805,"You know what, Mind truly your words at the moment",sent,anger
+user_806,"To be honest, Mind your words today",sent,anger
+user_807,"You know what, Mind your words seriously",sent,anger
+user_808,"I have to tell you, Mind extremely your words for real",sent,anger
+user_809,"Just so you know, Mind truly your words right now",sent,anger
+user_810,"Honestly, Mind your absolutely words seriously",sent,anger
+user_811,Mind completely your words,sent,anger
+user_812,"Hey, Mind truly your words at the moment",sent,anger
+user_813,"Listen, Mind very your words today",sent,anger
+user_814,Watch your mouth,sent,anger
+user_815,"Just so you know, Watch your mouth for real",sent,anger
+user_816,Watch absolutely your mouth today,sent,anger
+user_817,"To be honest, Watch your mouth",sent,anger
+user_818,"To be honest, Watch your mouth right now",sent,anger
+user_819,"I just want to say, Watch totally your mouth!",sent,anger
+user_820,"I have to tell you, Watch completely your mouth",sent,anger
+user_821,"Listen, Watch incredibly your mouth for real",sent,anger
+user_822,"Hey, Watch utterly your mouth today",sent,anger
+user_823,"Listen, Watch your mouth!!",sent,anger
+user_824,"You know what, Watch absolutely your mouth today",sent,anger
+user_825,Shut up,sent,anger
+user_826,"To be honest, Shut up",sent,anger
+user_827,"Just so you know, Shut up seriously",sent,anger
+user_828,"Listen, Shut up at the moment",sent,anger
+user_829,"To be honest, Shut up for real",sent,anger
+user_830,"I just want to say, Shut up seriously",sent,anger
+user_831,"Hey, Shut up right now",sent,anger
+user_832,"Hey, Shut up for real",sent,anger
+user_833,"Hey, Shut up honestly",sent,anger
+user_834,"Honestly, Shut up at the moment",sent,anger
+user_835,"Honestly, Shut up at the moment",sent,anger
+user_836,Get lost,sent,anger
+user_837,"To be honest, Get lost honestly",sent,anger
+user_838,"Just so you know, Get lost!",sent,anger
+user_839,"To be honest, Get lost for real",sent,anger
+user_840,"Hey, Get lost today",sent,anger
+user_841,"I have to tell you, Get lost at the moment",sent,anger
+user_842,"Hey, Get lost for real",sent,anger
+user_843,"I have to tell you, Get lost...",sent,anger
+user_844,"Hey, Get lost today",sent,anger
+user_845,"To be honest, Get lost honestly",sent,anger
+user_846,"To be honest, Get lost at the moment",sent,anger
+user_847,What the hell,sent,anger
+user_848,"To be honest, What the hell honestly",sent,anger
+user_849,"I have to tell you, What the hell honestly",sent,anger
+user_850,"You know what, What absolutely the hell honestly",sent,anger
+user_851,"You know what, What the utterly hell right now",sent,anger
+user_852,"Listen, What the hell",sent,anger
+user_853,"You know what, What the completely hell honestly",sent,anger
+user_854,"You know what, What the truly hell at the moment",sent,anger
+user_855,What the hell!!,sent,anger
+user_856,"I just want to say, What the extremely hell!!",sent,anger
+user_857,"I just want to say, What the hell",sent,anger
+user_858,What the fish,sent,anger
+user_859,"Listen, What the fish...",sent,anger
+user_860,"Hey, What the fish seriously",sent,anger
+user_861,"I have to tell you, What the fish",sent,anger
+user_862,"To be honest, What the incredibly fish...",sent,anger
+user_863,"Listen, What the fish",sent,anger
+user_864,"Just so you know, What very the fish for real",sent,anger
+user_865,What the fish right now,sent,anger
+user_866,"To be honest, What the fish seriously",sent,anger
+user_867,"Hey, What very the fish...",sent,anger
+user_868,What the fish honestly,sent,anger
+user_869,Are you kidding me,sent,anger
+user_870,"Hey, Are you kidding me right now",sent,anger
+user_871,"Listen, Are you kidding me!",sent,anger
+user_872,"Honestly, Are you kidding me for real",sent,anger
+user_873,"Listen, Are you very kidding me",sent,anger
+user_874,"I just want to say, Are completely you kidding me at the moment",sent,anger
+user_875,"I have to tell you, Are you kidding me!!",sent,anger
+user_876,"Honestly, Are you utterly kidding me honestly",sent,anger
+user_877,"You know what, Are utterly you kidding me right now",sent,anger
+user_878,"I have to tell you, Are you kidding incredibly me!",sent,anger
+user_879,Are you kidding me right now,sent,anger
+user_880,This is bullshit,sent,anger
+user_881,"To be honest, This absolutely is bullshit!",sent,anger
+user_882,"I have to tell you, This is so bullshit honestly",sent,anger
+user_883,"To be honest, This is bullshit!!",sent,anger
+user_884,"Hey, This is bullshit at the moment",sent,anger
+user_885,"Listen, This completely is bullshit!",sent,anger
+user_886,"Just so you know, This totally is bullshit!",sent,anger
+user_887,"Honestly, This is bullshit",sent,anger
+user_888,"Listen, This is absolutely bullshit at the moment",sent,anger
+user_889,"Listen, This is bullshit...",sent,anger
+user_890,"Honestly, This absolutely is bullshit!!",sent,anger
+user_891,Damn it all,sent,anger
+user_892,"Hey, Damn it all for real",sent,anger
+user_893,"Just so you know, Damn it extremely all for real",sent,anger
+user_894,Damn incredibly it all at the moment,sent,anger
+user_895,"I have to tell you, Damn very it all!!",sent,anger
+user_896,"Just so you know, Damn it all today",sent,anger
+user_897,"Just so you know, Damn truly it all...",sent,anger
+user_898,"Just so you know, Damn it totally all at the moment",sent,anger
+user_899,"To be honest, Damn it all!!",sent,anger
+user_900,"To be honest, Damn it all honestly",sent,anger
+user_901,"Just so you know, Damn it all today",sent,anger
+user_902,Screw this,sent,anger
+user_903,Screw this!,sent,anger
+user_904,"Hey, Screw this",sent,anger
+user_905,"To be honest, Screw this",sent,anger
+user_906,"Honestly, Screw this",sent,anger
+user_907,"I have to tell you, Screw this honestly",sent,anger
+user_908,Screw this for real,sent,anger
+user_909,"I have to tell you, Screw this seriously",sent,anger
+user_910,"To be honest, Screw this at the moment",sent,anger
+user_911,"Listen, Screw this honestly",sent,anger
+user_912,"I have to tell you, Screw this right now",sent,anger
+user_913,I hate this,sent,anger
+user_914,"Just so you know, I hate this!",sent,anger
+user_915,"Listen, I hate utterly this!",sent,anger
+user_916,"Just so you know, I hate really this!",sent,anger
+user_917,"To be honest, I hate really this!!",sent,anger
+user_918,"Hey, I utterly hate this!!",sent,anger
+user_919,"I just want to say, I hate this!!",sent,anger
+user_920,"I have to tell you, I hate this",sent,anger
+user_921,"Just so you know, I completely hate this!",sent,anger
+user_922,"I just want to say, I hate this honestly",sent,anger
+user_923,"Listen, I utterly hate this!",sent,anger
+user_924,Absolutely hate it,sent,anger
+user_925,"Listen, Absolutely utterly hate it...",sent,anger
+user_926,"You know what, Absolutely hate it for real",sent,anger
+user_927,"To be honest, Absolutely extremely hate it honestly",sent,anger
+user_928,"Listen, Absolutely hate it...",sent,anger
+user_929,"Honestly, Absolutely really hate it at the moment",sent,anger
+user_930,"I have to tell you, Absolutely completely hate it seriously",sent,anger
+user_931,"Listen, Absolutely absolutely hate it right now",sent,anger
+user_932,"Just so you know, Absolutely so hate it for real",sent,anger
+user_933,"I just want to say, Absolutely hate it honestly",sent,anger
+user_934,"Listen, Absolutely hate it right now",sent,anger
+user_935,Can't stand this anymore,sent,anger
+user_936,"You know what, Can't stand utterly this anymore honestly",sent,anger
+user_937,"To be honest, Can't stand this anymore",sent,anger
+user_938,"I just want to say, Can't stand this anymore for real",sent,anger
+user_939,"You know what, Can't stand this anymore!",sent,anger
+user_940,"I just want to say, Can't stand this so anymore at the moment",sent,anger
+user_941,"To be honest, Can't stand this anymore!!",sent,anger
+user_942,Can't stand this anymore right now,sent,anger
+user_943,"To be honest, Can't so stand this anymore!",sent,anger
+user_944,"I just want to say, Can't stand this anymore seriously",sent,anger
+user_945,"I just want to say, Can't stand this anymore!",sent,anger
+user_946,This is ridiculous,sent,anger
+user_947,"To be honest, This incredibly is ridiculous!!",sent,anger
+user_948,"Just so you know, This completely is ridiculous right now",sent,anger
+user_949,This is ridiculous...,sent,anger
+user_950,This completely is ridiculous at the moment,sent,anger
+user_951,This is completely ridiculous today,sent,anger
+user_952,This is ridiculous,sent,anger
+user_953,"Just so you know, This is ridiculous today",sent,anger
+user_954,"I just want to say, This is ridiculous for real",sent,anger
+user_955,"Hey, This is ridiculous right now",sent,anger
+user_956,"You know what, This completely is ridiculous at the moment",sent,anger
+user_957,Beyond angry,sent,anger
+user_958,"Just so you know, Beyond angry...",sent,anger
+user_959,"I have to tell you, Beyond angry seriously",sent,anger
+user_960,"To be honest, Beyond angry!!",sent,anger
+user_961,"To be honest, Beyond angry at the moment",sent,anger
+user_962,"Listen, Beyond angry",sent,anger
+user_963,"You know what, Beyond angry!",sent,anger
+user_964,Beyond angry...,sent,anger
+user_965,"You know what, Beyond angry seriously",sent,anger
+user_966,"Honestly, Beyond angry right now",sent,anger
+user_967,"I have to tell you, Beyond angry...",sent,anger
+user_968,Seething with rage,sent,anger
+user_969,Seething with rage,sent,anger
+user_970,"To be honest, Seething with very rage today",sent,anger
+user_971,"I have to tell you, Seething with rage right now",sent,anger
+user_972,"Honestly, Seething with totally rage",sent,anger
+user_973,"Hey, Seething with rage!!",sent,anger
+user_974,"I have to tell you, Seething with rage!!",sent,anger
+user_975,"I have to tell you, Seething with rage",sent,anger
+user_976,"Just so you know, Seething so with rage",sent,anger
+user_977,"I just want to say, Seething with so rage at the moment",sent,anger
+user_978,Seething extremely with rage at the moment,sent,anger
+user_979,White hot anger,sent,anger
+user_980,White hot anger,sent,anger
+user_981,"Listen, White hot anger!!",sent,anger
+user_982,"I have to tell you, White hot very anger!!",sent,anger
+user_983,"Hey, White hot anger honestly",sent,anger
+user_984,"Honestly, White hot anger today",sent,anger
+user_985,"Hey, White hot anger for real",sent,anger
+user_986,"I just want to say, White hot anger!",sent,anger
+user_987,"Honestly, White hot anger",sent,anger
+user_988,"Just so you know, White hot anger!!",sent,anger
+user_989,"You know what, White hot anger right now",sent,anger
+user_990,Volcanic rage,sent,anger
+user_991,"Listen, Volcanic rage!",sent,anger
+user_992,"Hey, Volcanic rage!!",sent,anger
+user_993,"I just want to say, Volcanic rage!",sent,anger
+user_994,"You know what, Volcanic rage!",sent,anger
+user_995,"Just so you know, Volcanic rage seriously",sent,anger
+user_996,"You know what, Volcanic rage!!",sent,anger
+user_997,"I have to tell you, Volcanic rage right now",sent,anger
+user_998,"I have to tell you, Volcanic rage...",sent,anger
+user_999,Volcanic rage!,sent,anger
+user_1000,"Just so you know, Volcanic rage seriously",sent,anger
+user_1001,Blind with fury,sent,anger
+user_1002,Blind with fury!,sent,anger
+user_1003,"Listen, Blind with fury right now",sent,anger
+user_1004,"To be honest, Blind with fury honestly",sent,anger
+user_1005,"To be honest, Blind with fury right now",sent,anger
+user_1006,"Hey, Blind with incredibly fury",sent,anger
+user_1007,"I have to tell you, Blind with completely fury...",sent,anger
+user_1008,"I just want to say, Blind with totally fury!",sent,anger
+user_1009,"You know what, Blind with fury today",sent,anger
+user_1010,"Listen, Blind with fury!!",sent,anger
+user_1011,"I have to tell you, Blind with fury honestly",sent,anger
+user_1012,Teeth grinding anger,sent,anger
+user_1013,"Listen, Teeth incredibly grinding anger honestly",sent,anger
+user_1014,"You know what, Teeth grinding anger today",sent,anger
+user_1015,Teeth grinding anger,sent,anger
+user_1016,"I just want to say, Teeth grinding anger!!",sent,anger
+user_1017,"To be honest, Teeth grinding anger at the moment",sent,anger
+user_1018,"Just so you know, Teeth utterly grinding anger",sent,anger
+user_1019,"Listen, Teeth grinding anger at the moment",sent,anger
+user_1020,Teeth grinding anger...,sent,anger
+user_1021,"Just so you know, Teeth grinding anger right now",sent,anger
+user_1022,"Listen, Teeth grinding anger...",sent,anger
+user_1023,Clenched fists,sent,anger
+user_1024,"I just want to say, Clenched fists...",sent,anger
+user_1025,"To be honest, Clenched fists today",sent,anger
+user_1026,Clenched fists,sent,anger
+user_1027,"You know what, Clenched fists honestly",sent,anger
+user_1028,"Honestly, Clenched fists!!",sent,anger
+user_1029,"You know what, Clenched fists for real",sent,anger
+user_1030,"To be honest, Clenched fists for real",sent,anger
+user_1031,"To be honest, Clenched fists honestly",sent,anger
+user_1032,"Hey, Clenched fists at the moment",sent,anger
+user_1033,"I have to tell you, Clenched fists!",sent,anger
+user_1034,Heart pounding with anger,sent,anger
+user_1035,"Listen, Heart pounding with completely anger...",sent,anger
+user_1036,"To be honest, Heart pounding with anger at the moment",sent,anger
+user_1037,"Honestly, Heart incredibly pounding with anger right now",sent,anger
+user_1038,"I have to tell you, Heart pounding with absolutely anger today",sent,anger
+user_1039,"To be honest, Heart pounding with anger!",sent,anger
+user_1040,"To be honest, Heart pounding with really anger at the moment",sent,anger
+user_1041,"To be honest, Heart pounding with anger!!",sent,anger
+user_1042,"To be honest, Heart pounding really with anger for real",sent,anger
+user_1043,Heart incredibly pounding with anger for real,sent,anger
+user_1044,"You know what, Heart incredibly pounding with anger right now",sent,anger
+user_1045,Shaking with rage,sent,anger
+user_1046,"Honestly, Shaking with so rage honestly",sent,anger
+user_1047,"Honestly, Shaking with rage today",sent,anger
+user_1048,"Just so you know, Shaking with incredibly rage today",sent,anger
+user_1049,"You know what, Shaking with so rage today",sent,anger
+user_1050,"Listen, Shaking with absolutely rage right now",sent,anger
+user_1051,Shaking with rage...,sent,anger
+user_1052,"Hey, Shaking with rage!",sent,anger
+user_1053,"Hey, Shaking with rage!",sent,anger
+user_1054,"Hey, Shaking with rage!",sent,anger
+user_1055,"Listen, Shaking completely with rage at the moment",sent,anger
+user_1056,Out of control angry,sent,anger
+user_1057,"Honestly, Out very of control angry right now",sent,anger
+user_1058,"Listen, Out of control angry",sent,anger
+user_1059,"I have to tell you, Out really of control angry seriously",sent,anger
+user_1060,"To be honest, Out of control angry!!",sent,anger
+user_1061,"You know what, Out completely of control angry today",sent,anger
+user_1062,"I have to tell you, Out of truly control angry",sent,anger
+user_1063,Out utterly of control angry today,sent,anger
+user_1064,"Just so you know, Out of utterly control angry for real",sent,anger
+user_1065,"You know what, Out of control angry seriously",sent,anger
+user_1066,"I just want to say, Out of control angry!!",sent,anger
+user_1067,Lost all patience,sent,anger
+user_1068,"You know what, Lost all patience for real",sent,anger
+user_1069,"To be honest, Lost all patience right now",sent,anger
+user_1070,"You know what, Lost all patience!!",sent,anger
+user_1071,"You know what, Lost extremely all patience honestly",sent,anger
+user_1072,"Listen, Lost all patience right now",sent,anger
+user_1073,"I have to tell you, Lost all patience at the moment",sent,anger
+user_1074,"Hey, Lost all patience right now",sent,anger
+user_1075,"Hey, Lost all patience!",sent,anger
+user_1076,"I have to tell you, Lost all patience for real",sent,anger
+user_1077,"Just so you know, Lost all patience!",sent,anger
+user_1078,No more Mr Nice Guy,sent,anger
+user_1079,"Just so you know, No more Mr Nice Guy!!",sent,anger
+user_1080,"I just want to say, No more Mr Nice Guy right now",sent,anger
+user_1081,"Hey, No more Mr Nice extremely Guy!",sent,anger
+user_1082,"Listen, No more Mr Nice Guy today",sent,anger
+user_1083,"To be honest, No so more Mr Nice Guy...",sent,anger
+user_1084,"To be honest, No more Mr totally Nice Guy",sent,anger
+user_1085,"Just so you know, No more Mr Nice truly Guy today",sent,anger
+user_1086,"To be honest, No more Mr very Nice Guy seriously",sent,anger
+user_1087,"I have to tell you, No more Mr Nice totally Guy seriously",sent,anger
+user_1088,"To be honest, No more Mr Nice Guy for real",sent,anger
+user_1089,That's it I'm done,sent,anger
+user_1090,"Just so you know, That's it I'm done honestly",sent,anger
+user_1091,"Listen, That's it I'm done seriously",sent,anger
+user_1092,"You know what, That's truly it I'm done today",sent,anger
+user_1093,"Just so you know, That's really it I'm done!!",sent,anger
+user_1094,"To be honest, That's it I'm done at the moment",sent,anger
+user_1095,"To be honest, That's it incredibly I'm done right now",sent,anger
+user_1096,"Hey, That's totally it I'm done right now",sent,anger
+user_1097,"Just so you know, That's it I'm done...",sent,anger
+user_1098,"Honestly, That's it I'm done right now",sent,anger
+user_1099,"Hey, That's so it I'm done!!",sent,anger
+user_1100,You've crossed the line,sent,anger
+user_1101,"Listen, You've crossed the line honestly",sent,anger
+user_1102,"Honestly, You've crossed the line seriously",sent,anger
+user_1103,"Just so you know, You've very crossed the line at the moment",sent,anger
+user_1104,"I have to tell you, You've crossed the line right now",sent,anger
+user_1105,"Listen, You've crossed the line at the moment",sent,anger
+user_1106,"I have to tell you, You've crossed the line honestly",sent,anger
+user_1107,"You know what, You've crossed the line",sent,anger
+user_1108,"Hey, You've crossed the line",sent,anger
+user_1109,"Honestly, You've crossed the line honestly",sent,anger
+user_1110,"I have to tell you, You've crossed the line",sent,anger
+user_1111,How could you,sent,anger
+user_1112,"Hey, How could you for real",sent,anger
+user_1113,"Just so you know, How could you!!",sent,anger
+user_1114,"I just want to say, How could you at the moment",sent,anger
+user_1115,"Listen, How could truly you honestly",sent,anger
+user_1116,"To be honest, How could you!!",sent,anger
+user_1117,"Hey, How could really you!!",sent,anger
+user_1118,"Hey, How could you!!",sent,anger
+user_1119,"Honestly, How could truly you today",sent,anger
+user_1120,How could incredibly you today,sent,anger
+user_1121,"To be honest, How could so you right now",sent,anger
+user_1122,Unforgivable,sent,anger
+user_1123,"Listen, Unforgivable today",sent,anger
+user_1124,"Hey, Unforgivable!!",sent,anger
+user_1125,"I just want to say, Unforgivable seriously",sent,anger
+user_1126,"To be honest, Unforgivable seriously",sent,anger
+user_1127,"I just want to say, Unforgivable!!",sent,anger
+user_1128,"Hey, Unforgivable seriously",sent,anger
+user_1129,"You know what, Unforgivable today",sent,anger
+user_1130,"Listen, Unforgivable!!",sent,anger
+user_1131,"I just want to say, Unforgivable honestly",sent,anger
+user_1132,"I have to tell you, Unforgivable at the moment",sent,anger
+user_1133,This is war,sent,anger
+user_1134,"Listen, This absolutely is war seriously",sent,anger
+user_1135,"Just so you know, This is extremely war...",sent,anger
+user_1136,"Hey, This is war for real",sent,anger
+user_1137,This is war,sent,anger
+user_1138,"Hey, This utterly is war!!",sent,anger
+user_1139,"Hey, This is completely war at the moment",sent,anger
+user_1140,"Listen, This is war...",sent,anger
+user_1141,"You know what, This is war",sent,anger
+user_1142,"To be honest, This is war seriously",sent,anger
+user_1143,"Hey, This is war seriously",sent,anger
+user_1144,You'll regret this,sent,anger
+user_1145,"Just so you know, You'll extremely regret this",sent,anger
+user_1146,"Hey, You'll regret this...",sent,anger
+user_1147,"Just so you know, You'll regret this!",sent,anger
+user_1148,"I have to tell you, You'll regret this",sent,anger
+user_1149,"I have to tell you, You'll regret this!",sent,anger
+user_1150,"Honestly, You'll regret this honestly",sent,anger
+user_1151,"You know what, You'll regret this",sent,anger
+user_1152,"I have to tell you, You'll totally regret this seriously",sent,anger
+user_1153,"You know what, You'll regret utterly this honestly",sent,anger
+user_1154,"You know what, You'll regret absolutely this today",sent,anger
+user_1155,Absolutely outraged,sent,anger
+user_1156,"To be honest, Absolutely outraged at the moment",sent,anger
+user_1157,"Just so you know, Absolutely outraged seriously",sent,anger
+user_1158,"To be honest, Absolutely outraged right now",sent,anger
+user_1159,"Hey, Absolutely outraged at the moment",sent,anger
+user_1160,Absolutely outraged!!,sent,anger
+user_1161,"To be honest, Absolutely outraged!!",sent,anger
+user_1162,"I just want to say, Absolutely outraged",sent,anger
+user_1163,"To be honest, Absolutely outraged for real",sent,anger
+user_1164,"Just so you know, Absolutely outraged",sent,anger
+user_1165,"I just want to say, Absolutely outraged right now",sent,anger
+user_1166,I feel so sad,sent,sadness
+user_1167,"I just want to say, I feel so very sad right now",sent,sadness
+user_1168,"I have to tell you, I feel so sad today",sent,sadness
+user_1169,"To be honest, I feel so sad today",sent,sadness
+user_1170,"I have to tell you, I feel so sad for real",sent,sadness
+user_1171,"Listen, I feel so sad at the moment",sent,sadness
+user_1172,I feel so sad seriously,sent,sadness
+user_1173,"Just so you know, I feel so sad today",sent,sadness
+user_1174,"You know what, I feel so sad right now",sent,sadness
+user_1175,"Listen, I feel so sad for real",sent,sadness
+user_1176,"Hey, I feel so sad for real",sent,sadness
+user_1177,This makes me cry,sent,sadness
+user_1178,"To be honest, This makes truly me cry",sent,sadness
+user_1179,"Listen, This makes me cry...",sent,sadness
+user_1180,This makes me cry honestly,sent,sadness
+user_1181,"Honestly, This makes me incredibly cry right now",sent,sadness
+user_1182,This makes me really cry...,sent,sadness
+user_1183,"Hey, This makes completely me cry at the moment",sent,sadness
+user_1184,This makes me cry right now,sent,sadness
+user_1185,"Honestly, This makes me cry at the moment",sent,sadness
+user_1186,This completely makes me cry!,sent,sadness
+user_1187,"I have to tell you, This so makes me cry today",sent,sadness
+user_1188,My heart is breaking,sent,sadness
+user_1189,"I have to tell you, My so heart is breaking...",sent,sadness
+user_1190,"You know what, My heart is breaking seriously",sent,sadness
+user_1191,"I just want to say, My heart is breaking",sent,sadness
+user_1192,"Just so you know, My heart is completely breaking at the moment",sent,sadness
+user_1193,"You know what, My absolutely heart is breaking at the moment",sent,sadness
+user_1194,"Honestly, My heart is breaking!",sent,sadness
+user_1195,"To be honest, My heart is breaking",sent,sadness
+user_1196,"Hey, My heart is extremely breaking seriously",sent,sadness
+user_1197,"You know what, My heart is breaking at the moment",sent,sadness
+user_1198,"Honestly, My heart is breaking today",sent,sadness
+user_1199,I'm so down today,sent,sadness
+user_1200,"I just want to say, I'm so down today seriously",sent,sadness
+user_1201,"Hey, I'm completely so down today for real",sent,sadness
+user_1202,"I have to tell you, I'm so down really today!",sent,sadness
+user_1203,"I just want to say, I'm so down today seriously",sent,sadness
+user_1204,"Hey, I'm so down today!",sent,sadness
+user_1205,"Just so you know, I'm so down today for real",sent,sadness
+user_1206,"You know what, I'm so down today!!",sent,sadness
+user_1207,"Honestly, I'm so incredibly down today today",sent,sadness
+user_1208,"To be honest, I'm so down truly today for real",sent,sadness
+user_1209,"You know what, I'm so down truly today!",sent,sadness
+user_1210,Feeling blue,sent,sadness
+user_1211,"I have to tell you, Feeling blue at the moment",sent,sadness
+user_1212,"To be honest, Feeling blue honestly",sent,sadness
+user_1213,"Hey, Feeling blue!!",sent,sadness
+user_1214,"Hey, Feeling blue honestly",sent,sadness
+user_1215,"Just so you know, Feeling blue seriously",sent,sadness
+user_1216,"Just so you know, Feeling blue at the moment",sent,sadness
+user_1217,"Listen, Feeling blue for real",sent,sadness
+user_1218,"Honestly, Feeling blue right now",sent,sadness
+user_1219,"Hey, Feeling blue!!",sent,sadness
+user_1220,"Hey, Feeling blue at the moment",sent,sadness
+user_1221,Tears falling,sent,sadness
+user_1222,"Listen, Tears falling!!",sent,sadness
+user_1223,"You know what, Tears falling!",sent,sadness
+user_1224,"Hey, Tears falling!!",sent,sadness
+user_1225,"To be honest, Tears falling at the moment",sent,sadness
+user_1226,"I just want to say, Tears falling",sent,sadness
+user_1227,"To be honest, Tears falling honestly",sent,sadness
+user_1228,"Honestly, Tears falling!",sent,sadness
+user_1229,Tears falling...,sent,sadness
+user_1230,Tears falling!!,sent,sadness
+user_1231,"Honestly, Tears falling",sent,sadness
+user_1232,Can't stop crying,sent,sadness
+user_1233,Can't absolutely stop crying!,sent,sadness
+user_1234,"I have to tell you, Can't stop crying seriously",sent,sadness
+user_1235,"I have to tell you, Can't really stop crying!!",sent,sadness
+user_1236,"I just want to say, Can't stop crying right now",sent,sadness
+user_1237,"I have to tell you, Can't stop crying at the moment",sent,sadness
+user_1238,"I just want to say, Can't stop crying!!",sent,sadness
+user_1239,"To be honest, Can't stop crying seriously",sent,sadness
+user_1240,"You know what, Can't completely stop crying!!",sent,sadness
+user_1241,"Listen, Can't stop crying right now",sent,sadness
+user_1242,"I have to tell you, Can't stop truly crying honestly",sent,sadness
+user_1243,Heavy heart,sent,sadness
+user_1244,"I have to tell you, Heavy heart",sent,sadness
+user_1245,"I just want to say, Heavy heart seriously",sent,sadness
+user_1246,"Honestly, Heavy heart seriously",sent,sadness
+user_1247,"Hey, Heavy heart!",sent,sadness
+user_1248,"Hey, Heavy heart!",sent,sadness
+user_1249,"Hey, Heavy heart today",sent,sadness
+user_1250,"Listen, Heavy heart!!",sent,sadness
+user_1251,"You know what, Heavy heart!",sent,sadness
+user_1252,Heavy heart...,sent,sadness
+user_1253,"I have to tell you, Heavy heart!",sent,sadness
+user_1254,Deep sadness,sent,sadness
+user_1255,"Just so you know, Deep sadness today",sent,sadness
+user_1256,"Just so you know, Deep sadness honestly",sent,sadness
+user_1257,"To be honest, Deep sadness",sent,sadness
+user_1258,"You know what, Deep sadness!!",sent,sadness
+user_1259,"To be honest, Deep sadness!!",sent,sadness
+user_1260,"Hey, Deep sadness seriously",sent,sadness
+user_1261,Deep sadness today,sent,sadness
+user_1262,"I just want to say, Deep sadness honestly",sent,sadness
+user_1263,"Just so you know, Deep sadness honestly",sent,sadness
+user_1264,"Just so you know, Deep sadness!!",sent,sadness
+user_1265,Overwhelming sorrow,sent,sadness
+user_1266,"Honestly, Overwhelming sorrow...",sent,sadness
+user_1267,"Just so you know, Overwhelming sorrow!",sent,sadness
+user_1268,"Hey, Overwhelming sorrow!",sent,sadness
+user_1269,"Listen, Overwhelming sorrow honestly",sent,sadness
+user_1270,"I have to tell you, Overwhelming sorrow for real",sent,sadness
+user_1271,"I have to tell you, Overwhelming sorrow honestly",sent,sadness
+user_1272,"Just so you know, Overwhelming sorrow",sent,sadness
+user_1273,"Just so you know, Overwhelming sorrow today",sent,sadness
+user_1274,"I have to tell you, Overwhelming sorrow right now",sent,sadness
+user_1275,"To be honest, Overwhelming sorrow!",sent,sadness
+user_1276,Drowning in sadness,sent,sadness
+user_1277,"To be honest, Drowning in sadness",sent,sadness
+user_1278,"I just want to say, Drowning in sadness!",sent,sadness
+user_1279,"You know what, Drowning in sadness at the moment",sent,sadness
+user_1280,"Hey, Drowning in sadness seriously",sent,sadness
+user_1281,"I just want to say, Drowning incredibly in sadness right now",sent,sadness
+user_1282,"You know what, Drowning in very sadness seriously",sent,sadness
+user_1283,"To be honest, Drowning utterly in sadness at the moment",sent,sadness
+user_1284,"Listen, Drowning in sadness today",sent,sadness
+user_1285,"To be honest, Drowning in sadness at the moment",sent,sadness
+user_1286,"Honestly, Drowning in truly sadness at the moment",sent,sadness
+user_1287,Lost and sad,sent,sadness
+user_1288,"Hey, Lost and sad today",sent,sadness
+user_1289,"Just so you know, Lost and sad...",sent,sadness
+user_1290,"Hey, Lost and extremely sad honestly",sent,sadness
+user_1291,"Listen, Lost and sad at the moment",sent,sadness
+user_1292,"To be honest, Lost completely and sad",sent,sadness
+user_1293,"Listen, Lost so and sad at the moment",sent,sadness
+user_1294,Lost and truly sad...,sent,sadness
+user_1295,"To be honest, Lost and sad!!",sent,sadness
+user_1296,"I just want to say, Lost and sad!!",sent,sadness
+user_1297,"Listen, Lost and sad seriously",sent,sadness
+user_1298,Nothing feels right,sent,sadness
+user_1299,"I have to tell you, Nothing truly feels right!!",sent,sadness
+user_1300,"I just want to say, Nothing feels right...",sent,sadness
+user_1301,"Honestly, Nothing feels right",sent,sadness
+user_1302,"Just so you know, Nothing feels truly right at the moment",sent,sadness
+user_1303,"Honestly, Nothing feels absolutely right honestly",sent,sadness
+user_1304,Nothing feels right today,sent,sadness
+user_1305,"Honestly, Nothing feels truly right seriously",sent,sadness
+user_1306,"Just so you know, Nothing feels right right now",sent,sadness
+user_1307,"Hey, Nothing utterly feels right today",sent,sadness
+user_1308,"Hey, Nothing feels right honestly",sent,sadness
+user_1309,Empty inside,sent,sadness
+user_1310,Empty inside...,sent,sadness
+user_1311,"To be honest, Empty inside for real",sent,sadness
+user_1312,"You know what, Empty inside today",sent,sadness
+user_1313,"To be honest, Empty inside!!",sent,sadness
+user_1314,"I have to tell you, Empty inside today",sent,sadness
+user_1315,"Honestly, Empty inside for real",sent,sadness
+user_1316,"I just want to say, Empty inside...",sent,sadness
+user_1317,Empty inside!,sent,sadness
+user_1318,"You know what, Empty inside for real",sent,sadness
+user_1319,"Honestly, Empty inside for real",sent,sadness
+user_1320,Aching heart,sent,sadness
+user_1321,"Hey, Aching heart at the moment",sent,sadness
+user_1322,"To be honest, Aching heart!",sent,sadness
+user_1323,"Hey, Aching heart today",sent,sadness
+user_1324,"Hey, Aching heart...",sent,sadness
+user_1325,"You know what, Aching heart!!",sent,sadness
+user_1326,"I have to tell you, Aching heart honestly",sent,sadness
+user_1327,"I have to tell you, Aching heart!!",sent,sadness
+user_1328,"I have to tell you, Aching heart right now",sent,sadness
+user_1329,"You know what, Aching heart today",sent,sadness
+user_1330,"You know what, Aching heart for real",sent,sadness
+user_1331,Painful memories,sent,sadness
+user_1332,"You know what, Painful memories at the moment",sent,sadness
+user_1333,"You know what, Painful memories today",sent,sadness
+user_1334,"I have to tell you, Painful memories",sent,sadness
+user_1335,"Just so you know, Painful memories honestly",sent,sadness
+user_1336,"I have to tell you, Painful memories",sent,sadness
+user_1337,"Just so you know, Painful memories right now",sent,sadness
+user_1338,Painful memories right now,sent,sadness
+user_1339,"Honestly, Painful memories",sent,sadness
+user_1340,Painful memories!!,sent,sadness
+user_1341,"Honestly, Painful memories!",sent,sadness
+user_1342,Missing you so much,sent,sadness
+user_1343,"To be honest, Missing you so much at the moment",sent,sadness
+user_1344,"I just want to say, Missing you absolutely so much at the moment",sent,sadness
+user_1345,"I just want to say, Missing extremely you so much honestly",sent,sadness
+user_1346,"Hey, Missing you so so much",sent,sadness
+user_1347,Missing you so much,sent,sadness
+user_1348,"I just want to say, Missing you so much today",sent,sadness
+user_1349,"Listen, Missing you so much seriously",sent,sadness
+user_1350,Missing you utterly so much!!,sent,sadness
+user_1351,"Listen, Missing you so much right now",sent,sadness
+user_1352,"Honestly, Missing you so much today",sent,sadness
+user_1353,Wish things were different,sent,sadness
+user_1354,"I just want to say, Wish things were different at the moment",sent,sadness
+user_1355,"Listen, Wish things were different right now",sent,sadness
+user_1356,"Listen, Wish things were extremely different today",sent,sadness
+user_1357,"Listen, Wish things utterly were different at the moment",sent,sadness
+user_1358,"Just so you know, Wish things incredibly were different honestly",sent,sadness
+user_1359,"You know what, Wish things were different honestly",sent,sadness
+user_1360,"Honestly, Wish things were different...",sent,sadness
+user_1361,"You know what, Wish utterly things were different right now",sent,sadness
+user_1362,"Just so you know, Wish things absolutely were different seriously",sent,sadness
+user_1363,"Just so you know, Wish things were different for real",sent,sadness
+user_1364,Life feels meaningless,sent,sadness
+user_1365,"I have to tell you, Life feels meaningless for real",sent,sadness
+user_1366,"I just want to say, Life feels meaningless right now",sent,sadness
+user_1367,Life feels meaningless honestly,sent,sadness
+user_1368,"Just so you know, Life feels extremely meaningless!!",sent,sadness
+user_1369,"I have to tell you, Life incredibly feels meaningless today",sent,sadness
+user_1370,"Hey, Life feels meaningless for real",sent,sadness
+user_1371,"Hey, Life feels so meaningless for real",sent,sadness
+user_1372,Life feels meaningless...,sent,sadness
+user_1373,"Just so you know, Life really feels meaningless...",sent,sadness
+user_1374,"Honestly, Life feels extremely meaningless at the moment",sent,sadness
+user_1375,Dark clouds hanging,sent,sadness
+user_1376,"To be honest, Dark clouds totally hanging seriously",sent,sadness
+user_1377,"Honestly, Dark extremely clouds hanging at the moment",sent,sadness
+user_1378,"Honestly, Dark clouds completely hanging...",sent,sadness
+user_1379,"Listen, Dark truly clouds hanging",sent,sadness
+user_1380,"I have to tell you, Dark clouds hanging for real",sent,sadness
+user_1381,"Honestly, Dark clouds hanging at the moment",sent,sadness
+user_1382,"Honestly, Dark clouds hanging today",sent,sadness
+user_1383,"Hey, Dark clouds extremely hanging",sent,sadness
+user_1384,"Honestly, Dark completely clouds hanging...",sent,sadness
+user_1385,"Just so you know, Dark clouds hanging!!",sent,sadness
+user_1386,Sinking feeling,sent,sadness
+user_1387,"You know what, Sinking feeling honestly",sent,sadness
+user_1388,"Listen, Sinking feeling",sent,sadness
+user_1389,Sinking feeling,sent,sadness
+user_1390,Sinking feeling at the moment,sent,sadness
+user_1391,"Just so you know, Sinking feeling today",sent,sadness
+user_1392,"Listen, Sinking feeling for real",sent,sadness
+user_1393,"Just so you know, Sinking feeling!",sent,sadness
+user_1394,"Listen, Sinking feeling",sent,sadness
+user_1395,"You know what, Sinking feeling",sent,sadness
+user_1396,Sinking feeling,sent,sadness
+user_1397,Tears won't stop,sent,sadness
+user_1398,"Listen, Tears incredibly won't stop today",sent,sadness
+user_1399,"To be honest, Tears won't stop seriously",sent,sadness
+user_1400,"Honestly, Tears won't stop!",sent,sadness
+user_1401,"Hey, Tears won't stop at the moment",sent,sadness
+user_1402,"I have to tell you, Tears won't stop for real",sent,sadness
+user_1403,"Listen, Tears won't truly stop today",sent,sadness
+user_1404,"Honestly, Tears won't utterly stop!!",sent,sadness
+user_1405,"I have to tell you, Tears won't stop honestly",sent,sadness
+user_1406,"To be honest, Tears so won't stop right now",sent,sadness
+user_1407,Tears won't so stop for real,sent,sadness
+user_1408,Broken hearted,sent,sadness
+user_1409,"Hey, Broken hearted honestly",sent,sadness
+user_1410,"Honestly, Broken hearted right now",sent,sadness
+user_1411,Broken hearted at the moment,sent,sadness
+user_1412,"I just want to say, Broken hearted!",sent,sadness
+user_1413,"Listen, Broken hearted for real",sent,sadness
+user_1414,"You know what, Broken hearted right now",sent,sadness
+user_1415,"Just so you know, Broken hearted seriously",sent,sadness
+user_1416,"You know what, Broken hearted for real",sent,sadness
+user_1417,"You know what, Broken hearted today",sent,sadness
+user_1418,"Just so you know, Broken hearted!",sent,sadness
+user_1419,Crushed spirit,sent,sadness
+user_1420,"I have to tell you, Crushed spirit!",sent,sadness
+user_1421,"To be honest, Crushed spirit!",sent,sadness
+user_1422,"Honestly, Crushed spirit right now",sent,sadness
+user_1423,"To be honest, Crushed spirit!",sent,sadness
+user_1424,"I just want to say, Crushed spirit!",sent,sadness
+user_1425,"To be honest, Crushed spirit honestly",sent,sadness
+user_1426,"I have to tell you, Crushed spirit for real",sent,sadness
+user_1427,"To be honest, Crushed spirit!",sent,sadness
+user_1428,Crushed spirit seriously,sent,sadness
+user_1429,"To be honest, Crushed spirit right now",sent,sadness
+user_1430,Weighed down by sadness,sent,sadness
+user_1431,"I just want to say, Weighed down truly by sadness!",sent,sadness
+user_1432,Weighed down by sadness right now,sent,sadness
+user_1433,"You know what, Weighed down truly by sadness!!",sent,sadness
+user_1434,"You know what, Weighed down by sadness for real",sent,sadness
+user_1435,"I have to tell you, Weighed utterly down by sadness right now",sent,sadness
+user_1436,"Hey, Weighed down extremely by sadness...",sent,sadness
+user_1437,"I just want to say, Weighed so down by sadness!!",sent,sadness
+user_1438,"Listen, Weighed down absolutely by sadness at the moment",sent,sadness
+user_1439,"You know what, Weighed down by sadness at the moment",sent,sadness
+user_1440,"Hey, Weighed down by sadness!",sent,sadness
+user_1441,Can't see the light,sent,sadness
+user_1442,"To be honest, Can't see the truly light for real",sent,sadness
+user_1443,"Listen, Can't see absolutely the light honestly",sent,sadness
+user_1444,"Just so you know, Can't see the light today",sent,sadness
+user_1445,"Just so you know, Can't completely see the light at the moment",sent,sadness
+user_1446,"Hey, Can't utterly see the light...",sent,sadness
+user_1447,"Listen, Can't see the truly light seriously",sent,sadness
+user_1448,Can't see the extremely light today,sent,sadness
+user_1449,"Honestly, Can't see the light",sent,sadness
+user_1450,"I have to tell you, Can't extremely see the light",sent,sadness
+user_1451,"Hey, Can't see the light for real",sent,sadness
+user_1452,Everything hurts,sent,sadness
+user_1453,"To be honest, Everything hurts right now",sent,sadness
+user_1454,"Hey, Everything hurts for real",sent,sadness
+user_1455,"Honestly, Everything hurts",sent,sadness
+user_1456,"Just so you know, Everything hurts honestly",sent,sadness
+user_1457,"Listen, Everything hurts today",sent,sadness
+user_1458,"Hey, Everything hurts right now",sent,sadness
+user_1459,"Honestly, Everything hurts seriously",sent,sadness
+user_1460,"Hey, Everything hurts!",sent,sadness
+user_1461,"Honestly, Everything hurts!!",sent,sadness
+user_1462,"Just so you know, Everything hurts today",sent,sadness
+user_1463,Feeling hopeless,sent,sadness
+user_1464,Feeling hopeless...,sent,sadness
+user_1465,"Honestly, Feeling hopeless today",sent,sadness
+user_1466,"You know what, Feeling hopeless!!",sent,sadness
+user_1467,"I just want to say, Feeling hopeless right now",sent,sadness
+user_1468,"I have to tell you, Feeling hopeless right now",sent,sadness
+user_1469,"I have to tell you, Feeling hopeless honestly",sent,sadness
+user_1470,"Just so you know, Feeling hopeless",sent,sadness
+user_1471,"You know what, Feeling hopeless right now",sent,sadness
+user_1472,"Just so you know, Feeling hopeless for real",sent,sadness
+user_1473,"Listen, Feeling hopeless honestly",sent,sadness
+user_1474,Lost my way,sent,sadness
+user_1475,"Just so you know, Lost my absolutely way honestly",sent,sadness
+user_1476,"Hey, Lost extremely my way today",sent,sadness
+user_1477,"You know what, Lost my way honestly",sent,sadness
+user_1478,"Honestly, Lost totally my way for real",sent,sadness
+user_1479,"You know what, Lost my way...",sent,sadness
+user_1480,"Listen, Lost my absolutely way for real",sent,sadness
+user_1481,"Honestly, Lost my way for real",sent,sadness
+user_1482,"I have to tell you, Lost my absolutely way...",sent,sadness
+user_1483,"Honestly, Lost completely my way at the moment",sent,sadness
+user_1484,"Hey, Lost my way today",sent,sadness
+user_1485,Drowning in tears,sent,sadness
+user_1486,"I have to tell you, Drowning in extremely tears honestly",sent,sadness
+user_1487,"To be honest, Drowning in tears seriously",sent,sadness
+user_1488,"Listen, Drowning really in tears!",sent,sadness
+user_1489,"I have to tell you, Drowning in tears for real",sent,sadness
+user_1490,"You know what, Drowning in tears",sent,sadness
+user_1491,"I just want to say, Drowning in tears at the moment",sent,sadness
+user_1492,"I just want to say, Drowning in tears seriously",sent,sadness
+user_1493,"Just so you know, Drowning in tears for real",sent,sadness
+user_1494,"Just so you know, Drowning in tears!",sent,sadness
+user_1495,"Hey, Drowning in tears today",sent,sadness
+user_1496,World feels gray,sent,sadness
+user_1497,"Hey, World feels gray honestly",sent,sadness
+user_1498,"Just so you know, World feels gray right now",sent,sadness
+user_1499,"Just so you know, World feels gray right now",sent,sadness
+user_1500,"Honestly, World feels gray",sent,sadness
+user_1501,"Hey, World feels gray",sent,sadness
+user_1502,"Just so you know, World feels gray today",sent,sadness
+user_1503,"Just so you know, World feels gray for real",sent,sadness
+user_1504,"Listen, World feels gray today",sent,sadness
+user_1505,"Just so you know, World feels gray today",sent,sadness
+user_1506,"Just so you know, World truly feels gray...",sent,sadness
+user_1507,Numb with sadness,sent,sadness
+user_1508,"To be honest, Numb truly with sadness!",sent,sadness
+user_1509,"I have to tell you, Numb with sadness for real",sent,sadness
+user_1510,"You know what, Numb with sadness!!",sent,sadness
+user_1511,Numb really with sadness!,sent,sadness
+user_1512,"Just so you know, Numb with incredibly sadness today",sent,sadness
+user_1513,"Honestly, Numb extremely with sadness today",sent,sadness
+user_1514,"I have to tell you, Numb extremely with sadness seriously",sent,sadness
+user_1515,"Listen, Numb with sadness today",sent,sadness
+user_1516,"You know what, Numb utterly with sadness today",sent,sadness
+user_1517,"To be honest, Numb with sadness today",sent,sadness
+user_1518,Aching inside,sent,sadness
+user_1519,"To be honest, Aching inside for real",sent,sadness
+user_1520,"You know what, Aching inside at the moment",sent,sadness
+user_1521,"To be honest, Aching inside today",sent,sadness
+user_1522,"Honestly, Aching inside...",sent,sadness
+user_1523,"To be honest, Aching inside honestly",sent,sadness
+user_1524,"Hey, Aching inside at the moment",sent,sadness
+user_1525,Aching inside for real,sent,sadness
+user_1526,"Hey, Aching inside right now",sent,sadness
+user_1527,"You know what, Aching inside...",sent,sadness
+user_1528,"Honestly, Aching inside!!",sent,sadness
+user_1529,Melancholy mood,sent,sadness
+user_1530,"I have to tell you, Melancholy mood honestly",sent,sadness
+user_1531,"Listen, Melancholy mood at the moment",sent,sadness
+user_1532,"I have to tell you, Melancholy mood at the moment",sent,sadness
+user_1533,"You know what, Melancholy mood at the moment",sent,sadness
+user_1534,Melancholy mood seriously,sent,sadness
+user_1535,Melancholy mood right now,sent,sadness
+user_1536,"Just so you know, Melancholy mood seriously",sent,sadness
+user_1537,"Listen, Melancholy mood today",sent,sadness
+user_1538,"Hey, Melancholy mood",sent,sadness
+user_1539,Melancholy mood,sent,sadness
+user_1540,Sorrowful times,sent,sadness
+user_1541,"Honestly, Sorrowful times right now",sent,sadness
+user_1542,"Listen, Sorrowful times for real",sent,sadness
+user_1543,"Listen, Sorrowful times today",sent,sadness
+user_1544,Sorrowful times,sent,sadness
+user_1545,"You know what, Sorrowful times!",sent,sadness
+user_1546,"Listen, Sorrowful times right now",sent,sadness
+user_1547,"Just so you know, Sorrowful times",sent,sadness
+user_1548,Sorrowful times!,sent,sadness
+user_1549,"Hey, Sorrowful times right now",sent,sadness
+user_1550,"I have to tell you, Sorrowful times!",sent,sadness
+user_1551,Grief overwhelming,sent,sadness
+user_1552,"I just want to say, Grief overwhelming...",sent,sadness
+user_1553,"To be honest, Grief overwhelming!",sent,sadness
+user_1554,"Hey, Grief overwhelming...",sent,sadness
+user_1555,"I have to tell you, Grief overwhelming!",sent,sadness
+user_1556,Grief overwhelming at the moment,sent,sadness
+user_1557,"To be honest, Grief overwhelming today",sent,sadness
+user_1558,"You know what, Grief overwhelming",sent,sadness
+user_1559,"Hey, Grief overwhelming today",sent,sadness
+user_1560,Grief overwhelming,sent,sadness
+user_1561,Grief overwhelming...,sent,sadness
+user_1562,Can't shake this sadness,sent,sadness
+user_1563,"I have to tell you, Can't shake this absolutely sadness",sent,sadness
+user_1564,"Just so you know, Can't shake this truly sadness honestly",sent,sadness
+user_1565,"I have to tell you, Can't shake this sadness seriously",sent,sadness
+user_1566,"Just so you know, Can't completely shake this sadness today",sent,sadness
+user_1567,"To be honest, Can't shake totally this sadness right now",sent,sadness
+user_1568,"You know what, Can't shake this sadness right now",sent,sadness
+user_1569,"I have to tell you, Can't absolutely shake this sadness honestly",sent,sadness
+user_1570,"Honestly, Can't really shake this sadness today",sent,sadness
+user_1571,"You know what, Can't shake this sadness seriously",sent,sadness
+user_1572,"Just so you know, Can't shake this sadness at the moment",sent,sadness
+user_1573,Heavy burden,sent,sadness
+user_1574,"Honestly, Heavy burden for real",sent,sadness
+user_1575,"Just so you know, Heavy burden",sent,sadness
+user_1576,"Just so you know, Heavy burden seriously",sent,sadness
+user_1577,"Just so you know, Heavy burden for real",sent,sadness
+user_1578,"Hey, Heavy burden",sent,sadness
+user_1579,"I have to tell you, Heavy burden at the moment",sent,sadness
+user_1580,"I just want to say, Heavy burden",sent,sadness
+user_1581,"Just so you know, Heavy burden",sent,sadness
+user_1582,"You know what, Heavy burden for real",sent,sadness
+user_1583,"Honestly, Heavy burden honestly",sent,sadness
+user_1584,Tears streaming,sent,sadness
+user_1585,"You know what, Tears streaming at the moment",sent,sadness
+user_1586,"Listen, Tears streaming seriously",sent,sadness
+user_1587,"Honestly, Tears streaming at the moment",sent,sadness
+user_1588,"Hey, Tears streaming today",sent,sadness
+user_1589,"To be honest, Tears streaming",sent,sadness
+user_1590,"I have to tell you, Tears streaming honestly",sent,sadness
+user_1591,"Honestly, Tears streaming!",sent,sadness
+user_1592,"I just want to say, Tears streaming right now",sent,sadness
+user_1593,"Listen, Tears streaming seriously",sent,sadness
+user_1594,"Hey, Tears streaming right now",sent,sadness
+user_1595,Heart feels empty,sent,sadness
+user_1596,"Just so you know, Heart feels empty at the moment",sent,sadness
+user_1597,"To be honest, Heart feels empty honestly",sent,sadness
+user_1598,"To be honest, Heart feels empty right now",sent,sadness
+user_1599,"You know what, Heart feels empty!",sent,sadness
+user_1600,"I just want to say, Heart really feels empty right now",sent,sadness
+user_1601,Heart feels empty honestly,sent,sadness
+user_1602,"Honestly, Heart feels empty...",sent,sadness
+user_1603,"You know what, Heart feels empty...",sent,sadness
+user_1604,"You know what, Heart feels empty!!",sent,sadness
+user_1605,Heart completely feels empty today,sent,sadness
+user_1606,Missing piece of me,sent,sadness
+user_1607,"You know what, Missing piece of me right now",sent,sadness
+user_1608,"Hey, Missing piece of me",sent,sadness
+user_1609,"Just so you know, Missing piece of completely me for real",sent,sadness
+user_1610,"Honestly, Missing piece extremely of me honestly",sent,sadness
+user_1611,"Hey, Missing piece of me",sent,sadness
+user_1612,"Hey, Missing piece of me...",sent,sadness
+user_1613,"Hey, Missing piece utterly of me at the moment",sent,sadness
+user_1614,"Hey, Missing piece of me right now",sent,sadness
+user_1615,"I have to tell you, Missing very piece of me today",sent,sadness
+user_1616,"I have to tell you, Missing piece of me...",sent,sadness
+user_1617,Sadness consuming,sent,sadness
+user_1618,"You know what, Sadness consuming...",sent,sadness
+user_1619,Sadness consuming right now,sent,sadness
+user_1620,"You know what, Sadness consuming seriously",sent,sadness
+user_1621,"Listen, Sadness consuming",sent,sadness
+user_1622,"To be honest, Sadness consuming for real",sent,sadness
+user_1623,Sadness consuming seriously,sent,sadness
+user_1624,"I have to tell you, Sadness consuming...",sent,sadness
+user_1625,"You know what, Sadness consuming!",sent,sadness
+user_1626,"Just so you know, Sadness consuming seriously",sent,sadness
+user_1627,Sadness consuming!!,sent,sadness
+user_1628,Dark thoughts,sent,sadness
+user_1629,"I just want to say, Dark thoughts",sent,sadness
+user_1630,"Listen, Dark thoughts...",sent,sadness
+user_1631,"Honestly, Dark thoughts right now",sent,sadness
+user_1632,"You know what, Dark thoughts!",sent,sadness
+user_1633,"Honestly, Dark thoughts at the moment",sent,sadness
+user_1634,"Hey, Dark thoughts right now",sent,sadness
+user_1635,Dark thoughts today,sent,sadness
+user_1636,"To be honest, Dark thoughts right now",sent,sadness
+user_1637,"I just want to say, Dark thoughts",sent,sadness
+user_1638,"You know what, Dark thoughts at the moment",sent,sadness
+user_1639,Can't find joy,sent,sadness
+user_1640,"I just want to say, Can't find very joy today",sent,sadness
+user_1641,"You know what, Can't find absolutely joy!",sent,sadness
+user_1642,"I have to tell you, Can't so find joy...",sent,sadness
+user_1643,"Listen, Can't find joy!",sent,sadness
+user_1644,"I just want to say, Can't find joy!!",sent,sadness
+user_1645,"I just want to say, Can't find joy...",sent,sadness
+user_1646,"Hey, Can't really find joy!",sent,sadness
+user_1647,Can't find joy for real,sent,sadness
+user_1648,"Honestly, Can't find really joy for real",sent,sadness
+user_1649,"I have to tell you, Can't find so joy right now",sent,sadness
+user_1650,Everything reminds me,sent,sadness
+user_1651,"To be honest, Everything reminds me at the moment",sent,sadness
+user_1652,"To be honest, Everything reminds truly me at the moment",sent,sadness
+user_1653,"You know what, Everything reminds totally me right now",sent,sadness
+user_1654,"Hey, Everything reminds extremely me seriously",sent,sadness
+user_1655,Everything really reminds me!,sent,sadness
+user_1656,"Hey, Everything reminds me!!",sent,sadness
+user_1657,"I have to tell you, Everything incredibly reminds me!",sent,sadness
+user_1658,"Listen, Everything reminds very me",sent,sadness
+user_1659,"Listen, Everything reminds me today",sent,sadness
+user_1660,Everything reminds me...,sent,sadness
+user_1661,Painful to breathe,sent,sadness
+user_1662,"Honestly, Painful to breathe seriously",sent,sadness
+user_1663,"To be honest, Painful to breathe...",sent,sadness
+user_1664,"You know what, Painful utterly to breathe today",sent,sadness
+user_1665,Painful to absolutely breathe!!,sent,sadness
+user_1666,"I have to tell you, Painful really to breathe for real",sent,sadness
+user_1667,"Honestly, Painful to breathe for real",sent,sadness
+user_1668,"To be honest, Painful to so breathe seriously",sent,sadness
+user_1669,"I just want to say, Painful to breathe at the moment",sent,sadness
+user_1670,"I just want to say, Painful incredibly to breathe for real",sent,sadness
+user_1671,"Listen, Painful to breathe right now",sent,sadness
+user_1672,Chest feels tight,sent,sadness
+user_1673,Chest feels tight seriously,sent,sadness
+user_1674,Chest feels tight!,sent,sadness
+user_1675,"Hey, Chest feels truly tight seriously",sent,sadness
+user_1676,"I have to tell you, Chest feels tight...",sent,sadness
+user_1677,"You know what, Chest extremely feels tight for real",sent,sadness
+user_1678,"I just want to say, Chest feels really tight seriously",sent,sadness
+user_1679,"Just so you know, Chest feels tight at the moment",sent,sadness
+user_1680,"Just so you know, Chest feels tight honestly",sent,sadness
+user_1681,"I just want to say, Chest feels tight seriously",sent,sadness
+user_1682,"You know what, Chest feels tight today",sent,sadness
+user_1683,Sadness everywhere,sent,sadness
+user_1684,"I just want to say, Sadness everywhere today",sent,sadness
+user_1685,Sadness everywhere honestly,sent,sadness
+user_1686,"I just want to say, Sadness everywhere at the moment",sent,sadness
+user_1687,"Hey, Sadness everywhere...",sent,sadness
+user_1688,"Hey, Sadness everywhere today",sent,sadness
+user_1689,"Just so you know, Sadness everywhere",sent,sadness
+user_1690,"Hey, Sadness everywhere honestly",sent,sadness
+user_1691,"Hey, Sadness everywhere right now",sent,sadness
+user_1692,"I just want to say, Sadness everywhere!!",sent,sadness
+user_1693,"I have to tell you, Sadness everywhere honestly",sent,sadness
+user_1694,I'm scared,sent,fear
+user_1695,"You know what, I'm scared",sent,fear
+user_1696,"I just want to say, I'm scared at the moment",sent,fear
+user_1697,I'm scared seriously,sent,fear
+user_1698,"I have to tell you, I'm scared at the moment",sent,fear
+user_1699,"You know what, I'm scared",sent,fear
+user_1700,"You know what, I'm scared at the moment",sent,fear
+user_1701,"Honestly, I'm scared at the moment",sent,fear
+user_1702,"Hey, I'm scared honestly",sent,fear
+user_1703,"You know what, I'm scared for real",sent,fear
+user_1704,"You know what, I'm scared honestly",sent,fear
+user_1705,This terrifies me,sent,fear
+user_1706,"I just want to say, This terrifies me...",sent,fear
+user_1707,"You know what, This terrifies absolutely me seriously",sent,fear
+user_1708,"To be honest, This terrifies me today",sent,fear
+user_1709,"I just want to say, This terrifies me right now",sent,fear
+user_1710,"You know what, This so terrifies me for real",sent,fear
+user_1711,"You know what, This terrifies me honestly",sent,fear
+user_1712,This really terrifies me...,sent,fear
+user_1713,"You know what, This terrifies me for real",sent,fear
+user_1714,"To be honest, This terrifies me at the moment",sent,fear
+user_1715,"Just so you know, This terrifies me!!",sent,fear
+user_1716,I'm afraid of what might happen,sent,fear
+user_1717,"I have to tell you, I'm afraid of absolutely what might happen seriously",sent,fear
+user_1718,"Honestly, I'm afraid of what might happen!!",sent,fear
+user_1719,"You know what, I'm incredibly afraid of what might happen",sent,fear
+user_1720,"I just want to say, I'm afraid of what utterly might happen for real",sent,fear
+user_1721,"Listen, I'm afraid of what might happen!",sent,fear
+user_1722,"To be honest, I'm afraid of what completely might happen right now",sent,fear
+user_1723,"Listen, I'm afraid of what so might happen at the moment",sent,fear
+user_1724,"Honestly, I'm afraid of what might so happen today",sent,fear
+user_1725,"I just want to say, I'm afraid of what might happen for real",sent,fear
+user_1726,I'm afraid very of what might happen!!,sent,fear
+user_1727,Trembling with fear,sent,fear
+user_1728,"You know what, Trembling utterly with fear at the moment",sent,fear
+user_1729,"I have to tell you, Trembling with fear seriously",sent,fear
+user_1730,"You know what, Trembling with absolutely fear honestly",sent,fear
+user_1731,"I just want to say, Trembling with absolutely fear...",sent,fear
+user_1732,"I have to tell you, Trembling truly with fear at the moment",sent,fear
+user_1733,"Honestly, Trembling with fear for real",sent,fear
+user_1734,"Listen, Trembling with fear honestly",sent,fear
+user_1735,"Hey, Trembling with really fear seriously",sent,fear
+user_1736,Trembling totally with fear at the moment,sent,fear
+user_1737,"Hey, Trembling with fear...",sent,fear
+user_1738,Heart racing,sent,fear
+user_1739,"Hey, Heart racing",sent,fear
+user_1740,"Hey, Heart racing right now",sent,fear
+user_1741,"I have to tell you, Heart racing...",sent,fear
+user_1742,"Just so you know, Heart racing",sent,fear
+user_1743,Heart racing!,sent,fear
+user_1744,"To be honest, Heart racing!!",sent,fear
+user_1745,"Listen, Heart racing!!",sent,fear
+user_1746,"Honestly, Heart racing for real",sent,fear
+user_1747,"I just want to say, Heart racing",sent,fear
+user_1748,"Just so you know, Heart racing for real",sent,fear
+user_1749,Can't breathe from fear,sent,fear
+user_1750,"I have to tell you, Can't breathe incredibly from fear!",sent,fear
+user_1751,"Just so you know, Can't breathe from truly fear honestly",sent,fear
+user_1752,"Just so you know, Can't breathe from completely fear seriously",sent,fear
+user_1753,"I just want to say, Can't breathe from completely fear for real",sent,fear
+user_1754,"To be honest, Can't breathe from fear!!",sent,fear
+user_1755,Can't breathe from fear at the moment,sent,fear
+user_1756,"You know what, Can't breathe from utterly fear!!",sent,fear
+user_1757,"Hey, Can't breathe from absolutely fear right now",sent,fear
+user_1758,"Honestly, Can't breathe from fear...",sent,fear
+user_1759,"To be honest, Can't breathe from fear honestly",sent,fear
+user_1760,Paralyzed with terror,sent,fear
+user_1761,"Honestly, Paralyzed with terror at the moment",sent,fear
+user_1762,"I have to tell you, Paralyzed with terror",sent,fear
+user_1763,Paralyzed extremely with terror today,sent,fear
+user_1764,"Hey, Paralyzed very with terror!!",sent,fear
+user_1765,"Listen, Paralyzed with terror at the moment",sent,fear
+user_1766,"I just want to say, Paralyzed with terror",sent,fear
+user_1767,"Hey, Paralyzed with terror!!",sent,fear
+user_1768,"To be honest, Paralyzed with terror",sent,fear
+user_1769,"Just so you know, Paralyzed with absolutely terror right now",sent,fear
+user_1770,"Listen, Paralyzed with terror...",sent,fear
+user_1771,Nightmare coming true,sent,fear
+user_1772,"Honestly, Nightmare completely coming true",sent,fear
+user_1773,"Hey, Nightmare very coming true for real",sent,fear
+user_1774,"Just so you know, Nightmare coming true seriously",sent,fear
+user_1775,"To be honest, Nightmare coming true for real",sent,fear
+user_1776,"To be honest, Nightmare coming true at the moment",sent,fear
+user_1777,"Just so you know, Nightmare coming true right now",sent,fear
+user_1778,"Listen, Nightmare coming true",sent,fear
+user_1779,"I just want to say, Nightmare coming so true for real",sent,fear
+user_1780,"You know what, Nightmare extremely coming true honestly",sent,fear
+user_1781,"You know what, Nightmare coming true seriously",sent,fear
+user_1782,Dreading this,sent,fear
+user_1783,"Hey, Dreading this",sent,fear
+user_1784,"To be honest, Dreading this today",sent,fear
+user_1785,"Just so you know, Dreading this at the moment",sent,fear
+user_1786,"Listen, Dreading this seriously",sent,fear
+user_1787,"To be honest, Dreading this right now",sent,fear
+user_1788,"I just want to say, Dreading this today",sent,fear
+user_1789,"Honestly, Dreading this at the moment",sent,fear
+user_1790,"I have to tell you, Dreading this",sent,fear
+user_1791,Dreading this for real,sent,fear
+user_1792,"Hey, Dreading this at the moment",sent,fear
+user_1793,Anxiety through the roof,sent,fear
+user_1794,"You know what, Anxiety incredibly through the roof at the moment",sent,fear
+user_1795,"Hey, Anxiety through the roof right now",sent,fear
+user_1796,"Honestly, Anxiety extremely through the roof!!",sent,fear
+user_1797,"Just so you know, Anxiety through the roof today",sent,fear
+user_1798,"Just so you know, Anxiety through the roof...",sent,fear
+user_1799,"You know what, Anxiety through truly the roof today",sent,fear
+user_1800,"I just want to say, Anxiety absolutely through the roof right now",sent,fear
+user_1801,"Honestly, Anxiety through the roof for real",sent,fear
+user_1802,"Honestly, Anxiety through the roof honestly",sent,fear
+user_1803,"You know what, Anxiety through the roof for real",sent,fear
+user_1804,Panic setting in,sent,fear
+user_1805,Panic setting incredibly in...,sent,fear
+user_1806,"To be honest, Panic setting in right now",sent,fear
+user_1807,"Hey, Panic completely setting in...",sent,fear
+user_1808,"Just so you know, Panic setting in!!",sent,fear
+user_1809,"You know what, Panic setting in seriously",sent,fear
+user_1810,"Honestly, Panic setting in seriously",sent,fear
+user_1811,"You know what, Panic setting in!",sent,fear
+user_1812,"You know what, Panic extremely setting in for real",sent,fear
+user_1813,"Honestly, Panic setting in...",sent,fear
+user_1814,"Listen, Panic setting in honestly",sent,fear
+user_1815,Cold sweat,sent,fear
+user_1816,"You know what, Cold sweat honestly",sent,fear
+user_1817,"Hey, Cold sweat today",sent,fear
+user_1818,"You know what, Cold sweat seriously",sent,fear
+user_1819,"Hey, Cold sweat",sent,fear
+user_1820,"I just want to say, Cold sweat right now",sent,fear
+user_1821,"Hey, Cold sweat today",sent,fear
+user_1822,"Hey, Cold sweat at the moment",sent,fear
+user_1823,Cold sweat...,sent,fear
+user_1824,"Hey, Cold sweat!",sent,fear
+user_1825,"Honestly, Cold sweat today",sent,fear
+user_1826,Shaking uncontrollably,sent,fear
+user_1827,"Listen, Shaking uncontrollably at the moment",sent,fear
+user_1828,"Honestly, Shaking uncontrollably right now",sent,fear
+user_1829,"Just so you know, Shaking uncontrollably seriously",sent,fear
+user_1830,"Hey, Shaking uncontrollably honestly",sent,fear
+user_1831,"I have to tell you, Shaking uncontrollably...",sent,fear
+user_1832,"You know what, Shaking uncontrollably!",sent,fear
+user_1833,"Honestly, Shaking uncontrollably",sent,fear
+user_1834,"I just want to say, Shaking uncontrollably",sent,fear
+user_1835,"I have to tell you, Shaking uncontrollably honestly",sent,fear
+user_1836,"Listen, Shaking uncontrollably right now",sent,fear
+user_1837,Fear gripping me,sent,fear
+user_1838,"Listen, Fear gripping me!",sent,fear
+user_1839,"Listen, Fear gripping totally me honestly",sent,fear
+user_1840,"You know what, Fear so gripping me for real",sent,fear
+user_1841,"You know what, Fear gripping completely me",sent,fear
+user_1842,"You know what, Fear gripping me today",sent,fear
+user_1843,Fear gripping truly me honestly,sent,fear
+user_1844,"Hey, Fear gripping me today",sent,fear
+user_1845,"I just want to say, Fear gripping me honestly",sent,fear
+user_1846,"You know what, Fear gripping me right now",sent,fear
+user_1847,"Honestly, Fear gripping so me!!",sent,fear
+user_1848,Can't escape this fear,sent,fear
+user_1849,"Honestly, Can't truly escape this fear honestly",sent,fear
+user_1850,"You know what, Can't escape this extremely fear for real",sent,fear
+user_1851,"Just so you know, Can't very escape this fear seriously",sent,fear
+user_1852,"I have to tell you, Can't utterly escape this fear today",sent,fear
+user_1853,"I have to tell you, Can't escape this fear honestly",sent,fear
+user_1854,"Honestly, Can't escape this fear today",sent,fear
+user_1855,"Hey, Can't absolutely escape this fear at the moment",sent,fear
+user_1856,Can't escape this fear right now,sent,fear
+user_1857,"To be honest, Can't escape this fear seriously",sent,fear
+user_1858,"You know what, Can't escape this fear",sent,fear
+user_1859,Terrified beyond words,sent,fear
+user_1860,"Just so you know, Terrified beyond words!!",sent,fear
+user_1861,"Just so you know, Terrified beyond words...",sent,fear
+user_1862,"Hey, Terrified beyond completely words!",sent,fear
+user_1863,"You know what, Terrified beyond words",sent,fear
+user_1864,"Hey, Terrified completely beyond words today",sent,fear
+user_1865,"Just so you know, Terrified beyond words at the moment",sent,fear
+user_1866,"I just want to say, Terrified beyond words for real",sent,fear
+user_1867,"Listen, Terrified very beyond words for real",sent,fear
+user_1868,"You know what, Terrified beyond words!",sent,fear
+user_1869,"Honestly, Terrified beyond truly words",sent,fear
+user_1870,Horrifying thought,sent,fear
+user_1871,"Hey, Horrifying thought right now",sent,fear
+user_1872,"Listen, Horrifying thought at the moment",sent,fear
+user_1873,"Honestly, Horrifying thought...",sent,fear
+user_1874,"To be honest, Horrifying thought at the moment",sent,fear
+user_1875,"I just want to say, Horrifying thought!!",sent,fear
+user_1876,"Just so you know, Horrifying thought...",sent,fear
+user_1877,"You know what, Horrifying thought right now",sent,fear
+user_1878,"Hey, Horrifying thought today",sent,fear
+user_1879,"Just so you know, Horrifying thought today",sent,fear
+user_1880,"Honestly, Horrifying thought...",sent,fear
+user_1881,Scared to death,sent,fear
+user_1882,"Hey, Scared to death",sent,fear
+user_1883,"I just want to say, Scared to death honestly",sent,fear
+user_1884,"I have to tell you, Scared to absolutely death seriously",sent,fear
+user_1885,Scared to death!,sent,fear
+user_1886,"To be honest, Scared to completely death right now",sent,fear
+user_1887,"I have to tell you, Scared to death!",sent,fear
+user_1888,"Just so you know, Scared totally to death!",sent,fear
+user_1889,"You know what, Scared to death",sent,fear
+user_1890,"Honestly, Scared to very death",sent,fear
+user_1891,"To be honest, Scared to completely death today",sent,fear
+user_1892,Blood running cold,sent,fear
+user_1893,"To be honest, Blood running cold!",sent,fear
+user_1894,"Listen, Blood running truly cold today",sent,fear
+user_1895,"Just so you know, Blood totally running cold seriously",sent,fear
+user_1896,"Listen, Blood so running cold for real",sent,fear
+user_1897,"Honestly, Blood running cold seriously",sent,fear
+user_1898,"Listen, Blood running cold!",sent,fear
+user_1899,"Honestly, Blood so running cold seriously",sent,fear
+user_1900,"I just want to say, Blood running cold...",sent,fear
+user_1901,"Hey, Blood running cold seriously",sent,fear
+user_1902,"Hey, Blood running cold at the moment",sent,fear
+user_1903,Hair standing on end,sent,fear
+user_1904,Hair standing on end seriously,sent,fear
+user_1905,"Just so you know, Hair standing on totally end!!",sent,fear
+user_1906,"You know what, Hair standing on end!",sent,fear
+user_1907,"Just so you know, Hair standing on end seriously",sent,fear
+user_1908,"I just want to say, Hair standing completely on end!!",sent,fear
+user_1909,"Hey, Hair standing on end right now",sent,fear
+user_1910,"I have to tell you, Hair standing on end...",sent,fear
+user_1911,"Hey, Hair standing on end today",sent,fear
+user_1912,"Hey, Hair really standing on end for real",sent,fear
+user_1913,"Listen, Hair standing really on end today",sent,fear
+user_1914,Frozen in fear,sent,fear
+user_1915,"Just so you know, Frozen extremely in fear seriously",sent,fear
+user_1916,"Listen, Frozen in completely fear honestly",sent,fear
+user_1917,Frozen in completely fear today,sent,fear
+user_1918,"Hey, Frozen totally in fear!!",sent,fear
+user_1919,"I have to tell you, Frozen in utterly fear seriously",sent,fear
+user_1920,"To be honest, Frozen in fear seriously",sent,fear
+user_1921,"I have to tell you, Frozen in fear!",sent,fear
+user_1922,"Hey, Frozen in fear!!",sent,fear
+user_1923,"Listen, Frozen in completely fear today",sent,fear
+user_1924,"Hey, Frozen in fear",sent,fear
+user_1925,Knees weak with fear,sent,fear
+user_1926,"Honestly, Knees totally weak with fear today",sent,fear
+user_1927,"Honestly, Knees weak so with fear!!",sent,fear
+user_1928,"Listen, Knees weak with fear today",sent,fear
+user_1929,"You know what, Knees weak with fear at the moment",sent,fear
+user_1930,"I have to tell you, Knees weak with fear seriously",sent,fear
+user_1931,"Listen, Knees weak with fear...",sent,fear
+user_1932,"Just so you know, Knees completely weak with fear",sent,fear
+user_1933,"Listen, Knees incredibly weak with fear today",sent,fear
+user_1934,"Listen, Knees extremely weak with fear seriously",sent,fear
+user_1935,"Just so you know, Knees weak with so fear today",sent,fear
+user_1936,Heart in my throat,sent,fear
+user_1937,Heart in my truly throat seriously,sent,fear
+user_1938,"Hey, Heart in my throat",sent,fear
+user_1939,"I have to tell you, Heart in my throat at the moment",sent,fear
+user_1940,"Hey, Heart in my throat!!",sent,fear
+user_1941,Heart in extremely my throat honestly,sent,fear
+user_1942,"Hey, Heart in my throat honestly",sent,fear
+user_1943,"I have to tell you, Heart in my throat...",sent,fear
+user_1944,"You know what, Heart in extremely my throat...",sent,fear
+user_1945,"I have to tell you, Heart in my totally throat",sent,fear
+user_1946,"Honestly, Heart extremely in my throat...",sent,fear
+user_1947,Petrified,sent,fear
+user_1948,"Listen, Petrified...",sent,fear
+user_1949,"To be honest, Petrified today",sent,fear
+user_1950,"To be honest, Petrified!!",sent,fear
+user_1951,"You know what, Petrified for real",sent,fear
+user_1952,"I just want to say, Petrified!",sent,fear
+user_1953,"Honestly, Petrified!!",sent,fear
+user_1954,"Honestly, Petrified",sent,fear
+user_1955,"Listen, Petrified!!",sent,fear
+user_1956,Petrified,sent,fear
+user_1957,"To be honest, Petrified for real",sent,fear
+user_1958,Overwhelming dread,sent,fear
+user_1959,"You know what, Overwhelming dread!",sent,fear
+user_1960,"Honestly, Overwhelming dread at the moment",sent,fear
+user_1961,"Just so you know, Overwhelming dread for real",sent,fear
+user_1962,Overwhelming dread today,sent,fear
+user_1963,Overwhelming dread...,sent,fear
+user_1964,"Listen, Overwhelming dread today",sent,fear
+user_1965,"Hey, Overwhelming dread honestly",sent,fear
+user_1966,Overwhelming dread right now,sent,fear
+user_1967,Overwhelming dread at the moment,sent,fear
+user_1968,"Hey, Overwhelming dread for real",sent,fear
+user_1969,Can't face this,sent,fear
+user_1970,"Hey, Can't face really this!!",sent,fear
+user_1971,"You know what, Can't face really this...",sent,fear
+user_1972,"I just want to say, Can't incredibly face this",sent,fear
+user_1973,"You know what, Can't face utterly this today",sent,fear
+user_1974,"To be honest, Can't face this right now",sent,fear
+user_1975,"I just want to say, Can't face this!",sent,fear
+user_1976,"You know what, Can't face this...",sent,fear
+user_1977,"To be honest, Can't face this...",sent,fear
+user_1978,"To be honest, Can't absolutely face this today",sent,fear
+user_1979,"I have to tell you, Can't face so this...",sent,fear
+user_1980,Too scary,sent,fear
+user_1981,"You know what, Too scary for real",sent,fear
+user_1982,"Listen, Too scary...",sent,fear
+user_1983,"I have to tell you, Too scary!",sent,fear
+user_1984,Too scary,sent,fear
+user_1985,"Listen, Too scary right now",sent,fear
+user_1986,"Listen, Too scary seriously",sent,fear
+user_1987,"Hey, Too scary honestly",sent,fear
+user_1988,"I have to tell you, Too scary!!",sent,fear
+user_1989,"Hey, Too scary!!",sent,fear
+user_1990,"Honestly, Too scary honestly",sent,fear
+user_1991,Nightmare scenario,sent,fear
+user_1992,"I just want to say, Nightmare scenario honestly",sent,fear
+user_1993,"Just so you know, Nightmare scenario",sent,fear
+user_1994,"Just so you know, Nightmare scenario for real",sent,fear
+user_1995,"Just so you know, Nightmare scenario today",sent,fear
+user_1996,"I have to tell you, Nightmare scenario",sent,fear
+user_1997,"Listen, Nightmare scenario!",sent,fear
+user_1998,"To be honest, Nightmare scenario at the moment",sent,fear
+user_1999,"Hey, Nightmare scenario for real",sent,fear
+user_2000,"Hey, Nightmare scenario...",sent,fear
+user_2001,"Just so you know, Nightmare scenario today",sent,fear
+user_2002,Worst fears realized,sent,fear
+user_2003,Worst fears realized!,sent,fear
+user_2004,"I just want to say, Worst fears realized today",sent,fear
+user_2005,"I just want to say, Worst completely fears realized honestly",sent,fear
+user_2006,Worst fears realized...,sent,fear
+user_2007,"To be honest, Worst extremely fears realized honestly",sent,fear
+user_2008,Worst fears really realized!,sent,fear
+user_2009,"I just want to say, Worst truly fears realized!!",sent,fear
+user_2010,"To be honest, Worst really fears realized for real",sent,fear
+user_2011,"Listen, Worst fears realized seriously",sent,fear
+user_2012,Worst fears really realized right now,sent,fear
+user_2013,Panic attack coming,sent,fear
+user_2014,"Hey, Panic attack completely coming at the moment",sent,fear
+user_2015,Panic so attack coming,sent,fear
+user_2016,Panic attack coming!,sent,fear
+user_2017,"Hey, Panic attack coming at the moment",sent,fear
+user_2018,"You know what, Panic attack absolutely coming!!",sent,fear
+user_2019,"You know what, Panic very attack coming right now",sent,fear
+user_2020,"Just so you know, Panic incredibly attack coming...",sent,fear
+user_2021,"Honestly, Panic attack coming today",sent,fear
+user_2022,"I just want to say, Panic very attack coming for real",sent,fear
+user_2023,Panic attack really coming!!,sent,fear
+user_2024,Afraid to move,sent,fear
+user_2025,"Just so you know, Afraid to move for real",sent,fear
+user_2026,"I have to tell you, Afraid to truly move right now",sent,fear
+user_2027,"I just want to say, Afraid to move right now",sent,fear
+user_2028,"You know what, Afraid really to move...",sent,fear
+user_2029,"Just so you know, Afraid to very move...",sent,fear
+user_2030,"You know what, Afraid incredibly to move",sent,fear
+user_2031,"Listen, Afraid to move right now",sent,fear
+user_2032,"I just want to say, Afraid absolutely to move!!",sent,fear
+user_2033,"Honestly, Afraid truly to move...",sent,fear
+user_2034,"Listen, Afraid to move...",sent,fear
+user_2035,Terror consuming me,sent,fear
+user_2036,"Just so you know, Terror consuming me!",sent,fear
+user_2037,"Just so you know, Terror consuming truly me today",sent,fear
+user_2038,"I have to tell you, Terror completely consuming me for real",sent,fear
+user_2039,"Listen, Terror very consuming me for real",sent,fear
+user_2040,"You know what, Terror extremely consuming me right now",sent,fear
+user_2041,"I just want to say, Terror consuming really me!",sent,fear
+user_2042,"Listen, Terror consuming me!",sent,fear
+user_2043,"Hey, Terror consuming me",sent,fear
+user_2044,"I have to tell you, Terror really consuming me",sent,fear
+user_2045,"Listen, Terror consuming me at the moment",sent,fear
+user_2046,Frightened speechless,sent,fear
+user_2047,"Honestly, Frightened speechless today",sent,fear
+user_2048,"Hey, Frightened speechless for real",sent,fear
+user_2049,"I just want to say, Frightened speechless!!",sent,fear
+user_2050,"To be honest, Frightened speechless seriously",sent,fear
+user_2051,"Just so you know, Frightened speechless honestly",sent,fear
+user_2052,Frightened speechless right now,sent,fear
+user_2053,"To be honest, Frightened speechless for real",sent,fear
+user_2054,"Just so you know, Frightened speechless seriously",sent,fear
+user_2055,"To be honest, Frightened speechless today",sent,fear
+user_2056,Frightened speechless!!,sent,fear
+user_2057,Fearful thoughts,sent,fear
+user_2058,"To be honest, Fearful thoughts at the moment",sent,fear
+user_2059,"Hey, Fearful thoughts...",sent,fear
+user_2060,"Just so you know, Fearful thoughts!!",sent,fear
+user_2061,"To be honest, Fearful thoughts honestly",sent,fear
+user_2062,"Honestly, Fearful thoughts...",sent,fear
+user_2063,"I just want to say, Fearful thoughts honestly",sent,fear
+user_2064,"I just want to say, Fearful thoughts!!",sent,fear
+user_2065,"I just want to say, Fearful thoughts seriously",sent,fear
+user_2066,"Listen, Fearful thoughts today",sent,fear
+user_2067,"Honestly, Fearful thoughts honestly",sent,fear
+user_2068,Can't stop shaking,sent,fear
+user_2069,"I just want to say, Can't stop completely shaking",sent,fear
+user_2070,"Hey, Can't stop incredibly shaking",sent,fear
+user_2071,"Just so you know, Can't stop shaking at the moment",sent,fear
+user_2072,"I just want to say, Can't stop utterly shaking today",sent,fear
+user_2073,Can't stop utterly shaking!!,sent,fear
+user_2074,"Just so you know, Can't stop shaking seriously",sent,fear
+user_2075,"I have to tell you, Can't stop utterly shaking...",sent,fear
+user_2076,"You know what, Can't stop totally shaking",sent,fear
+user_2077,"To be honest, Can't stop so shaking today",sent,fear
+user_2078,"Honestly, Can't stop so shaking...",sent,fear
+user_2079,Mind racing with fear,sent,fear
+user_2080,"Listen, Mind racing with very fear!!",sent,fear
+user_2081,"You know what, Mind racing totally with fear honestly",sent,fear
+user_2082,"Hey, Mind racing with fear right now",sent,fear
+user_2083,"Listen, Mind racing with fear",sent,fear
+user_2084,"I have to tell you, Mind extremely racing with fear!!",sent,fear
+user_2085,Mind very racing with fear at the moment,sent,fear
+user_2086,"Just so you know, Mind racing with absolutely fear",sent,fear
+user_2087,"I just want to say, Mind racing extremely with fear right now",sent,fear
+user_2088,"I have to tell you, Mind racing truly with fear...",sent,fear
+user_2089,"Hey, Mind racing with really fear...",sent,fear
+user_2090,Dread filling me,sent,fear
+user_2091,"I have to tell you, Dread totally filling me today",sent,fear
+user_2092,"Listen, Dread filling extremely me for real",sent,fear
+user_2093,"I just want to say, Dread filling me right now",sent,fear
+user_2094,"You know what, Dread filling me",sent,fear
+user_2095,"You know what, Dread filling me right now",sent,fear
+user_2096,"You know what, Dread filling me",sent,fear
+user_2097,"You know what, Dread filling totally me for real",sent,fear
+user_2098,"I have to tell you, Dread filling very me...",sent,fear
+user_2099,"Honestly, Dread filling me!",sent,fear
+user_2100,"I have to tell you, Dread really filling me right now",sent,fear
+user_2101,Scared stiff,sent,fear
+user_2102,"I have to tell you, Scared stiff seriously",sent,fear
+user_2103,"To be honest, Scared stiff!!",sent,fear
+user_2104,"You know what, Scared stiff",sent,fear
+user_2105,"You know what, Scared stiff!",sent,fear
+user_2106,"Hey, Scared stiff for real",sent,fear
+user_2107,"You know what, Scared stiff for real",sent,fear
+user_2108,"Just so you know, Scared stiff right now",sent,fear
+user_2109,"Hey, Scared stiff",sent,fear
+user_2110,"Hey, Scared stiff right now",sent,fear
+user_2111,Scared stiff for real,sent,fear
+user_2112,Fear taking over,sent,fear
+user_2113,Fear taking over honestly,sent,fear
+user_2114,"Hey, Fear extremely taking over seriously",sent,fear
+user_2115,"Just so you know, Fear taking extremely over seriously",sent,fear
+user_2116,"Just so you know, Fear taking over today",sent,fear
+user_2117,"Listen, Fear taking utterly over!!",sent,fear
+user_2118,"I have to tell you, Fear truly taking over",sent,fear
+user_2119,"Just so you know, Fear taking very over today",sent,fear
+user_2120,"Hey, Fear absolutely taking over at the moment",sent,fear
+user_2121,Fear taking totally over right now,sent,fear
+user_2122,"You know what, Fear taking over seriously",sent,fear
+user_2123,Anxiety spiraling,sent,fear
+user_2124,"I have to tell you, Anxiety spiraling seriously",sent,fear
+user_2125,"Hey, Anxiety spiraling...",sent,fear
+user_2126,"Just so you know, Anxiety spiraling!!",sent,fear
+user_2127,"I just want to say, Anxiety spiraling!!",sent,fear
+user_2128,"I just want to say, Anxiety spiraling...",sent,fear
+user_2129,Anxiety spiraling,sent,fear
+user_2130,"Listen, Anxiety spiraling honestly",sent,fear
+user_2131,Anxiety spiraling for real,sent,fear
+user_2132,"Honestly, Anxiety spiraling at the moment",sent,fear
+user_2133,"Just so you know, Anxiety spiraling honestly",sent,fear
+user_2134,Can't calm down,sent,fear
+user_2135,"You know what, Can't calm down right now",sent,fear
+user_2136,"Honestly, Can't calm down",sent,fear
+user_2137,Can't calm down for real,sent,fear
+user_2138,"Listen, Can't calm down...",sent,fear
+user_2139,"I just want to say, Can't calm very down honestly",sent,fear
+user_2140,"I just want to say, Can't calm utterly down",sent,fear
+user_2141,"To be honest, Can't calm down!",sent,fear
+user_2142,"Hey, Can't calm so down seriously",sent,fear
+user_2143,Can't calm down!!,sent,fear
+user_2144,"You know what, Can't calm utterly down seriously",sent,fear
+user_2145,Terror gripping,sent,fear
+user_2146,"You know what, Terror gripping",sent,fear
+user_2147,"Hey, Terror gripping today",sent,fear
+user_2148,"Just so you know, Terror gripping...",sent,fear
+user_2149,"You know what, Terror gripping",sent,fear
+user_2150,"Just so you know, Terror gripping!!",sent,fear
+user_2151,"Hey, Terror gripping honestly",sent,fear
+user_2152,"Hey, Terror gripping at the moment",sent,fear
+user_2153,"Honestly, Terror gripping today",sent,fear
+user_2154,"Hey, Terror gripping!",sent,fear
+user_2155,"To be honest, Terror gripping seriously",sent,fear
+user_2156,Phobia triggered,sent,fear
+user_2157,Phobia triggered honestly,sent,fear
+user_2158,"I just want to say, Phobia triggered right now",sent,fear
+user_2159,"To be honest, Phobia triggered seriously",sent,fear
+user_2160,"To be honest, Phobia triggered at the moment",sent,fear
+user_2161,"Hey, Phobia triggered today",sent,fear
+user_2162,"Honestly, Phobia triggered seriously",sent,fear
+user_2163,Phobia triggered today,sent,fear
+user_2164,"Honestly, Phobia triggered right now",sent,fear
+user_2165,"You know what, Phobia triggered seriously",sent,fear
+user_2166,"I have to tell you, Phobia triggered honestly",sent,fear
+user_2167,Afraid of everything,sent,fear
+user_2168,"I just want to say, Afraid truly of everything...",sent,fear
+user_2169,"I have to tell you, Afraid of everything for real",sent,fear
+user_2170,"Just so you know, Afraid of everything!!",sent,fear
+user_2171,"Hey, Afraid of everything right now",sent,fear
+user_2172,"I have to tell you, Afraid of everything for real",sent,fear
+user_2173,"Hey, Afraid of everything right now",sent,fear
+user_2174,"Listen, Afraid of truly everything today",sent,fear
+user_2175,"To be honest, Afraid of everything honestly",sent,fear
+user_2176,"Hey, Afraid of everything at the moment",sent,fear
+user_2177,"To be honest, Afraid of extremely everything for real",sent,fear
+user_2178,Fear paralyzing,sent,fear
+user_2179,"You know what, Fear paralyzing today",sent,fear
+user_2180,"To be honest, Fear paralyzing honestly",sent,fear
+user_2181,"Listen, Fear paralyzing honestly",sent,fear
+user_2182,"Just so you know, Fear paralyzing at the moment",sent,fear
+user_2183,"I just want to say, Fear paralyzing at the moment",sent,fear
+user_2184,"Just so you know, Fear paralyzing today",sent,fear
+user_2185,"Hey, Fear paralyzing seriously",sent,fear
+user_2186,"Hey, Fear paralyzing seriously",sent,fear
+user_2187,"I have to tell you, Fear paralyzing for real",sent,fear
+user_2188,Fear paralyzing!!,sent,fear
+user_2189,Wow!,sent,surprise
+user_2190,Wow! today,sent,surprise
+user_2191,"Hey, Wow! right now",sent,surprise
+user_2192,"Just so you know, Wow! right now",sent,surprise
+user_2193,"I have to tell you, Wow!...",sent,surprise
+user_2194,"I have to tell you, Wow!...",sent,surprise
+user_2195,"Just so you know, Wow! right now",sent,surprise
+user_2196,"Listen, Wow!!!",sent,surprise
+user_2197,"Listen, Wow! today",sent,surprise
+user_2198,"I have to tell you, Wow! right now",sent,surprise
+user_2199,"To be honest, Wow!...",sent,surprise
+user_2200,Oh my!,sent,surprise
+user_2201,Oh my!!,sent,surprise
+user_2202,"To be honest, Oh my! honestly",sent,surprise
+user_2203,"You know what, Oh my! at the moment",sent,surprise
+user_2204,"Hey, Oh my!!!",sent,surprise
+user_2205,"Just so you know, Oh my! right now",sent,surprise
+user_2206,"Hey, Oh my! today",sent,surprise
+user_2207,"I just want to say, Oh my! honestly",sent,surprise
+user_2208,Oh my! for real,sent,surprise
+user_2209,"To be honest, Oh my! right now",sent,surprise
+user_2210,Oh my! right now,sent,surprise
+user_2211,I can't believe it,sent,surprise
+user_2212,"You know what, I can't believe really it seriously",sent,surprise
+user_2213,"Just so you know, I can't believe it!",sent,surprise
+user_2214,"Honestly, I can't believe it for real",sent,surprise
+user_2215,"I have to tell you, I can't believe it!",sent,surprise
+user_2216,"Listen, I can't utterly believe it today",sent,surprise
+user_2217,"To be honest, I can't believe it honestly",sent,surprise
+user_2218,"Just so you know, I can't believe really it!!",sent,surprise
+user_2219,"To be honest, I can't believe it today",sent,surprise
+user_2220,I can't believe really it at the moment,sent,surprise
+user_2221,"Listen, I can't believe it today",sent,surprise
+user_2222,What a surprise,sent,surprise
+user_2223,"Listen, What a surprise!",sent,surprise
+user_2224,"You know what, What a truly surprise honestly",sent,surprise
+user_2225,"You know what, What a surprise for real",sent,surprise
+user_2226,"Hey, What a surprise for real",sent,surprise
+user_2227,What really a surprise at the moment,sent,surprise
+user_2228,"Hey, What a surprise",sent,surprise
+user_2229,"Just so you know, What a truly surprise right now",sent,surprise
+user_2230,"To be honest, What a surprise",sent,surprise
+user_2231,"Listen, What a so surprise right now",sent,surprise
+user_2232,"Just so you know, What so a surprise seriously",sent,surprise
+user_2233,Never expected this,sent,surprise
+user_2234,"I just want to say, Never expected truly this seriously",sent,surprise
+user_2235,"To be honest, Never expected totally this!!",sent,surprise
+user_2236,"To be honest, Never expected completely this seriously",sent,surprise
+user_2237,"Hey, Never expected this seriously",sent,surprise
+user_2238,"You know what, Never expected so this honestly",sent,surprise
+user_2239,"To be honest, Never extremely expected this!!",sent,surprise
+user_2240,"You know what, Never expected incredibly this!!",sent,surprise
+user_2241,"I have to tell you, Never expected this!",sent,surprise
+user_2242,"To be honest, Never expected incredibly this today",sent,surprise
+user_2243,"I have to tell you, Never expected so this honestly",sent,surprise
+user_2244,Caught me off guard,sent,surprise
+user_2245,"Listen, Caught me off totally guard at the moment",sent,surprise
+user_2246,"I have to tell you, Caught me off extremely guard right now",sent,surprise
+user_2247,"Just so you know, Caught me off guard for real",sent,surprise
+user_2248,"I just want to say, Caught very me off guard",sent,surprise
+user_2249,"I have to tell you, Caught me extremely off guard at the moment",sent,surprise
+user_2250,"Listen, Caught me off guard",sent,surprise
+user_2251,"Honestly, Caught me off guard for real",sent,surprise
+user_2252,"I just want to say, Caught me off guard...",sent,surprise
+user_2253,"Hey, Caught me off guard for real",sent,surprise
+user_2254,"Just so you know, Caught me totally off guard right now",sent,surprise
+user_2255,Didn't see that coming,sent,surprise
+user_2256,"Honestly, Didn't see that incredibly coming",sent,surprise
+user_2257,"Listen, Didn't so see that coming...",sent,surprise
+user_2258,"I just want to say, Didn't see that coming seriously",sent,surprise
+user_2259,"Hey, Didn't see absolutely that coming",sent,surprise
+user_2260,"Just so you know, Didn't see extremely that coming at the moment",sent,surprise
+user_2261,"I just want to say, Didn't see that coming honestly",sent,surprise
+user_2262,Didn't see totally that coming for real,sent,surprise
+user_2263,"I have to tell you, Didn't see very that coming",sent,surprise
+user_2264,"I just want to say, Didn't totally see that coming at the moment",sent,surprise
+user_2265,"Hey, Didn't see that truly coming for real",sent,surprise
+user_2266,Jaw dropping,sent,surprise
+user_2267,"Listen, Jaw dropping honestly",sent,surprise
+user_2268,"Honestly, Jaw dropping right now",sent,surprise
+user_2269,"I just want to say, Jaw dropping!",sent,surprise
+user_2270,"Honestly, Jaw dropping at the moment",sent,surprise
+user_2271,"To be honest, Jaw dropping right now",sent,surprise
+user_2272,"To be honest, Jaw dropping right now",sent,surprise
+user_2273,Jaw dropping!,sent,surprise
+user_2274,"I have to tell you, Jaw dropping at the moment",sent,surprise
+user_2275,"Just so you know, Jaw dropping right now",sent,surprise
+user_2276,Jaw dropping at the moment,sent,surprise
+user_2277,Speechless,sent,surprise
+user_2278,"Listen, Speechless for real",sent,surprise
+user_2279,"Just so you know, Speechless today",sent,surprise
+user_2280,Speechless...,sent,surprise
+user_2281,"You know what, Speechless...",sent,surprise
+user_2282,Speechless at the moment,sent,surprise
+user_2283,"Listen, Speechless right now",sent,surprise
+user_2284,"I just want to say, Speechless...",sent,surprise
+user_2285,"Hey, Speechless!",sent,surprise
+user_2286,Speechless at the moment,sent,surprise
+user_2287,Speechless!!,sent,surprise
+user_2288,Mind blown,sent,surprise
+user_2289,"I have to tell you, Mind blown right now",sent,surprise
+user_2290,Mind blown at the moment,sent,surprise
+user_2291,"I have to tell you, Mind blown honestly",sent,surprise
+user_2292,"Just so you know, Mind blown seriously",sent,surprise
+user_2293,"Honestly, Mind blown seriously",sent,surprise
+user_2294,"Hey, Mind blown right now",sent,surprise
+user_2295,"I just want to say, Mind blown!",sent,surprise
+user_2296,"Just so you know, Mind blown honestly",sent,surprise
+user_2297,"Hey, Mind blown seriously",sent,surprise
+user_2298,"I have to tell you, Mind blown right now",sent,surprise
+user_2299,Incredible,sent,surprise
+user_2300,"I have to tell you, Incredible seriously",sent,surprise
+user_2301,"Hey, Incredible!",sent,surprise
+user_2302,"I have to tell you, Incredible honestly",sent,surprise
+user_2303,"Honestly, Incredible honestly",sent,surprise
+user_2304,"I have to tell you, Incredible!!",sent,surprise
+user_2305,Incredible honestly,sent,surprise
+user_2306,Incredible today,sent,surprise
+user_2307,"Just so you know, Incredible right now",sent,surprise
+user_2308,"To be honest, Incredible!",sent,surprise
+user_2309,Incredible...,sent,surprise
+user_2310,Astonishing,sent,surprise
+user_2311,"I have to tell you, Astonishing...",sent,surprise
+user_2312,Astonishing seriously,sent,surprise
+user_2313,"You know what, Astonishing!",sent,surprise
+user_2314,"Just so you know, Astonishing...",sent,surprise
+user_2315,Astonishing seriously,sent,surprise
+user_2316,"Listen, Astonishing for real",sent,surprise
+user_2317,"Listen, Astonishing today",sent,surprise
+user_2318,"Honestly, Astonishing seriously",sent,surprise
+user_2319,"You know what, Astonishing right now",sent,surprise
+user_2320,"Honestly, Astonishing seriously",sent,surprise
+user_2321,Shocking news,sent,surprise
+user_2322,"Honestly, Shocking news at the moment",sent,surprise
+user_2323,"Honestly, Shocking news today",sent,surprise
+user_2324,"I have to tell you, Shocking news seriously",sent,surprise
+user_2325,"Listen, Shocking news",sent,surprise
+user_2326,"To be honest, Shocking news!",sent,surprise
+user_2327,"Hey, Shocking news today",sent,surprise
+user_2328,"Listen, Shocking news for real",sent,surprise
+user_2329,Shocking news!!,sent,surprise
+user_2330,"Honestly, Shocking news!",sent,surprise
+user_2331,"Honestly, Shocking news today",sent,surprise
+user_2332,Unexpected turn,sent,surprise
+user_2333,"You know what, Unexpected turn at the moment",sent,surprise
+user_2334,"Listen, Unexpected turn today",sent,surprise
+user_2335,"You know what, Unexpected turn...",sent,surprise
+user_2336,"Just so you know, Unexpected turn honestly",sent,surprise
+user_2337,"Honestly, Unexpected turn seriously",sent,surprise
+user_2338,Unexpected turn...,sent,surprise
+user_2339,"Listen, Unexpected turn for real",sent,surprise
+user_2340,"Just so you know, Unexpected turn!!",sent,surprise
+user_2341,"I have to tell you, Unexpected turn!",sent,surprise
+user_2342,"Honestly, Unexpected turn honestly",sent,surprise
+user_2343,Plot twist,sent,surprise
+user_2344,"Honestly, Plot twist today",sent,surprise
+user_2345,"Hey, Plot twist at the moment",sent,surprise
+user_2346,"You know what, Plot twist at the moment",sent,surprise
+user_2347,"I have to tell you, Plot twist right now",sent,surprise
+user_2348,Plot twist right now,sent,surprise
+user_2349,"I just want to say, Plot twist for real",sent,surprise
+user_2350,"Honestly, Plot twist!",sent,surprise
+user_2351,"To be honest, Plot twist!!",sent,surprise
+user_2352,"I have to tell you, Plot twist honestly",sent,surprise
+user_2353,"I have to tell you, Plot twist for real",sent,surprise
+user_2354,Never thought I'd see this,sent,surprise
+user_2355,"I just want to say, Never thought I'd see utterly this at the moment",sent,surprise
+user_2356,"You know what, Never completely thought I'd see this honestly",sent,surprise
+user_2357,"You know what, Never thought I'd incredibly see this honestly",sent,surprise
+user_2358,"Hey, Never thought I'd see this at the moment",sent,surprise
+user_2359,Never thought I'd see incredibly this...,sent,surprise
+user_2360,"To be honest, Never thought I'd see this...",sent,surprise
+user_2361,"Just so you know, Never thought truly I'd see this seriously",sent,surprise
+user_2362,"To be honest, Never thought I'd see this...",sent,surprise
+user_2363,Never thought I'd see this!,sent,surprise
+user_2364,"Honestly, Never thought I'd see this honestly",sent,surprise
+user_2365,Out of nowhere,sent,surprise
+user_2366,"Honestly, Out of extremely nowhere right now",sent,surprise
+user_2367,"Listen, Out very of nowhere...",sent,surprise
+user_2368,"I just want to say, Out of nowhere honestly",sent,surprise
+user_2369,"You know what, Out of extremely nowhere",sent,surprise
+user_2370,"Listen, Out of nowhere at the moment",sent,surprise
+user_2371,"Hey, Out so of nowhere right now",sent,surprise
+user_2372,"To be honest, Out of nowhere right now",sent,surprise
+user_2373,"You know what, Out utterly of nowhere for real",sent,surprise
+user_2374,"Just so you know, Out of nowhere at the moment",sent,surprise
+user_2375,"Just so you know, Out of nowhere",sent,surprise
+user_2376,Surprise surprise,sent,surprise
+user_2377,"Honestly, Surprise surprise today",sent,surprise
+user_2378,"You know what, Surprise surprise!",sent,surprise
+user_2379,"Hey, Surprise surprise...",sent,surprise
+user_2380,"You know what, Surprise surprise!",sent,surprise
+user_2381,"Listen, Surprise surprise seriously",sent,surprise
+user_2382,Surprise surprise!,sent,surprise
+user_2383,Surprise surprise right now,sent,surprise
+user_2384,"I have to tell you, Surprise surprise today",sent,surprise
+user_2385,"Hey, Surprise surprise!!",sent,surprise
+user_2386,"You know what, Surprise surprise",sent,surprise
+user_2387,Well I'll be,sent,surprise
+user_2388,"I just want to say, Well I'll incredibly be at the moment",sent,surprise
+user_2389,"Just so you know, Well I'll be right now",sent,surprise
+user_2390,Well I'll so be!,sent,surprise
+user_2391,"I just want to say, Well I'll be seriously",sent,surprise
+user_2392,"To be honest, Well I'll be",sent,surprise
+user_2393,"I have to tell you, Well utterly I'll be at the moment",sent,surprise
+user_2394,"To be honest, Well I'll really be...",sent,surprise
+user_2395,"You know what, Well absolutely I'll be for real",sent,surprise
+user_2396,Well I'll be!!,sent,surprise
+user_2397,"To be honest, Well very I'll be right now",sent,surprise
+user_2398,Color me surprised,sent,surprise
+user_2399,"Just so you know, Color me surprised at the moment",sent,surprise
+user_2400,"I have to tell you, Color me surprised!",sent,surprise
+user_2401,"Just so you know, Color me surprised right now",sent,surprise
+user_2402,"Honestly, Color me surprised!",sent,surprise
+user_2403,Color me surprised today,sent,surprise
+user_2404,"Honestly, Color me surprised...",sent,surprise
+user_2405,"I just want to say, Color me surprised honestly",sent,surprise
+user_2406,"You know what, Color me completely surprised!",sent,surprise
+user_2407,Color me totally surprised seriously,sent,surprise
+user_2408,"You know what, Color absolutely me surprised at the moment",sent,surprise
+user_2409,Knock me over with a feather,sent,surprise
+user_2410,"You know what, Knock me totally over with a feather",sent,surprise
+user_2411,"I have to tell you, Knock me over with a feather today",sent,surprise
+user_2412,"I have to tell you, Knock me over with a incredibly feather at the moment",sent,surprise
+user_2413,"I have to tell you, Knock me over with a feather today",sent,surprise
+user_2414,"I have to tell you, Knock me over with a feather!",sent,surprise
+user_2415,"I just want to say, Knock me over really with a feather",sent,surprise
+user_2416,"Honestly, Knock extremely me over with a feather...",sent,surprise
+user_2417,"Honestly, Knock me over incredibly with a feather at the moment",sent,surprise
+user_2418,"I have to tell you, Knock me so over with a feather for real",sent,surprise
+user_2419,"Honestly, Knock very me over with a feather",sent,surprise
+user_2420,Who would have thought,sent,surprise
+user_2421,"Listen, Who would very have thought",sent,surprise
+user_2422,"Hey, Who really would have thought honestly",sent,surprise
+user_2423,"Honestly, Who would have thought for real",sent,surprise
+user_2424,"I just want to say, Who would completely have thought!",sent,surprise
+user_2425,"Honestly, Who would have thought right now",sent,surprise
+user_2426,"You know what, Who completely would have thought at the moment",sent,surprise
+user_2427,"I just want to say, Who would incredibly have thought honestly",sent,surprise
+user_2428,"Honestly, Who would have thought...",sent,surprise
+user_2429,"To be honest, Who completely would have thought right now",sent,surprise
+user_2430,"You know what, Who would incredibly have thought!!",sent,surprise
+user_2431,Blown away,sent,surprise
+user_2432,"Honestly, Blown away",sent,surprise
+user_2433,Blown away,sent,surprise
+user_2434,Blown away at the moment,sent,surprise
+user_2435,Blown away...,sent,surprise
+user_2436,"You know what, Blown away",sent,surprise
+user_2437,Blown away!,sent,surprise
+user_2438,"Listen, Blown away",sent,surprise
+user_2439,"To be honest, Blown away right now",sent,surprise
+user_2440,Blown away for real,sent,surprise
+user_2441,"Just so you know, Blown away",sent,surprise
+user_2442,Taken aback,sent,surprise
+user_2443,"Honestly, Taken aback for real",sent,surprise
+user_2444,"To be honest, Taken aback!",sent,surprise
+user_2445,"Just so you know, Taken aback honestly",sent,surprise
+user_2446,"Honestly, Taken aback seriously",sent,surprise
+user_2447,"I have to tell you, Taken aback at the moment",sent,surprise
+user_2448,"Listen, Taken aback honestly",sent,surprise
+user_2449,"Listen, Taken aback...",sent,surprise
+user_2450,"Listen, Taken aback right now",sent,surprise
+user_2451,"I have to tell you, Taken aback honestly",sent,surprise
+user_2452,"I have to tell you, Taken aback!!",sent,surprise
+user_2453,Completely unexpected,sent,surprise
+user_2454,"To be honest, Completely unexpected honestly",sent,surprise
+user_2455,Completely unexpected today,sent,surprise
+user_2456,"Just so you know, Completely unexpected today",sent,surprise
+user_2457,"I just want to say, Completely unexpected right now",sent,surprise
+user_2458,"Hey, Completely unexpected honestly",sent,surprise
+user_2459,"You know what, Completely unexpected",sent,surprise
+user_2460,"Listen, Completely unexpected seriously",sent,surprise
+user_2461,"You know what, Completely unexpected seriously",sent,surprise
+user_2462,"Hey, Completely unexpected!!",sent,surprise
+user_2463,"You know what, Completely unexpected seriously",sent,surprise
+user_2464,Surprised beyond belief,sent,surprise
+user_2465,"I have to tell you, Surprised beyond belief right now",sent,surprise
+user_2466,"Just so you know, Surprised totally beyond belief!",sent,surprise
+user_2467,"Honestly, Surprised really beyond belief at the moment",sent,surprise
+user_2468,"You know what, Surprised beyond really belief for real",sent,surprise
+user_2469,"I just want to say, Surprised beyond incredibly belief",sent,surprise
+user_2470,Surprised beyond belief!,sent,surprise
+user_2471,"I just want to say, Surprised beyond really belief!",sent,surprise
+user_2472,"I just want to say, Surprised truly beyond belief honestly",sent,surprise
+user_2473,"I have to tell you, Surprised beyond belief today",sent,surprise
+user_2474,"Just so you know, Surprised totally beyond belief seriously",sent,surprise
+user_2475,Eyes wide open,sent,surprise
+user_2476,"I have to tell you, Eyes wide open!",sent,surprise
+user_2477,"Honestly, Eyes wide completely open!!",sent,surprise
+user_2478,"I have to tell you, Eyes so wide open at the moment",sent,surprise
+user_2479,"To be honest, Eyes wide open today",sent,surprise
+user_2480,"Hey, Eyes wide open honestly",sent,surprise
+user_2481,Eyes wide open honestly,sent,surprise
+user_2482,"Just so you know, Eyes really wide open...",sent,surprise
+user_2483,Eyes wide open!!,sent,surprise
+user_2484,"Hey, Eyes wide open!",sent,surprise
+user_2485,"Hey, Eyes really wide open!",sent,surprise
+user_2486,Mouth hanging open,sent,surprise
+user_2487,"I have to tell you, Mouth hanging open",sent,surprise
+user_2488,"I just want to say, Mouth hanging very open...",sent,surprise
+user_2489,"Hey, Mouth hanging open",sent,surprise
+user_2490,Mouth hanging open,sent,surprise
+user_2491,"To be honest, Mouth hanging so open!!",sent,surprise
+user_2492,"Honestly, Mouth hanging open seriously",sent,surprise
+user_2493,"Just so you know, Mouth hanging open right now",sent,surprise
+user_2494,Mouth hanging open seriously,sent,surprise
+user_2495,"Just so you know, Mouth incredibly hanging open seriously",sent,surprise
+user_2496,"I just want to say, Mouth hanging open right now",sent,surprise
+user_2497,Stunned,sent,surprise
+user_2498,"To be honest, Stunned!",sent,surprise
+user_2499,"Just so you know, Stunned!!",sent,surprise
+user_2500,"Hey, Stunned at the moment",sent,surprise
+user_2501,"To be honest, Stunned!",sent,surprise
+user_2502,"Just so you know, Stunned honestly",sent,surprise
+user_2503,"You know what, Stunned honestly",sent,surprise
+user_2504,"Just so you know, Stunned seriously",sent,surprise
+user_2505,"I have to tell you, Stunned!",sent,surprise
+user_2506,"To be honest, Stunned at the moment",sent,surprise
+user_2507,"Listen, Stunned seriously",sent,surprise
+user_2508,Floored,sent,surprise
+user_2509,"I have to tell you, Floored seriously",sent,surprise
+user_2510,"Honestly, Floored right now",sent,surprise
+user_2511,"Honestly, Floored...",sent,surprise
+user_2512,Floored at the moment,sent,surprise
+user_2513,"Just so you know, Floored at the moment",sent,surprise
+user_2514,Floored!!,sent,surprise
+user_2515,"You know what, Floored right now",sent,surprise
+user_2516,"I just want to say, Floored seriously",sent,surprise
+user_2517,"Listen, Floored at the moment",sent,surprise
+user_2518,Floored today,sent,surprise
+user_2519,Gobsmacked,sent,surprise
+user_2520,"I have to tell you, Gobsmacked!",sent,surprise
+user_2521,"Honestly, Gobsmacked seriously",sent,surprise
+user_2522,"I have to tell you, Gobsmacked right now",sent,surprise
+user_2523,"To be honest, Gobsmacked honestly",sent,surprise
+user_2524,Gobsmacked honestly,sent,surprise
+user_2525,"Honestly, Gobsmacked seriously",sent,surprise
+user_2526,"Hey, Gobsmacked for real",sent,surprise
+user_2527,Gobsmacked...,sent,surprise
+user_2528,"I just want to say, Gobsmacked honestly",sent,surprise
+user_2529,"I just want to say, Gobsmacked right now",sent,surprise
+user_2530,Amazed,sent,surprise
+user_2531,"Hey, Amazed for real",sent,surprise
+user_2532,"I just want to say, Amazed right now",sent,surprise
+user_2533,"I have to tell you, Amazed at the moment",sent,surprise
+user_2534,"Honestly, Amazed right now",sent,surprise
+user_2535,"You know what, Amazed...",sent,surprise
+user_2536,Amazed right now,sent,surprise
+user_2537,"Hey, Amazed",sent,surprise
+user_2538,"Listen, Amazed today",sent,surprise
+user_2539,"Just so you know, Amazed!",sent,surprise
+user_2540,Amazed honestly,sent,surprise
+user_2541,Startled,sent,surprise
+user_2542,"Just so you know, Startled",sent,surprise
+user_2543,"To be honest, Startled for real",sent,surprise
+user_2544,"Just so you know, Startled honestly",sent,surprise
+user_2545,"Hey, Startled at the moment",sent,surprise
+user_2546,"You know what, Startled seriously",sent,surprise
+user_2547,"Just so you know, Startled seriously",sent,surprise
+user_2548,"Listen, Startled",sent,surprise
+user_2549,"Just so you know, Startled for real",sent,surprise
+user_2550,"To be honest, Startled for real",sent,surprise
+user_2551,"Listen, Startled for real",sent,surprise
+user_2552,Jolted,sent,surprise
+user_2553,"Hey, Jolted honestly",sent,surprise
+user_2554,"Just so you know, Jolted",sent,surprise
+user_2555,"To be honest, Jolted...",sent,surprise
+user_2556,"To be honest, Jolted at the moment",sent,surprise
+user_2557,"To be honest, Jolted right now",sent,surprise
+user_2558,"To be honest, Jolted seriously",sent,surprise
+user_2559,Jolted seriously,sent,surprise
+user_2560,"You know what, Jolted honestly",sent,surprise
+user_2561,"Listen, Jolted honestly",sent,surprise
+user_2562,"Listen, Jolted seriously",sent,surprise
+user_2563,Caught unawares,sent,surprise
+user_2564,Caught unawares,sent,surprise
+user_2565,"You know what, Caught unawares honestly",sent,surprise
+user_2566,"Just so you know, Caught unawares for real",sent,surprise
+user_2567,"Listen, Caught unawares at the moment",sent,surprise
+user_2568,Caught unawares today,sent,surprise
+user_2569,"Honestly, Caught unawares for real",sent,surprise
+user_2570,"Hey, Caught unawares!!",sent,surprise
+user_2571,"I have to tell you, Caught unawares for real",sent,surprise
+user_2572,"Just so you know, Caught unawares seriously",sent,surprise
+user_2573,"To be honest, Caught unawares at the moment",sent,surprise
+user_2574,Unpredictable,sent,surprise
+user_2575,"Hey, Unpredictable seriously",sent,surprise
+user_2576,"Hey, Unpredictable seriously",sent,surprise
+user_2577,Unpredictable right now,sent,surprise
+user_2578,"Honestly, Unpredictable honestly",sent,surprise
+user_2579,Unpredictable for real,sent,surprise
+user_2580,"Listen, Unpredictable seriously",sent,surprise
+user_2581,"Listen, Unpredictable for real",sent,surprise
+user_2582,"Just so you know, Unpredictable at the moment",sent,surprise
+user_2583,"I have to tell you, Unpredictable for real",sent,surprise
+user_2584,"Hey, Unpredictable honestly",sent,surprise
+user_2585,Sudden revelation,sent,surprise
+user_2586,"Hey, Sudden revelation today",sent,surprise
+user_2587,"I just want to say, Sudden revelation seriously",sent,surprise
+user_2588,"I just want to say, Sudden revelation for real",sent,surprise
+user_2589,"Honestly, Sudden revelation right now",sent,surprise
+user_2590,"To be honest, Sudden revelation...",sent,surprise
+user_2591,"To be honest, Sudden revelation!",sent,surprise
+user_2592,"Just so you know, Sudden revelation honestly",sent,surprise
+user_2593,"You know what, Sudden revelation at the moment",sent,surprise
+user_2594,"Just so you know, Sudden revelation!!",sent,surprise
+user_2595,"To be honest, Sudden revelation seriously",sent,surprise
+user_2596,Bombshell,sent,surprise
+user_2597,"You know what, Bombshell",sent,surprise
+user_2598,Bombshell for real,sent,surprise
+user_2599,"Hey, Bombshell seriously",sent,surprise
+user_2600,"You know what, Bombshell seriously",sent,surprise
+user_2601,"Honestly, Bombshell honestly",sent,surprise
+user_2602,"To be honest, Bombshell honestly",sent,surprise
+user_2603,"Listen, Bombshell for real",sent,surprise
+user_2604,"Hey, Bombshell today",sent,surprise
+user_2605,"Just so you know, Bombshell seriously",sent,surprise
+user_2606,"Just so you know, Bombshell honestly",sent,surprise
+user_2607,Game changer,sent,surprise
+user_2608,"I just want to say, Game changer right now",sent,surprise
+user_2609,"Listen, Game changer!",sent,surprise
+user_2610,"I have to tell you, Game changer!!",sent,surprise
+user_2611,"I have to tell you, Game changer...",sent,surprise
+user_2612,"I have to tell you, Game changer!!",sent,surprise
+user_2613,"You know what, Game changer...",sent,surprise
+user_2614,"To be honest, Game changer...",sent,surprise
+user_2615,"I have to tell you, Game changer!",sent,surprise
+user_2616,"I just want to say, Game changer for real",sent,surprise
+user_2617,"Listen, Game changer...",sent,surprise
+user_2618,Didn't see it coming,sent,surprise
+user_2619,Didn't see it coming at the moment,sent,surprise
+user_2620,Didn't see it coming!,sent,surprise
+user_2621,"You know what, Didn't see it truly coming today",sent,surprise
+user_2622,"Hey, Didn't see so it coming today",sent,surprise
+user_2623,"Honestly, Didn't see it coming seriously",sent,surprise
+user_2624,"Listen, Didn't see it incredibly coming!",sent,surprise
+user_2625,"Honestly, Didn't see it coming!",sent,surprise
+user_2626,"Listen, Didn't see it coming right now",sent,surprise
+user_2627,Didn't see it very coming for real,sent,surprise
+user_2628,"Just so you know, Didn't completely see it coming seriously",sent,surprise
+user_2629,Out of the blue,sent,surprise
+user_2630,"Honestly, Out extremely of the blue...",sent,surprise
+user_2631,"I just want to say, Out of the blue!",sent,surprise
+user_2632,"I have to tell you, Out of the blue seriously",sent,surprise
+user_2633,"Just so you know, Out really of the blue seriously",sent,surprise
+user_2634,"Listen, Out of the utterly blue seriously",sent,surprise
+user_2635,"Hey, Out of the blue...",sent,surprise
+user_2636,"Hey, Out of the blue for real",sent,surprise
+user_2637,"Hey, Out of the blue for real",sent,surprise
+user_2638,"To be honest, Out of the blue right now",sent,surprise
+user_2639,Out of the blue today,sent,surprise
+user_2640,Bolt from the blue,sent,surprise
+user_2641,"I just want to say, Bolt from the blue today",sent,surprise
+user_2642,"Hey, Bolt from the blue",sent,surprise
+user_2643,"Honestly, Bolt from utterly the blue today",sent,surprise
+user_2644,"To be honest, Bolt from the blue today",sent,surprise
+user_2645,"Listen, Bolt from the blue honestly",sent,surprise
+user_2646,Bolt from truly the blue today,sent,surprise
+user_2647,"Hey, Bolt from completely the blue...",sent,surprise
+user_2648,"Just so you know, Bolt from the so blue right now",sent,surprise
+user_2649,"Hey, Bolt from the blue",sent,surprise
+user_2650,"You know what, Bolt from the blue for real",sent,surprise
+user_2651,Surprise element,sent,surprise
+user_2652,"I just want to say, Surprise element!",sent,surprise
+user_2653,"Just so you know, Surprise element!",sent,surprise
+user_2654,Surprise element!!,sent,surprise
+user_2655,"Hey, Surprise element seriously",sent,surprise
+user_2656,"You know what, Surprise element today",sent,surprise
+user_2657,Surprise element!,sent,surprise
+user_2658,"Hey, Surprise element!",sent,surprise
+user_2659,"I just want to say, Surprise element at the moment",sent,surprise
+user_2660,"Just so you know, Surprise element",sent,surprise
+user_2661,"You know what, Surprise element",sent,surprise
+user_2662,Unexpected twist,sent,surprise
+user_2663,"To be honest, Unexpected twist...",sent,surprise
+user_2664,"You know what, Unexpected twist for real",sent,surprise
+user_2665,"I have to tell you, Unexpected twist today",sent,surprise
+user_2666,Unexpected twist at the moment,sent,surprise
+user_2667,"You know what, Unexpected twist for real",sent,surprise
+user_2668,"I have to tell you, Unexpected twist honestly",sent,surprise
+user_2669,"Just so you know, Unexpected twist!!",sent,surprise
+user_2670,"Just so you know, Unexpected twist!!",sent,surprise
+user_2671,"Just so you know, Unexpected twist",sent,surprise
+user_2672,"I just want to say, Unexpected twist right now",sent,surprise
+user_2673,Shocking revelation,sent,surprise
+user_2674,"I just want to say, Shocking revelation for real",sent,surprise
+user_2675,"Hey, Shocking revelation at the moment",sent,surprise
+user_2676,"Honestly, Shocking revelation today",sent,surprise
+user_2677,"I have to tell you, Shocking revelation for real",sent,surprise
+user_2678,"Honestly, Shocking revelation seriously",sent,surprise
+user_2679,"Just so you know, Shocking revelation!!",sent,surprise
+user_2680,"Listen, Shocking revelation at the moment",sent,surprise
+user_2681,"Hey, Shocking revelation honestly",sent,surprise
+user_2682,"To be honest, Shocking revelation right now",sent,surprise
+user_2683,"Listen, Shocking revelation!",sent,surprise
